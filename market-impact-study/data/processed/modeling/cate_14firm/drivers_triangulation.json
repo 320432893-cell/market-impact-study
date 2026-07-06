@@ -1,0 +1,104 @@
+{
+  "H1": {
+    "name": "H1 成长被打折(ΔlnPS~Δln营收 斜率<0)",
+    "slope": -0.169,
+    "p_wcb": 0.003,
+    "p_perm": 0.003,
+    "p_placebo": 0.002,
+    "sign_consist": 1.0,
+    "within_firm_slope": -0.165,
+    "lofo_consist": 1.0,
+    "se_cr2": 0.048,
+    "dof_bm": 3.8,
+    "p_cr2": 0.027,
+    "effective_G": 4.9,
+    "passes": {
+      "推断": true,
+      "设定": true,
+      "识别": true,
+      "证伪": true,
+      "泛化": true
+    },
+    "verdict": "可信(5/5)",
+    "p_romano_wolf": 0.005,
+    "bayes": {
+      "mean": -0.168,
+      "ci95": [
+        -0.244,
+        -0.09
+      ],
+      "P_neg": 1.0,
+      "rhat": 1.001
+    }
+  },
+  "H2": {
+    "name": "H2 低杠杆→高估值(超额PS~资产负债率,负)",
+    "beta": -0.519,
+    "p_wcb": 0.003,
+    "p_perm": 0.002,
+    "p_placebo": 0.002,
+    "sign_consist": 1.0,
+    "within_firm_beta": -0.162,
+    "lofo_consist": 1.0,
+    "leadlag": {
+      "forward_过去特征→今估值": -0.507,
+      "reverse_过去估值→特征变化": -0.135,
+      "判读": "正向为主"
+    },
+    "se_cr2": 0.051,
+    "dof_bm": 5.0,
+    "p_cr2": 0.0,
+    "effective_G": 5.7,
+    "passes": {
+      "推断": true,
+      "设定": true,
+      "识别": true,
+      "证伪": true,
+      "泛化": true
+    },
+    "verdict": "可信(5/5)",
+    "p_romano_wolf": 0.003,
+    "bayes": {
+      "mean": -0.251,
+      "ci95": [
+        -0.315,
+        -0.189
+      ],
+      "P_neg": 1.0,
+      "rhat": 1.0
+    }
+  },
+  "H3": {
+    "name": "H3 盈利(毛利率剥营收机械部分后)→估值",
+    "beta": 0.114,
+    "p_wcb": 0.41,
+    "p_perm": 0.002,
+    "p_placebo": 0.775,
+    "sign_consist": 0.75,
+    "within_firm_beta": -0.05,
+    "lofo_consist": 1.0,
+    "leadlag": null,
+    "se_cr2": 0.153,
+    "dof_bm": 4.5,
+    "p_cr2": 0.491,
+    "effective_G": 5.4,
+    "passes": {
+      "推断": false,
+      "设定": false,
+      "识别": false,
+      "证伪": false,
+      "泛化": true
+    },
+    "verdict": "存疑(1/5) 未过:推断/设定/识别/证伪",
+    "p_romano_wolf": 0.41,
+    "bayes": {
+      "mean": -0.039,
+      "ci95": [
+        -0.085,
+        0.005
+      ],
+      "P_neg": 0.961,
+      "rhat": 1.0
+    }
+  }
+}

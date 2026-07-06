@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>数据治理与建模入口</title>
+  <style>
+    body { margin: 0; font: 15px Arial, "Microsoft YaHei", sans-serif; color: #202020; background: #f7f8f9; }
+    header { padding: 28px 36px; background: #ffffff; border-bottom: 1px solid #dde2e6; }
+    main { max-width: 1160px; margin: 0 auto; padding: 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+    .metric, section { background: #ffffff; border: 1px solid #dde2e6; border-radius: 6px; padding: 16px; }
+    .metric strong { display: block; font-size: 24px; margin-top: 8px; }
+    img { width: 100%; height: auto; border: 1px solid #e4e7ea; background: #fff; }
+    table { border-collapse: collapse; width: 100%; background: #fff; font-size: 13px; }
+    th, td { border: 1px solid #dde2e6; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #eef3f5; }
+    code { background: #eef3f5; padding: 2px 4px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>数据治理与建模入口</h1>
+    <p>本页只展示样本、标签和建模入口，不包含模型训练结果。目的在于说明后续模型为什么从这些样本和字段开始。</p>
+  </header>
+  <main>
+    <div class="grid">
+      <div class="metric">modeling_rows<strong>6398</strong></div><div class="metric">modeling_columns<strong>120</strong></div><div class="metric">manual_review_template_rows<strong>100</strong></div><div class="metric">main_model_rows<strong>444</strong></div><div class="metric">clean_sensitivity_rows<strong>54</strong></div>
+    </div>
+
+        <section>
+          <h2>样本策略分布</h2>
+          <p>说明哪些样本进入主模型、稳健性、案例或排除，避免后续训练临时筛样本。</p>
+          <img src="../../../market-impact-study/figures/data_governance/sample_policy_distribution.svg" alt="样本策略分布" />
+        </section>
+
+
+        <section>
+          <h2>人工复核原因分布</h2>
+          <p>展示为什么这些事件需要人工复核，支撑事件治理过程。</p>
+          <img src="../../../market-impact-study/figures/data_governance/review_reason_distribution.svg" alt="人工复核原因分布" />
+        </section>
+
+
+        <section>
+          <h2>20日相对市值反应分布</h2>
+          <p>检查主标签是否被极端值主导，并为 winsorize/分位数分析提供依据。</p>
+          <img src="../../../market-impact-study/figures/data_governance/main_label_histogram.svg" alt="20日相对市值反应分布" />
+        </section>
+
+
+        <section>
+          <h2>事件类型样本量</h2>
+          <p>展示事件分类结构，突出其他类占比和分类审计必要性。</p>
+          <img src="../../../market-impact-study/figures/data_governance/category_event_count.svg" alt="事件类型样本量" />
+        </section>
+
+
+        <section>
+          <h2>事件类型 x 20日相对市值反应</h2>
+          <p>为后续特征工程和报告中的事件类型解释提供直观依据。</p>
+          <img src="../../../market-impact-study/figures/data_governance/category_label_boxplot.svg" alt="事件类型 x 20日相对市值反应" />
+        </section>
+
+    <section>
+      <h2>建模宽表字段入口</h2>
+      <p>后续 EDA、显性/隐性特征拼接、训练和图表均优先读取 <code>data/processed/modeling/modeling_dataset_v1.csv</code>。</p>
+      <table><thead><tr><th>column</th></tr></thead><tbody><tr><td>analysis_group_id</td></tr><tr><td>event_id</td></tr><tr><td>company</td></tr><tr><td>ts_code</td></tr><tr><td>symbol</td></tr><tr><td>event_date</td></tr><tr><td>aligned_trade_date</td></tr><tr><td>pre_trade_date</td></tr><tr><td>source_type</td></tr><tr><td>source_types</td></tr><tr><td>primary_category</td></tr><tr><td>category_tags</td></tr><tr><td>title</td></tr><tr><td>summary</td></tr><tr><td>group_titles_sample</td></tr><tr><td>source_url</td></tr><tr><td>pdf_url</td></tr><tr><td>local_pdf_path</td></tr><tr><td>has_pdf</td></tr><tr><td>source_count</td></tr><tr><td>group_event_count</td></tr><tr><td>group_source_count</td></tr><tr><td>group_evidence_count</td></tr><tr><td>car_status</td></tr><tr><td>is_subject_company</td></tr><tr><td>is_peer_event</td></tr><tr><td>is_pre_listing</td></tr><tr><td>is_ipo_listing_related</td></tr><tr><td>is_market_trading_related</td></tr><tr><td>capital_action_subtype</td></tr><tr><td>capital_action_subtype_hits</td></tr><tr><td>overlap_event_count_p0_p5</td></tr><tr><td>overlap_event_count_p0_p20</td></tr><tr><td>overlap_event_count_p0_p60</td></tr><tr><td>overlap_category_count_p0_p20</td></tr><tr><td>overlap_categories_p0_p20</td></tr><tr><td>is_overlap_clean_p0_p5</td></tr><tr><td>is_overlap_clean_p0_p20</td></tr><tr><td>is_overlap_clean_p0_p60</td></tr><tr><td>actual_mv_return_p0_p5</td></tr><tr><td>peer_avg_mv_return_p0_p5</td></tr><tr><td>relative_mv_return_p0_p5</td></tr><tr><td>car_p0_p5</td></tr><tr><td>abnormal_mv_impact_yi_p0_p5</td></tr><tr><td>actual_mv_change_yi_p0_p5</td></tr><tr><td>window_coverage_p0_p5</td></tr><tr><td>end_trade_date_p0_p5</td></tr><tr><td>actual_mv_return_p0_p20</td></tr><tr><td>peer_avg_mv_return_p0_p20</td></tr><tr><td>relative_mv_return_p0_p20</td></tr><tr><td>car_p0_p20</td></tr><tr><td>abnormal_mv_impact_yi_p0_p20</td></tr><tr><td>actual_mv_change_yi_p0_p20</td></tr><tr><td>window_coverage_p0_p20</td></tr><tr><td>end_trade_date_p0_p20</td></tr><tr><td>actual_mv_return_p0_p60</td></tr><tr><td>peer_avg_mv_return_p0_p60</td></tr><tr><td>relative_mv_return_p0_p60</td></tr><tr><td>car_p0_p60</td></tr><tr><td>abnormal_mv_impact_yi_p0_p60</td></tr><tr><td>actual_mv_change_yi_p0_p60</td></tr><tr><td>window_coverage_p0_p60</td></tr><tr><td>end_trade_date_p0_p60</td></tr><tr><td>relative_mv_reaction_label_p0_p20</td></tr><tr><td>as_of_date</td></tr><tr><td>source_count_feature</td></tr><tr><td>evidence_count</td></tr><tr><td>group_event_count_feature</td></tr><tr><td>group_source_count_feature</td></tr><tr><td>group_evidence_count_feature</td></tr><tr><td>keyword_score_num</td></tr><tr><td>source_weight_num</td></tr><tr><td>signal_strength_num</td></tr><tr><td>has_pdf_num</td></tr><tr><td>pre_total_mv_yi</td></tr><tr><td>text_char_len</td></tr><tr><td>text_digit_count</td></tr><tr><td>text_percent_count</td></tr><tr><td>text_money_word_count</td></tr><tr><td>text_risk_keyword_count</td></tr></tbody></table>
+    </section>
+    <section>
+      <h2>复核模板样例</h2>
+      <p>人工复核不改原始 SSOT，先填 overlay 模板，再由后续脚本合并。</p>
+      <table><thead><tr><th>review_rank</th><th>review_reason</th><th>suggested_action</th><th>analysis_group_id</th><th>company</th><th>symbol</th><th>event_date</th><th>split</th><th>default_model_scope</th><th>primary_category</th><th>capital_action_subtype</th><th>source_type</th><th>source_types</th><th>title</th><th>group_titles_sample</th><th>relative_mv_return_p0_p20</th><th>abnormal_mv_impact_yi_p0_p20</th><th>actual_mv_return_p0_p20</th><th>peer_avg_mv_return_p0_p20</th><th>overlap_event_count_p0_p20</th><th>is_overlap_clean_p0_p20</th><th>source_count</th><th>group_event_count</th><th>group_source_count</th><th>has_main_label</th><th>is_default_training_candidate</th><th>manual_keep_for_model</th><th>manual_is_noise</th><th>manual_corrected_category</th><th>manual_notes</th></tr></thead><tbody><tr><td>1</td><td>top_positive_label|extreme_relative_label|large_mv_impact|category_other|subject_company|overlap_dirty_p20|not_default_training</td><td>排除默认建模，保留为审计/案例</td><td>300590|2017-01-11|其他</td><td>移为通信</td><td>300590</td><td>2017-01-11</td><td>train</td><td>audit_or_aux</td><td>其他</td><td>nan</td><td>announcement</td><td>announcement</td><td>关于“N移为”盘中临时停牌的公告</td><td>关于“N移为”盘中临时停牌的公告</td><td>0.9403478826302528</td><td>43.53129479999998</td><td>0.7959034381858083</td><td>-0.1444444444444445</td><td>4</td><td>False</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td></tr><tr><td>2</td><td>top_positive_label|extreme_relative_label|large_mv_impact|category_other|subject_company|overlap_dirty_p20|not_default_training</td><td>排除默认建模，保留为审计/案例</td><td>300590|2017-01-13|其他</td><td>移为通信</td><td>300590</td><td>2017-01-13</td><td>train</td><td>audit_or_aux</td><td>其他</td><td>nan</td><td>announcement</td><td>announcement</td><td>股票交易异常波动公告(2017/1/13)</td><td>股票交易异常波动公告(2017/1/13)</td><td>0.6116221734226096</td><td>24.128436800000003</td><td>0.5091997339835956</td><td>-0.102422439439014</td><td>5</td><td>False</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td></tr><tr><td>3</td><td>top_positive_label|extreme_relative_label|category_other|subject_company|overlap_dirty_p20</td><td>优先人工重分类</td><td>300590|2021-06-28|其他</td><td>移为通信</td><td>300590</td><td>2021-06-28</td><td>train</td><td>audit_or_aux</td><td>其他</td><td>nan</td><td>announcement</td><td>announcement</td><td>关于召开公司2021年第三次临时股东大会的通知</td><td>关于召开公司2021年第三次临时股东大会的通知 || 独立董事关于第三届董事会第七次会议相关事项的独立意见 || 第三届监事会第六次会议决议公告 || 第三届董事会第七次会议决议公告</td><td>0.4499163539912483</td><td>22.08414333494673</td><td>0.4479166666666667</td><td>-0.0019996873245816</td><td>15</td><td>False</td><td>1</td><td>4</td><td>1</td><td>1</td><td>1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td></tr><tr><td>4</td><td>top_positive_label|extreme_relative_label|category_other|subject_company|overlap_dirty_p20</td><td>优先人工重分类</td><td>300590|2020-11-04|其他</td><td>移为通信</td><td>300590</td><td>2020-11-04</td><td>train</td><td>audit_or_aux</td><td>其他</td><td>nan</td><td>announcement</td><td>announcement</td><td>国信证券股份有限公司关于公司2020年度持续督导培训工作报告</td><td>国信证券股份有限公司关于公司2020年度持续督导培训工作报告</td><td>0.4210235997676131</td><td>21.61988623250229</td><td>0.4478813559322032</td><td>0.0268577561645901</td><td>7</td><td>False</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td></tr><tr><td>5</td><td>top_positive_label|extreme_relative_label|category_other|subject_company|overlap_dirty_p20</td><td>优先人工重分类</td><td>300590|2020-11-02|其他</td><td>移为通信</td><td>300590</td><td>2020-11-02</td><td>train</td><td>audit_or_aux</td><td>其他</td><td>nan</td><td>announcement</td><td>announcement</td><td>2020年第二次临时股东大会的法律意见书</td><td>2020年第二次临时股东大会的法律意见书 || 第三届董事会第一次会议决议公告 || 独立董事关于第三届董事会第一次会议相关事项的独立意见 || 2020年第二次临时股东大会决议公告 || 第三届监事会第一次会议决议公告 || 关于公司董事会、监事会完成换届选举及聘任公司高级管理人员和证券事务代表的公告</td><td>0.4330484034059093</td><td>21.05755726608412</td><td>0.4855769230769229</td><td>0.0525285196710136</td><td>8</td><td>False</td><td>1</td><td>6</td><td>1</td><td>1</td><td>1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td></tr><tr><td>6</td><td>extreme_relative_label|category_other|subject_company|overlap_dirty_p20</td><td>优先人工重分类</td><td>300590|2020-10-29|其他</td><td>移为通信</td><td>300590</td><td>2020-10-29</td><td>train</td><td>audit_or_aux</td><td>其他</td><td>nan</td><td>announcement</td><td>announcement</td><td>第二届董事会第三十次会议决议公告</td><td>第二届董事会第三十次会议决议公告 || 第二届监事会第二十九次会议决议公告</td><td>0.317142965752612</td><td>18.274004886222</td><td>0.3463081861958268</td><td>0.0291652204432148</td><td>12</td><td>False</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td></tr><tr><td>7</td><td>category_other|subject_company|overlap_dirty_p20</td><td>优先人工重分类</td><td>300590|2021-07-13|其他</td><td>移为通信</td><td>300590</td><td>2021-07-13</td><td>train</td><td>audit_or_aux</td><td>其他</td><td>nan</td><td>announcement</td><td>announcement</td><td>2021年第三次临时股东大会的法律意见书</td><td>2021年第三次临时股东大会的法律意见书 || 2021年第三次临时股东大会决议公告</td><td>0.2823471887358805</td><td>16.577240510215283</td><td>0.3255860332223836</td><td>0.0432388444865031</td><td>16</td><td>False</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td></tr><tr><td>8</td><td>extreme_relative_label|category_other|subject_company|overlap_dirty_p20</td><td>优先人工重分类</td><td>300590|2021-07-16|其他</td><td>移为通信</td><td>300590</td><td>2021-07-16</td><td>train</td><td>audit_or_aux</td><td>其他</td><td>nan</td><td>announcement</td><td>announcement</td><td>第三届监事会第七次会议决议公告</td><td>第三届监事会第七次会议决议公告 || 独立董事关于第三届董事会第八次会议相关事项的独立意见 || 第三届董事会第八次会议决议公告</td><td>0.2929002231847734</td><td>15.89669607257234</td><td>0.3262702206279937</td><td>0.0333699974432203</td><td>14</td><td>False</td><td>1</td><td>3</td><td>1</td><td>1</td><td>1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td></tr><tr><td>9</td><td>category_other|subject_company|overlap_dirty_p20|not_default_training</td><td>排除默认建模，保留为审计/案例</td><td>300590|2017-01-17|其他</td><td>移为通信</td><td>300590</td><td>2017-01-17</td><td>train</td><td>audit_or_aux</td><td>其他</td><td>nan</td><td>announcement</td><td>announcement</td><td>股票交易异常波动公告(2017/1/17)</td><td>股票交易异常波动公告(2017/1/17)</td><td>0.28176366668717</td><td>16.489709599999998</td><td>0.2693294246976914</td><td>-0.0124342419894787</td><td>4</td><td>False</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td></tr><tr><td>10</td><td>category_other|subject_company|overlap_dirty_p20</td><td>优先人工重分类</td><td>300590|2017-06-15|其他</td><td>移为通信</td><td>300590</td><td>2017-06-15</td><td>train</td><td>audit_or_aux</td><td>其他</td><td>nan</td><td>announcement</td><td>announcement</td><td>关于公司完成工商变更登记的公告</td><td>关于公司完成工商变更登记的公告</td><td>0.2746725357321163</td><td>-14.74308613333333</td><td>0.2707606420097697</td><td>-0.0039118937223466</td><td>48</td><td>False</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>nan</td><td>nan</td><td>nan</td><td>nan</td></tr></tbody></table>
+    </section>
+  </main>
+</body>
+</html>

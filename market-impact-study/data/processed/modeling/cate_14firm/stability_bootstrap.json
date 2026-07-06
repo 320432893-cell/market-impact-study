@@ -1,0 +1,594 @@
+{
+  "B": 400,
+  "n_ok": 400,
+  "features": [
+    {
+      "feat": "振幅(60d)",
+      "select_freq": 0.99,
+      "shap_median": 0.0387,
+      "shap_ci": [
+        0.0148,
+        0.0615
+      ],
+      "coef_median": 0.0785,
+      "coef_ci": [
+        0.0273,
+        0.1202
+      ]
+    },
+    {
+      "feat": "营收3年CAGR",
+      "select_freq": 0.983,
+      "shap_median": 0.0465,
+      "shap_ci": [
+        0.0116,
+        0.0944
+      ],
+      "coef_median": -0.0967,
+      "coef_ci": [
+        -0.168,
+        -0.0325
+      ]
+    },
+    {
+      "feat": "扣非净利增速",
+      "select_freq": 0.958,
+      "shap_median": 0.0447,
+      "shap_ci": [
+        0.0137,
+        0.0799
+      ],
+      "coef_median": 0.0519,
+      "coef_ci": [
+        0.0085,
+        0.1062
+      ]
+    },
+    {
+      "feat": "资产周转率",
+      "select_freq": 0.94,
+      "shap_median": 0.0145,
+      "shap_ci": [
+        0.0025,
+        0.0309
+      ],
+      "coef_median": -0.1207,
+      "coef_ci": [
+        -0.2755,
+        -0.0211
+      ]
+    },
+    {
+      "feat": "融资余额/市值",
+      "select_freq": 0.94,
+      "shap_median": 0.0654,
+      "shap_ci": [
+        0.018,
+        0.1652
+      ],
+      "coef_median": -0.1403,
+      "coef_ci": [
+        -0.2653,
+        -0.0187
+      ]
+    },
+    {
+      "feat": "Amihud非流动性(60d)",
+      "select_freq": 0.907,
+      "shap_median": 0.0481,
+      "shap_ci": [
+        0.0067,
+        0.0974
+      ],
+      "coef_median": -0.089,
+      "coef_ci": [
+        -0.2974,
+        -0.0068
+      ]
+    },
+    {
+      "feat": "资产负债率",
+      "select_freq": 0.895,
+      "shap_median": 0.1438,
+      "shap_ci": [
+        0.0515,
+        0.3007
+      ],
+      "coef_median": -0.2054,
+      "coef_ci": [
+        -0.4388,
+        -0.0314
+      ]
+    },
+    {
+      "feat": "量比(60d)",
+      "select_freq": 0.865,
+      "shap_median": 0.0167,
+      "shap_ci": [
+        0.0019,
+        0.0359
+      ],
+      "coef_median": 0.057,
+      "coef_ci": [
+        0.0089,
+        0.278
+      ]
+    },
+    {
+      "feat": "股东户数同比",
+      "select_freq": 0.84,
+      "shap_median": 0.0171,
+      "shap_ci": [
+        0.0013,
+        0.0446
+      ],
+      "coef_median": -0.0403,
+      "coef_ci": [
+        -0.0923,
+        0.0007
+      ]
+    },
+    {
+      "feat": "营收同比",
+      "select_freq": 0.828,
+      "shap_median": 0.0238,
+      "shap_ci": [
+        0.0039,
+        0.0494
+      ],
+      "coef_median": -0.042,
+      "coef_ci": [
+        -0.0956,
+        0.0249
+      ]
+    },
+    {
+      "feat": "现金/总资产",
+      "select_freq": 0.825,
+      "shap_median": 0.0098,
+      "shap_ci": [
+        0.0007,
+        0.0328
+      ],
+      "coef_median": -0.0652,
+      "coef_ci": [
+        -0.1434,
+        0.0
+      ]
+    },
+    {
+      "feat": "固定资产周转",
+      "select_freq": 0.807,
+      "shap_median": 0.003,
+      "shap_ci": [
+        0.0,
+        0.0208
+      ],
+      "coef_median": 0.0468,
+      "coef_ci": [
+        -0.0093,
+        0.1188
+      ]
+    },
+    {
+      "feat": "北向持股占比",
+      "select_freq": 0.792,
+      "shap_median": 0.0031,
+      "shap_ci": [
+        0.0,
+        0.0235
+      ],
+      "coef_median": -0.0263,
+      "coef_ci": [
+        -0.0889,
+        0.0573
+      ]
+    },
+    {
+      "feat": "净利同比",
+      "select_freq": 0.782,
+      "shap_median": 0.0191,
+      "shap_ci": [
+        0.0047,
+        0.0478
+      ],
+      "coef_median": 0.0047,
+      "coef_ci": [
+        -0.0915,
+        0.0667
+      ]
+    },
+    {
+      "feat": "北向持股Δ60d",
+      "select_freq": 0.782,
+      "shap_median": 0.0022,
+      "shap_ci": [
+        0.0,
+        0.0144
+      ],
+      "coef_median": 0.0049,
+      "coef_ci": [
+        -0.0919,
+        0.0854
+      ]
+    },
+    {
+      "feat": "前十大机构占比",
+      "select_freq": 0.78,
+      "shap_median": 0.0171,
+      "shap_ci": [
+        0.0012,
+        0.0465
+      ],
+      "coef_median": -0.0417,
+      "coef_ci": [
+        -0.1028,
+        0.0245
+      ]
+    },
+    {
+      "feat": "海外收入占比",
+      "select_freq": 0.77,
+      "shap_median": 0.017,
+      "shap_ci": [
+        0.0006,
+        0.0765
+      ],
+      "coef_median": 0.0294,
+      "coef_ci": [
+        -0.0597,
+        0.1338
+      ]
+    },
+    {
+      "feat": "应收周转",
+      "select_freq": 0.757,
+      "shap_median": 0.0062,
+      "shap_ci": [
+        0.0,
+        0.0276
+      ],
+      "coef_median": 0.1148,
+      "coef_ci": [
+        0.0034,
+        0.227
+      ]
+    },
+    {
+      "feat": "财务费用率",
+      "select_freq": 0.745,
+      "shap_median": 0.0146,
+      "shap_ci": [
+        0.001,
+        0.0593
+      ],
+      "coef_median": -0.0385,
+      "coef_ci": [
+        -0.1316,
+        0.0475
+      ]
+    },
+    {
+      "feat": "净利率",
+      "select_freq": 0.74,
+      "shap_median": 0.0588,
+      "shap_ci": [
+        0.0147,
+        0.1403
+      ],
+      "coef_median": 0.1099,
+      "coef_ci": [
+        0.016,
+        0.3877
+      ]
+    },
+    {
+      "feat": "毛利率趋势Δ",
+      "select_freq": 0.733,
+      "shap_median": 0.0011,
+      "shap_ci": [
+        0.0,
+        0.0077
+      ],
+      "coef_median": -0.0241,
+      "coef_ci": [
+        -0.0504,
+        0.0
+      ]
+    },
+    {
+      "feat": "净利率趋势Δ",
+      "select_freq": 0.705,
+      "shap_median": 0.0089,
+      "shap_ci": [
+        0.0,
+        0.0285
+      ],
+      "coef_median": 0.0202,
+      "coef_ci": [
+        -0.0236,
+        0.0503
+      ]
+    },
+    {
+      "feat": "换手率(60d)",
+      "select_freq": 0.7,
+      "shap_median": 0.0372,
+      "shap_ci": [
+        0.0102,
+        0.0702
+      ],
+      "coef_median": 0.0278,
+      "coef_ci": [
+        -0.0382,
+        0.1027
+      ]
+    },
+    {
+      "feat": "经营现金流/营收",
+      "select_freq": 0.693,
+      "shap_median": 0.0047,
+      "shap_ci": [
+        0.0,
+        0.0223
+      ],
+      "coef_median": 0.0,
+      "coef_ci": [
+        -0.0742,
+        0.0576
+      ]
+    },
+    {
+      "feat": "销售费用率",
+      "select_freq": 0.632,
+      "shap_median": 0.0168,
+      "shap_ci": [
+        0.0011,
+        0.0707
+      ],
+      "coef_median": 0.0626,
+      "coef_ci": [
+        -0.039,
+        0.1746
+      ]
+    },
+    {
+      "feat": "融资余额Δ60d",
+      "select_freq": 0.63,
+      "shap_median": 0.0007,
+      "shap_ci": [
+        0.0,
+        0.0144
+      ],
+      "coef_median": -0.0001,
+      "coef_ci": [
+        -0.0518,
+        0.0436
+      ]
+    },
+    {
+      "feat": "主力净流入/市值",
+      "select_freq": 0.627,
+      "shap_median": 0.0071,
+      "shap_ci": [
+        0.0002,
+        0.0273
+      ],
+      "coef_median": 0.0114,
+      "coef_ci": [
+        -0.0273,
+        0.0358
+      ]
+    },
+    {
+      "feat": "经营现金流增速",
+      "select_freq": 0.615,
+      "shap_median": 0.0039,
+      "shap_ci": [
+        0.0,
+        0.0184
+      ],
+      "coef_median": 0.0005,
+      "coef_ci": [
+        -0.0312,
+        0.0353
+      ]
+    },
+    {
+      "feat": "研发强度",
+      "select_freq": 0.613,
+      "shap_median": 0.0284,
+      "shap_ci": [
+        0.0011,
+        0.0687
+      ],
+      "coef_median": 0.0217,
+      "coef_ci": [
+        -0.081,
+        0.1061
+      ]
+    },
+    {
+      "feat": "自由现金流/营收",
+      "select_freq": 0.542,
+      "shap_median": 0.0108,
+      "shap_ci": [
+        0.0,
+        0.0334
+      ],
+      "coef_median": -0.0098,
+      "coef_ci": [
+        -0.0514,
+        0.0463
+      ]
+    },
+    {
+      "feat": "现金比率",
+      "select_freq": 0.525,
+      "shap_median": 0.0435,
+      "shap_ci": [
+        0.0001,
+        0.1372
+      ],
+      "coef_median": 0.0584,
+      "coef_ci": [
+        -0.019,
+        0.3593
+      ]
+    },
+    {
+      "feat": "毛利率",
+      "select_freq": 0.497,
+      "shap_median": 0.0708,
+      "shap_ci": [
+        0.0052,
+        0.2238
+      ],
+      "coef_median": 0.0183,
+      "coef_ci": [
+        -0.0871,
+        0.1241
+      ]
+    },
+    {
+      "feat": "管理费用率",
+      "select_freq": 0.472,
+      "shap_median": 0.0216,
+      "shap_ci": [
+        0.001,
+        0.0755
+      ],
+      "coef_median": 0.0122,
+      "coef_ci": [
+        -0.1215,
+        0.1279
+      ]
+    },
+    {
+      "feat": "营业利润率",
+      "select_freq": 0.43,
+      "shap_median": 0.0394,
+      "shap_ci": [
+        0.0,
+        0.1252
+      ],
+      "coef_median": 0.0538,
+      "coef_ci": [
+        -0.2925,
+        0.2454
+      ]
+    },
+    {
+      "feat": "ROE",
+      "select_freq": 0.417,
+      "shap_median": 0.0038,
+      "shap_ci": [
+        0.0,
+        0.0189
+      ],
+      "coef_median": -0.0339,
+      "coef_ci": [
+        -0.0926,
+        0.2214
+      ]
+    },
+    {
+      "feat": "产权比率",
+      "select_freq": 0.383,
+      "shap_median": 0.0678,
+      "shap_ci": [
+        0.0036,
+        0.183
+      ],
+      "coef_median": -0.0283,
+      "coef_ci": [
+        -0.2029,
+        0.0851
+      ]
+    },
+    {
+      "feat": "ROA",
+      "select_freq": 0.37,
+      "shap_median": 0.0042,
+      "shap_ci": [
+        0.0,
+        0.0231
+      ],
+      "coef_median": 0.0118,
+      "coef_ci": [
+        -0.1016,
+        0.0906
+      ]
+    },
+    {
+      "feat": "流动比率",
+      "select_freq": 0.367,
+      "shap_median": 0.0082,
+      "shap_ci": [
+        0.0,
+        0.063
+      ],
+      "coef_median": 0.0,
+      "coef_ci": [
+        -0.3927,
+        0.0809
+      ]
+    },
+    {
+      "feat": "速动比率",
+      "select_freq": 0.335,
+      "shap_median": 0.0362,
+      "shap_ci": [
+        0.0005,
+        0.1654
+      ],
+      "coef_median": 0.0,
+      "coef_ci": [
+        -0.2296,
+        0.2437
+      ]
+    },
+    {
+      "feat": "权益乘数",
+      "select_freq": 0.325,
+      "shap_median": 0.0,
+      "shap_ci": [
+        0.0,
+        0.109
+      ],
+      "coef_median": 0.0042,
+      "coef_ci": [
+        -0.1829,
+        0.0807
+      ]
+    },
+    {
+      "feat": "扣非ROE",
+      "select_freq": 0.31,
+      "shap_median": 0.007,
+      "shap_ci": [
+        0.0,
+        0.0306
+      ],
+      "coef_median": -0.0056,
+      "coef_ci": [
+        -0.1235,
+        0.1893
+      ]
+    },
+    {
+      "feat": "ROIC投入资本回报",
+      "select_freq": 0.302,
+      "shap_median": 0.0035,
+      "shap_ci": [
+        0.0,
+        0.0208
+      ],
+      "coef_median": -0.0395,
+      "coef_ci": [
+        -0.2526,
+        0.0353
+      ]
+    }
+  ]
+}

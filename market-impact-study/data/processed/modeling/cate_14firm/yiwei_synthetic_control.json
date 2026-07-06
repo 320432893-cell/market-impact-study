@@ -1,0 +1,31 @@
+{
+  "event": 20200522,
+  "pre": 190,
+  "post": 240,
+  "donors": [
+    "日海智能",
+    "高新兴",
+    "万集科技",
+    "广和通",
+    "金溢科技",
+    "美格智能",
+    "移远通信"
+  ],
+  "weights": {
+    "高新兴": 0.248,
+    "万集科技": 0.045,
+    "广和通": 0.334,
+    "移远通信": 0.373
+  },
+  "pre_fit_rmspe": 0.1212,
+  "post_rmspe": 0.4457,
+  "gaps": {
+    "gap_+20d_pct": -13.7,
+    "gap_+60d_pct": -61.4,
+    "gap_+120d_pct": 7.9,
+    "gap_+240d_pct": -56.1
+  },
+  "placebo_p": 0.375,
+  "credible_prefit": false,
+  "verdict": "inconclusive:pre-fit差+placebo不显著"
+}

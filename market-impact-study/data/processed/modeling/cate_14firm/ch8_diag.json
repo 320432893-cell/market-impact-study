@@ -1,0 +1,73 @@
+{
+  "sweep": [
+    {
+      "num_leaves": 3,
+      "insample": 0.818,
+      "cv": 0.448
+    },
+    {
+      "num_leaves": 4,
+      "insample": 0.855,
+      "cv": 0.452
+    },
+    {
+      "num_leaves": 5,
+      "insample": 0.88,
+      "cv": 0.451
+    },
+    {
+      "num_leaves": 6,
+      "insample": 0.898,
+      "cv": 0.447
+    },
+    {
+      "num_leaves": 7,
+      "insample": 0.91,
+      "cv": 0.44
+    },
+    {
+      "num_leaves": 11,
+      "insample": 0.932,
+      "cv": 0.415
+    },
+    {
+      "num_leaves": 15,
+      "insample": 0.938,
+      "cv": 0.42
+    },
+    {
+      "num_leaves": 31,
+      "insample": 0.938,
+      "cv": 0.42
+    },
+    {
+      "num_leaves": 63,
+      "insample": 0.938,
+      "cv": 0.42
+    }
+  ],
+  "ladder": {
+    "insample": 0.847,
+    "groupcv": 0.442,
+    "oot": 0.497,
+    "lofo": 0.454,
+    "chosen_num_leaves": 4
+  },
+  "metrics": {
+    "insample": {
+      "r2": 0.847,
+      "rmse": 0.267,
+      "mae": 0.21
+    },
+    "oot": {
+      "r2": 0.497,
+      "rmse": 0.531,
+      "mae": 0.429
+    },
+    "lofo": {
+      "r2": 0.454,
+      "rmse": 0.504,
+      "mae": 0.411
+    }
+  }
+}

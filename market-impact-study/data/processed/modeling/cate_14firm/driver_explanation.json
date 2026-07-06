@@ -1,0 +1,2104 @@
+{
+  "guardrail": {
+    "principle": "解释只用【干净公式 + 三角验证过】的驱动;含营收(在 Y=ln(PS) 分母里)/含市值的特征=算术假象,拒绝做反事实与因果话术。",
+    "verified_hard": {
+      "H1": "可信(5/5)",
+      "H2": "可信(5/5)",
+      "H3": "存疑(1/5) 未过:推断/设定/识别/证伪"
+    },
+    "clean_passed_lever": "资产负债率(杠杆,H2 5/5 + 定义级干净 + 公司内FE真驱动)",
+    "refused_levers": [
+      {
+        "feat": "净利率",
+        "reason": "含营收"
+      },
+      {
+        "feat": "净利率趋势Δ",
+        "reason": "含营收"
+      },
+      {
+        "feat": "固定资产周转",
+        "reason": "含营收"
+      },
+      {
+        "feat": "毛利率",
+        "reason": "含营收"
+      },
+      {
+        "feat": "研发强度",
+        "reason": "含营收"
+      },
+      {
+        "feat": "营收3年CAGR",
+        "reason": "含营收"
+      },
+      {
+        "feat": "融资余额/市值",
+        "reason": "含市值"
+      },
+      {
+        "feat": "财务费用率",
+        "reason": "含营收"
+      },
+      {
+        "feat": "资产周转率",
+        "reason": "含营收"
+      }
+    ]
+  },
+  "counterfactual_level": {
+    "note": "只对【干净公式 + 可调整】杠杆做反事实;杠杆=资产负债率经三角验证 H2 5/5。其余含营收/含市值特征=算术假象,拒绝模拟(见 refused)。这是 ceteris paribus 模型隐含,关联级非因果。",
+    "by_firm": {
+      "日海智能": {
+        "base_excess": -1.031,
+        "levers": [
+          {
+            "lever": "资产负债率",
+            "current": 59.019,
+            "dir": -1,
+            "verified": true,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 35.831,
+                "d_excess": 0.25
+              },
+              {
+                "target": "同行最优档",
+                "to": 14.526,
+                "d_excess": 0.45
+              }
+            ]
+          },
+          {
+            "lever": "现金比率",
+            "current": 0.877,
+            "dir": 0,
+            "verified": false,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 1.409,
+                "d_excess": 0.279
+              },
+              {
+                "target": "同行最优档",
+                "to": 1.409,
+                "d_excess": 0.279
+              }
+            ]
+          }
+        ]
+      },
+      "金溢科技": {
+        "base_excess": 0.257,
+        "levers": [
+          {
+            "lever": "资产负债率",
+            "current": 24.11,
+            "dir": -1,
+            "verified": true,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 35.831,
+                "d_excess": -0.025
+              },
+              {
+                "target": "同行最优档",
+                "to": 14.526,
+                "d_excess": 0.318
+              }
+            ]
+          },
+          {
+            "lever": "现金比率",
+            "current": 3.435,
+            "dir": 0,
+            "verified": false,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 1.409,
+                "d_excess": 0.0
+              },
+              {
+                "target": "同行最优档",
+                "to": 1.409,
+                "d_excess": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      "美格智能": {
+        "base_excess": 0.0,
+        "levers": [
+          {
+            "lever": "资产负债率",
+            "current": 41.014,
+            "dir": -1,
+            "verified": true,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 35.831,
+                "d_excess": 0.0
+              },
+              {
+                "target": "同行最优档",
+                "to": 14.526,
+                "d_excess": 0.311
+              }
+            ]
+          },
+          {
+            "lever": "现金比率",
+            "current": 1.188,
+            "dir": 0,
+            "verified": false,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 1.409,
+                "d_excess": 0.0
+              },
+              {
+                "target": "同行最优档",
+                "to": 1.409,
+                "d_excess": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      "锐明技术": {
+        "base_excess": 0.003,
+        "levers": [
+          {
+            "lever": "资产负债率",
+            "current": 36.38,
+            "dir": -1,
+            "verified": true,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 35.831,
+                "d_excess": 0.0
+              },
+              {
+                "target": "同行最优档",
+                "to": 14.526,
+                "d_excess": 0.376
+              }
+            ]
+          },
+          {
+            "lever": "现金比率",
+            "current": 1.633,
+            "dir": 0,
+            "verified": false,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 1.409,
+                "d_excess": 0.0
+              },
+              {
+                "target": "同行最优档",
+                "to": 1.409,
+                "d_excess": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      "高新兴": {
+        "base_excess": 0.025,
+        "levers": [
+          {
+            "lever": "资产负债率",
+            "current": 30.583,
+            "dir": -1,
+            "verified": true,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 35.831,
+                "d_excess": -0.044
+              },
+              {
+                "target": "同行最优档",
+                "to": 14.526,
+                "d_excess": 0.318
+              }
+            ]
+          },
+          {
+            "lever": "现金比率",
+            "current": 1.549,
+            "dir": 0,
+            "verified": false,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 1.409,
+                "d_excess": 0.0
+              },
+              {
+                "target": "同行最优档",
+                "to": 1.409,
+                "d_excess": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      "万集科技": {
+        "base_excess": -0.032,
+        "levers": [
+          {
+            "lever": "资产负债率",
+            "current": 29.859,
+            "dir": -1,
+            "verified": true,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 35.831,
+                "d_excess": -0.047
+              },
+              {
+                "target": "同行最优档",
+                "to": 14.526,
+                "d_excess": 0.318
+              }
+            ]
+          },
+          {
+            "lever": "现金比率",
+            "current": 2.22,
+            "dir": 0,
+            "verified": false,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 1.409,
+                "d_excess": 0.0
+              },
+              {
+                "target": "同行最优档",
+                "to": 1.409,
+                "d_excess": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      "移为通信": {
+        "base_excess": 0.63,
+        "levers": [
+          {
+            "lever": "资产负债率",
+            "current": 14.065,
+            "dir": -1,
+            "verified": true,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 35.831,
+                "d_excess": -0.361
+              },
+              {
+                "target": "同行最优档",
+                "to": 14.526,
+                "d_excess": 0.0
+              }
+            ]
+          },
+          {
+            "lever": "现金比率",
+            "current": 4.42,
+            "dir": 0,
+            "verified": false,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 1.409,
+                "d_excess": 0.0
+              },
+              {
+                "target": "同行最优档",
+                "to": 1.409,
+                "d_excess": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      "广和通": {
+        "base_excess": -0.004,
+        "levers": [
+          {
+            "lever": "资产负债率",
+            "current": 48.413,
+            "dir": -1,
+            "verified": true,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 35.831,
+                "d_excess": 0.0
+              },
+              {
+                "target": "同行最优档",
+                "to": 14.526,
+                "d_excess": 0.351
+              }
+            ]
+          },
+          {
+            "lever": "现金比率",
+            "current": 1.395,
+            "dir": 0,
+            "verified": false,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 1.409,
+                "d_excess": 0.0
+              },
+              {
+                "target": "同行最优档",
+                "to": 1.409,
+                "d_excess": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      "博实结": {
+        "base_excess": 0.409,
+        "levers": [
+          {
+            "lever": "资产负债率",
+            "current": 23.217,
+            "dir": -1,
+            "verified": true,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 35.831,
+                "d_excess": -0.047
+              },
+              {
+                "target": "同行最优档",
+                "to": 14.526,
+                "d_excess": 0.341
+              }
+            ]
+          },
+          {
+            "lever": "现金比率",
+            "current": 3.302,
+            "dir": 0,
+            "verified": false,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 1.409,
+                "d_excess": 0.0
+              },
+              {
+                "target": "同行最优档",
+                "to": 1.409,
+                "d_excess": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      "移远通信": {
+        "base_excess": -0.546,
+        "levers": [
+          {
+            "lever": "资产负债率",
+            "current": 58.571,
+            "dir": -1,
+            "verified": true,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 35.831,
+                "d_excess": 0.21
+              },
+              {
+                "target": "同行最优档",
+                "to": 14.526,
+                "d_excess": 0.4
+              }
+            ]
+          },
+          {
+            "lever": "现金比率",
+            "current": 0.793,
+            "dir": 0,
+            "verified": false,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 1.409,
+                "d_excess": 0.243
+              },
+              {
+                "target": "同行最优档",
+                "to": 1.409,
+                "d_excess": 0.243
+              }
+            ]
+          }
+        ]
+      },
+      "映翰通": {
+        "base_excess": 0.733,
+        "levers": [
+          {
+            "lever": "资产负债率",
+            "current": 14.777,
+            "dir": -1,
+            "verified": true,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 35.831,
+                "d_excess": -0.397
+              },
+              {
+                "target": "同行最优档",
+                "to": 14.526,
+                "d_excess": 0.0
+              }
+            ]
+          },
+          {
+            "lever": "现金比率",
+            "current": 5.815,
+            "dir": 0,
+            "verified": false,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 1.409,
+                "d_excess": 0.003
+              },
+              {
+                "target": "同行最优档",
+                "to": 1.409,
+                "d_excess": 0.003
+              }
+            ]
+          }
+        ]
+      },
+      "有方科技": {
+        "base_excess": -0.501,
+        "levers": [
+          {
+            "lever": "资产负债率",
+            "current": 47.91,
+            "dir": -1,
+            "verified": true,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 35.831,
+                "d_excess": 0.0
+              },
+              {
+                "target": "同行最优档",
+                "to": 14.526,
+                "d_excess": 0.232
+              }
+            ]
+          },
+          {
+            "lever": "现金比率",
+            "current": 1.131,
+            "dir": 0,
+            "verified": false,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 1.409,
+                "d_excess": 0.181
+              },
+              {
+                "target": "同行最优档",
+                "to": 1.409,
+                "d_excess": 0.181
+              }
+            ]
+          }
+        ]
+      },
+      "三旺通信": {
+        "base_excess": 0.924,
+        "levers": [
+          {
+            "lever": "资产负债率",
+            "current": 18.258,
+            "dir": -1,
+            "verified": true,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 35.831,
+                "d_excess": -0.388
+              },
+              {
+                "target": "同行最优档",
+                "to": 14.526,
+                "d_excess": 0.0
+              }
+            ]
+          },
+          {
+            "lever": "现金比率",
+            "current": 4.301,
+            "dir": 0,
+            "verified": false,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 1.409,
+                "d_excess": 0.003
+              },
+              {
+                "target": "同行最优档",
+                "to": 1.409,
+                "d_excess": 0.003
+              }
+            ]
+          }
+        ]
+      },
+      "利尔达": {
+        "base_excess": -0.433,
+        "levers": [
+          {
+            "lever": "资产负债率",
+            "current": 62.541,
+            "dir": -1,
+            "verified": true,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 35.831,
+                "d_excess": 0.166
+              },
+              {
+                "target": "同行最优档",
+                "to": 14.526,
+                "d_excess": 0.347
+              }
+            ]
+          },
+          {
+            "lever": "现金比率",
+            "current": 0.823,
+            "dir": 0,
+            "verified": false,
+            "scenarios": [
+              {
+                "target": "同行中位",
+                "to": 1.409,
+                "d_excess": 0.253
+              },
+              {
+                "target": "同行最优档",
+                "to": 1.409,
+                "d_excess": 0.253
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "counterfactual_mcap": {
+    "note": "市值层唯一已验证可操作引擎=营收成长(H1 成长被打折 5/5,弹性 β=0.58<1 已折算)。移为实际 CAGR 11.9%、市值×1.3;若做到赢家档,市值倍数见下(已按 β 打折,非线性外推)。",
+    "beta": 0.58,
+    "years": 8,
+    "scenarios": [
+      {
+        "scenario": "同行赢家档",
+        "rev_cagr": 34.4,
+        "rev_mult": 10.65,
+        "mcap_mult": 3.04
+      },
+      {
+        "scenario": "同行中位档",
+        "rev_cagr": 14.3,
+        "rev_mult": 2.91,
+        "mcap_mult": 1.43
+      },
+      {
+        "scenario": "移为实际",
+        "rev_cagr": 11.9,
+        "rev_mult": 2.46,
+        "mcap_mult": 1.3
+      }
+    ]
+  },
+  "per_firm_analysis": {
+    "note": "全 13 家:① 逐年通道路径(累积 ln 分解,营收 vs 估值)=稳健逐家产物;② 市值反事实(若营收做到赢家/中位档→市值,按已验证 β 折算)。⚠️ 反事实诚实边界:对移为(焦点公司、11年)最有意义;长历史公司(高新兴16年等)按赢家CAGR复利会机械放大到不现实(看相对方向、不看绝对值);次新股(年数<6)short_history=true,路径/反事实都仅供参考。",
+    "benchmarks": {
+      "beta": 0.58,
+      "winner_cagr": 33.8,
+      "median_cagr": 11.9
+    },
+    "firms": [
+      {
+        "firm": "广和通",
+        "code": "300638.SZ",
+        "is_yiwei": false,
+        "actual_cagr": 37.0,
+        "mcap_mult": 7.4,
+        "rev_mult": 12.4,
+        "ps_mult": 0.6,
+        "channel": "经营",
+        "cf_mcap": {
+          "赢家档": 6.63,
+          "中位档": 2.89
+        },
+        "n_years": 9,
+        "short_history": false,
+        "path": [
+          {
+            "yr": 2017,
+            "cum_rev": 0.0,
+            "cum_ps": 0.0,
+            "cum_mv": 0.0
+          },
+          {
+            "yr": 2018,
+            "cum_rev": 0.796,
+            "cum_ps": -0.871,
+            "cum_mv": -0.075
+          },
+          {
+            "yr": 2019,
+            "cum_rev": 1.224,
+            "cum_ps": -0.375,
+            "cum_mv": 0.849
+          },
+          {
+            "yr": 2020,
+            "cum_rev": 1.583,
+            "cum_ps": -0.192,
+            "cum_mv": 1.391
+          },
+          {
+            "yr": 2021,
+            "cum_rev": 1.987,
+            "cum_ps": -0.152,
+            "cum_mv": 1.835
+          },
+          {
+            "yr": 2022,
+            "cum_rev": 2.305,
+            "cum_ps": -1.161,
+            "cum_mv": 1.144
+          },
+          {
+            "yr": 2023,
+            "cum_rev": 2.617,
+            "cum_ps": -1.22,
+            "cum_mv": 1.398
+          },
+          {
+            "yr": 2024,
+            "cum_rev": 2.677,
+            "cum_ps": -1.222,
+            "cum_mv": 1.454
+          },
+          {
+            "yr": 2025,
+            "cum_rev": 2.518,
+            "cum_ps": -0.517,
+            "cum_mv": 2.001
+          }
+        ]
+      },
+      {
+        "firm": "高新兴",
+        "code": "300098.SZ",
+        "is_yiwei": false,
+        "actual_cagr": 17.3,
+        "mcap_mult": 4.32,
+        "rev_mult": 10.91,
+        "ps_mult": 0.4,
+        "channel": "经营",
+        "cf_mcap": {
+          "赢家档": 13.61,
+          "中位档": 2.87
+        },
+        "n_years": 16,
+        "short_history": false,
+        "path": [
+          {
+            "yr": 2010,
+            "cum_rev": 0.0,
+            "cum_ps": 0.0,
+            "cum_mv": 0.0
+          },
+          {
+            "yr": 2011,
+            "cum_rev": 0.073,
+            "cum_ps": -0.329,
+            "cum_mv": -0.256
+          },
+          {
+            "yr": 2012,
+            "cum_rev": 0.505,
+            "cum_ps": -1.23,
+            "cum_mv": -0.725
+          },
+          {
+            "yr": 2013,
+            "cum_rev": 1.08,
+            "cum_ps": -0.929,
+            "cum_mv": 0.151
+          },
+          {
+            "yr": 2014,
+            "cum_rev": 1.397,
+            "cum_ps": -0.784,
+            "cum_mv": 0.614
+          },
+          {
+            "yr": 2015,
+            "cum_rev": 1.78,
+            "cum_ps": 0.436,
+            "cum_mv": 2.215
+          },
+          {
+            "yr": 2016,
+            "cum_rev": 1.97,
+            "cum_ps": -0.033,
+            "cum_mv": 1.938
+          },
+          {
+            "yr": 2017,
+            "cum_rev": 2.507,
+            "cum_ps": -0.677,
+            "cum_mv": 1.83
+          },
+          {
+            "yr": 2018,
+            "cum_rev": 2.973,
+            "cum_ps": -1.391,
+            "cum_mv": 1.582
+          },
+          {
+            "yr": 2019,
+            "cum_rev": 2.693,
+            "cum_ps": -1.242,
+            "cum_mv": 1.451
+          },
+          {
+            "yr": 2020,
+            "cum_rev": 2.546,
+            "cum_ps": -1.479,
+            "cum_mv": 1.067
+          },
+          {
+            "yr": 2021,
+            "cum_rev": 2.685,
+            "cum_ps": -1.371,
+            "cum_mv": 1.314
+          },
+          {
+            "yr": 2022,
+            "cum_rev": 2.549,
+            "cum_ps": -1.772,
+            "cum_mv": 0.777
+          },
+          {
+            "yr": 2023,
+            "cum_rev": 2.289,
+            "cum_ps": -1.232,
+            "cum_mv": 1.057
+          },
+          {
+            "yr": 2024,
+            "cum_rev": 2.05,
+            "cum_ps": -0.694,
+            "cum_mv": 1.357
+          },
+          {
+            "yr": 2025,
+            "cum_rev": 2.39,
+            "cum_ps": -0.926,
+            "cum_mv": 1.464
+          }
+        ]
+      },
+      {
+        "firm": "美格智能",
+        "code": "002881.SZ",
+        "is_yiwei": false,
+        "actual_cagr": 24.7,
+        "mcap_mult": 3.6,
+        "rev_mult": 5.83,
+        "ps_mult": 0.62,
+        "channel": "经营",
+        "cf_mcap": {
+          "赢家档": 5.0,
+          "中位档": 2.18
+        },
+        "n_years": 9,
+        "short_history": false,
+        "path": [
+          {
+            "yr": 2017,
+            "cum_rev": 0.0,
+            "cum_ps": 0.0,
+            "cum_mv": 0.0
+          },
+          {
+            "yr": 2018,
+            "cum_rev": 0.432,
+            "cum_ps": -0.436,
+            "cum_mv": -0.004
+          },
+          {
+            "yr": 2019,
+            "cum_rev": 0.373,
+            "cum_ps": 0.027,
+            "cum_mv": 0.4
+          },
+          {
+            "yr": 2020,
+            "cum_rev": 0.557,
+            "cum_ps": -0.436,
+            "cum_mv": 0.121
+          },
+          {
+            "yr": 2021,
+            "cum_rev": 1.12,
+            "cum_ps": -0.227,
+            "cum_mv": 0.893
+          },
+          {
+            "yr": 2022,
+            "cum_rev": 1.278,
+            "cum_ps": -0.597,
+            "cum_mv": 0.681
+          },
+          {
+            "yr": 2023,
+            "cum_rev": 1.207,
+            "cum_ps": -0.426,
+            "cum_mv": 0.781
+          },
+          {
+            "yr": 2024,
+            "cum_rev": 1.521,
+            "cum_ps": -0.638,
+            "cum_mv": 0.884
+          },
+          {
+            "yr": 2025,
+            "cum_rev": 1.763,
+            "cum_ps": -0.483,
+            "cum_mv": 1.28
+          }
+        ]
+      },
+      {
+        "firm": "移远通信",
+        "code": "603236.SH",
+        "is_yiwei": false,
+        "actual_cagr": 34.4,
+        "mcap_mult": 2.11,
+        "rev_mult": 5.89,
+        "ps_mult": 0.36,
+        "channel": "经营",
+        "cf_mcap": {
+          "赢家档": 2.08,
+          "中位档": 1.12
+        },
+        "n_years": 7,
+        "short_history": false,
+        "path": [
+          {
+            "yr": 2019,
+            "cum_rev": 0.0,
+            "cum_ps": 0.0,
+            "cum_mv": 0.0
+          },
+          {
+            "yr": 2020,
+            "cum_rev": 0.391,
+            "cum_ps": 0.039,
+            "cum_mv": 0.43
+          },
+          {
+            "yr": 2021,
+            "cum_rev": 1.003,
+            "cum_ps": -0.18,
+            "cum_mv": 0.823
+          },
+          {
+            "yr": 2022,
+            "cum_rev": 1.237,
+            "cum_ps": -0.856,
+            "cum_mv": 0.381
+          },
+          {
+            "yr": 2023,
+            "cum_rev": 1.211,
+            "cum_ps": -1.122,
+            "cum_mv": 0.089
+          },
+          {
+            "yr": 2024,
+            "cum_rev": 1.505,
+            "cum_ps": -1.185,
+            "cum_mv": 0.319
+          },
+          {
+            "yr": 2025,
+            "cum_rev": 1.773,
+            "cum_ps": -1.026,
+            "cum_mv": 0.747
+          }
+        ]
+      },
+      {
+        "firm": "有方科技",
+        "code": "688159.SH",
+        "is_yiwei": false,
+        "actual_cagr": 33.2,
+        "mcap_mult": 1.78,
+        "rev_mult": 4.19,
+        "ps_mult": 0.42,
+        "channel": "经营",
+        "cf_mcap": {
+          "赢家档": 1.8,
+          "中位档": 1.07
+        },
+        "n_years": 6,
+        "short_history": false,
+        "path": [
+          {
+            "yr": 2020,
+            "cum_rev": 0.0,
+            "cum_ps": 0.0,
+            "cum_mv": 0.0
+          },
+          {
+            "yr": 2021,
+            "cum_rev": 0.58,
+            "cum_ps": -0.444,
+            "cum_mv": 0.136
+          },
+          {
+            "yr": 2022,
+            "cum_rev": 0.381,
+            "cum_ps": -1.02,
+            "cum_mv": -0.639
+          },
+          {
+            "yr": 2023,
+            "cum_rev": 0.485,
+            "cum_ps": -0.169,
+            "cum_mv": 0.316
+          },
+          {
+            "yr": 2024,
+            "cum_rev": 1.677,
+            "cum_ps": -1.582,
+            "cum_mv": 0.096
+          },
+          {
+            "yr": 2025,
+            "cum_rev": 1.433,
+            "cum_ps": -0.859,
+            "cum_mv": 0.574
+          }
+        ]
+      },
+      {
+        "firm": "利尔达",
+        "code": "920249.BJ",
+        "is_yiwei": false,
+        "actual_cagr": 0.1,
+        "mcap_mult": 1.78,
+        "rev_mult": 1.0,
+        "ps_mult": 1.78,
+        "channel": "估值",
+        "cf_mcap": {
+          "赢家档": 2.5,
+          "中位档": 2.03
+        },
+        "n_years": 3,
+        "short_history": true,
+        "path": [
+          {
+            "yr": 2023,
+            "cum_rev": 0.0,
+            "cum_ps": 0.0,
+            "cum_mv": 0.0
+          },
+          {
+            "yr": 2024,
+            "cum_rev": -0.215,
+            "cum_ps": 0.405,
+            "cum_mv": 0.191
+          },
+          {
+            "yr": 2025,
+            "cum_rev": 0.002,
+            "cum_ps": 0.575,
+            "cum_mv": 0.577
+          }
+        ]
+      },
+      {
+        "firm": "移为通信",
+        "code": "300590.SZ",
+        "is_yiwei": true,
+        "actual_cagr": 11.9,
+        "mcap_mult": 1.3,
+        "rev_mult": 2.46,
+        "ps_mult": 0.53,
+        "channel": "经营",
+        "cf_mcap": {
+          "赢家档": 2.98,
+          "中位档": 1.3
+        },
+        "n_years": 9,
+        "short_history": false,
+        "path": [
+          {
+            "yr": 2017,
+            "cum_rev": 0.0,
+            "cum_ps": 0.0,
+            "cum_mv": 0.0
+          },
+          {
+            "yr": 2018,
+            "cum_rev": 0.273,
+            "cum_ps": -0.389,
+            "cum_mv": -0.116
+          },
+          {
+            "yr": 2019,
+            "cum_rev": 0.552,
+            "cum_ps": -0.289,
+            "cum_mv": 0.263
+          },
+          {
+            "yr": 2020,
+            "cum_rev": 0.266,
+            "cum_ps": 0.237,
+            "cum_mv": 0.502
+          },
+          {
+            "yr": 2021,
+            "cum_rev": 0.932,
+            "cum_ps": -0.262,
+            "cum_mv": 0.671
+          },
+          {
+            "yr": 2022,
+            "cum_rev": 1.017,
+            "cum_ps": -1.017,
+            "cum_mv": -0.0
+          },
+          {
+            "yr": 2023,
+            "cum_rev": 1.031,
+            "cum_ps": -0.826,
+            "cum_mv": 0.204
+          },
+          {
+            "yr": 2024,
+            "cum_rev": 0.981,
+            "cum_ps": -0.522,
+            "cum_mv": 0.459
+          },
+          {
+            "yr": 2025,
+            "cum_rev": 0.9,
+            "cum_ps": -0.639,
+            "cum_mv": 0.261
+          }
+        ]
+      },
+      {
+        "firm": "映翰通",
+        "code": "688080.SH",
+        "is_yiwei": false,
+        "actual_cagr": 20.1,
+        "mcap_mult": 1.3,
+        "rev_mult": 2.5,
+        "ps_mult": 0.52,
+        "channel": "经营",
+        "cf_mcap": {
+          "赢家档": 1.78,
+          "中位档": 1.06
+        },
+        "n_years": 6,
+        "short_history": false,
+        "path": [
+          {
+            "yr": 2020,
+            "cum_rev": 0.0,
+            "cum_ps": 0.0,
+            "cum_mv": 0.0
+          },
+          {
+            "yr": 2021,
+            "cum_rev": 0.369,
+            "cum_ps": 0.103,
+            "cum_mv": 0.472
+          },
+          {
+            "yr": 2022,
+            "cum_rev": 0.219,
+            "cum_ps": -0.503,
+            "cum_mv": -0.284
+          },
+          {
+            "yr": 2023,
+            "cum_rev": 0.462,
+            "cum_ps": -0.421,
+            "cum_mv": 0.041
+          },
+          {
+            "yr": 2024,
+            "cum_rev": 0.677,
+            "cum_ps": -0.842,
+            "cum_mv": -0.165
+          },
+          {
+            "yr": 2025,
+            "cum_rev": 0.916,
+            "cum_ps": -0.656,
+            "cum_mv": 0.26
+          }
+        ]
+      },
+      {
+        "firm": "金溢科技",
+        "code": "002869.SZ",
+        "is_yiwei": false,
+        "actual_cagr": -3.6,
+        "mcap_mult": 1.1,
+        "rev_mult": 0.75,
+        "ps_mult": 1.48,
+        "channel": "估值",
+        "cf_mcap": {
+          "赢家档": 5.02,
+          "中位档": 2.19
+        },
+        "n_years": 9,
+        "short_history": false,
+        "path": [
+          {
+            "yr": 2017,
+            "cum_rev": 0.0,
+            "cum_ps": 0.0,
+            "cum_mv": 0.0
+          },
+          {
+            "yr": 2018,
+            "cum_rev": -0.03,
+            "cum_ps": -0.666,
+            "cum_mv": -0.696
+          },
+          {
+            "yr": 2019,
+            "cum_rev": 1.525,
+            "cum_ps": -0.779,
+            "cum_mv": 0.745
+          },
+          {
+            "yr": 2020,
+            "cum_rev": 0.921,
+            "cum_ps": -0.437,
+            "cum_mv": 0.484
+          },
+          {
+            "yr": 2021,
+            "cum_rev": -0.725,
+            "cum_ps": 0.436,
+            "cum_mv": -0.289
+          },
+          {
+            "yr": 2022,
+            "cum_rev": -0.237,
+            "cum_ps": 0.271,
+            "cum_mv": 0.034
+          },
+          {
+            "yr": 2023,
+            "cum_rev": -0.195,
+            "cum_ps": 0.167,
+            "cum_mv": -0.028
+          },
+          {
+            "yr": 2024,
+            "cum_rev": -0.043,
+            "cum_ps": 0.289,
+            "cum_mv": 0.245
+          },
+          {
+            "yr": 2025,
+            "cum_rev": -0.293,
+            "cum_ps": 0.39,
+            "cum_mv": 0.096
+          }
+        ]
+      },
+      {
+        "firm": "三旺通信",
+        "code": "688618.SH",
+        "is_yiwei": false,
+        "actual_cagr": 11.3,
+        "mcap_mult": 1.08,
+        "rev_mult": 1.71,
+        "ps_mult": 0.63,
+        "channel": "经营",
+        "cf_mcap": {
+          "赢家档": 1.84,
+          "中位档": 1.1
+        },
+        "n_years": 6,
+        "short_history": false,
+        "path": [
+          {
+            "yr": 2020,
+            "cum_rev": 0.0,
+            "cum_ps": 0.0,
+            "cum_mv": 0.0
+          },
+          {
+            "yr": 2021,
+            "cum_rev": 0.193,
+            "cum_ps": -0.383,
+            "cum_mv": -0.19
+          },
+          {
+            "yr": 2022,
+            "cum_rev": 0.473,
+            "cum_ps": -0.075,
+            "cum_mv": 0.398
+          },
+          {
+            "yr": 2023,
+            "cum_rev": 0.742,
+            "cum_ps": -0.257,
+            "cum_mv": 0.485
+          },
+          {
+            "yr": 2024,
+            "cum_rev": 0.534,
+            "cum_ps": -0.69,
+            "cum_mv": -0.156
+          },
+          {
+            "yr": 2025,
+            "cum_rev": 0.536,
+            "cum_ps": -0.456,
+            "cum_mv": 0.08
+          }
+        ]
+      },
+      {
+        "firm": "万集科技",
+        "code": "300552.SZ",
+        "is_yiwei": false,
+        "actual_cagr": 6.2,
+        "mcap_mult": 1.07,
+        "rev_mult": 1.72,
+        "ps_mult": 0.62,
+        "channel": "经营",
+        "cf_mcap": {
+          "赢家档": 3.57,
+          "中位档": 1.4
+        },
+        "n_years": 10,
+        "short_history": false,
+        "path": [
+          {
+            "yr": 2016,
+            "cum_rev": 0.0,
+            "cum_ps": 0.0,
+            "cum_mv": 0.0
+          },
+          {
+            "yr": 2017,
+            "cum_rev": -0.011,
+            "cum_ps": -0.766,
+            "cum_mv": -0.778
+          },
+          {
+            "yr": 2018,
+            "cum_rev": 0.085,
+            "cum_ps": -1.451,
+            "cum_mv": -1.366
+          },
+          {
+            "yr": 2019,
+            "cum_rev": 1.662,
+            "cum_ps": -1.238,
+            "cum_mv": 0.424
+          },
+          {
+            "yr": 2020,
+            "cum_rev": 0.961,
+            "cum_ps": -0.563,
+            "cum_mv": 0.398
+          },
+          {
+            "yr": 2021,
+            "cum_rev": 0.396,
+            "cum_ps": -0.124,
+            "cum_mv": 0.272
+          },
+          {
+            "yr": 2022,
+            "cum_rev": 0.317,
+            "cum_ps": -0.781,
+            "cum_mv": -0.463
+          },
+          {
+            "yr": 2023,
+            "cum_rev": 0.358,
+            "cum_ps": -0.32,
+            "cum_mv": 0.038
+          },
+          {
+            "yr": 2024,
+            "cum_rev": 0.381,
+            "cum_ps": -0.194,
+            "cum_mv": 0.187
+          },
+          {
+            "yr": 2025,
+            "cum_rev": 0.543,
+            "cum_ps": -0.479,
+            "cum_mv": 0.063
+          }
+        ]
+      },
+      {
+        "firm": "日海智能",
+        "code": "002313.SZ",
+        "is_yiwei": false,
+        "actual_cagr": 9.1,
+        "mcap_mult": 0.93,
+        "rev_mult": 4.02,
+        "ps_mult": 0.23,
+        "channel": "估值",
+        "cf_mcap": {
+          "赢家档": 6.19,
+          "中位档": 1.18
+        },
+        "n_years": 17,
+        "short_history": false,
+        "path": [
+          {
+            "yr": 2009,
+            "cum_rev": 0.0,
+            "cum_ps": 0.0,
+            "cum_mv": 0.0
+          },
+          {
+            "yr": 2010,
+            "cum_rev": 0.275,
+            "cum_ps": 0.071,
+            "cum_mv": 0.346
+          },
+          {
+            "yr": 2011,
+            "cum_rev": 0.666,
+            "cum_ps": -0.674,
+            "cum_mv": -0.008
+          },
+          {
+            "yr": 2012,
+            "cum_rev": 1.033,
+            "cum_ps": -0.97,
+            "cum_mv": 0.063
+          },
+          {
+            "yr": 2013,
+            "cum_rev": 1.11,
+            "cum_ps": -0.887,
+            "cum_mv": 0.223
+          },
+          {
+            "yr": 2014,
+            "cum_rev": 1.266,
+            "cum_ps": -1.43,
+            "cum_mv": -0.164
+          },
+          {
+            "yr": 2015,
+            "cum_rev": 1.432,
+            "cum_ps": -1.309,
+            "cum_mv": 0.123
+          },
+          {
+            "yr": 2016,
+            "cum_rev": 1.374,
+            "cum_ps": -0.797,
+            "cum_mv": 0.577
+          },
+          {
+            "yr": 2017,
+            "cum_rev": 1.474,
+            "cum_ps": -0.567,
+            "cum_mv": 0.907
+          },
+          {
+            "yr": 2018,
+            "cum_rev": 1.865,
+            "cum_ps": -1.319,
+            "cum_mv": 0.546
+          },
+          {
+            "yr": 2019,
+            "cum_rev": 1.941,
+            "cum_ps": -1.527,
+            "cum_mv": 0.414
+          },
+          {
+            "yr": 2020,
+            "cum_rev": 1.75,
+            "cum_ps": -1.668,
+            "cum_mv": 0.082
+          },
+          {
+            "yr": 2021,
+            "cum_rev": 1.936,
+            "cum_ps": -1.892,
+            "cum_mv": 0.045
+          },
+          {
+            "yr": 2022,
+            "cum_rev": 1.591,
+            "cum_ps": -2.255,
+            "cum_mv": -0.664
+          },
+          {
+            "yr": 2023,
+            "cum_rev": 1.419,
+            "cum_ps": -1.376,
+            "cum_mv": 0.043
+          },
+          {
+            "yr": 2024,
+            "cum_rev": 1.47,
+            "cum_ps": -1.799,
+            "cum_mv": -0.33
+          },
+          {
+            "yr": 2025,
+            "cum_rev": 1.392,
+            "cum_ps": -1.459,
+            "cum_mv": -0.068
+          }
+        ]
+      },
+      {
+        "firm": "锐明技术",
+        "code": "002970.SZ",
+        "is_yiwei": false,
+        "actual_cagr": 8.0,
+        "mcap_mult": 0.83,
+        "rev_mult": 1.58,
+        "ps_mult": 0.52,
+        "channel": "估值",
+        "cf_mcap": {
+          "赢家档": 1.75,
+          "中位档": 0.94
+        },
+        "n_years": 7,
+        "short_history": false,
+        "path": [
+          {
+            "yr": 2019,
+            "cum_rev": 0.0,
+            "cum_ps": 0.0,
+            "cum_mv": 0.0
+          },
+          {
+            "yr": 2020,
+            "cum_rev": 0.029,
+            "cum_ps": -0.174,
+            "cum_mv": -0.145
+          },
+          {
+            "yr": 2021,
+            "cum_rev": 0.091,
+            "cum_ps": -0.487,
+            "cum_mv": -0.396
+          },
+          {
+            "yr": 2022,
+            "cum_rev": -0.122,
+            "cum_ps": -1.032,
+            "cum_mv": -1.154
+          },
+          {
+            "yr": 2023,
+            "cum_rev": 0.083,
+            "cum_ps": -0.777,
+            "cum_mv": -0.694
+          },
+          {
+            "yr": 2024,
+            "cum_rev": 0.575,
+            "cum_ps": -0.805,
+            "cum_mv": -0.231
+          },
+          {
+            "yr": 2025,
+            "cum_rev": 0.46,
+            "cum_ps": -0.65,
+            "cum_mv": -0.19
+          }
+        ]
+      }
+    ]
+  },
+  "dependence": {
+    "资产负债率": {
+      "curve": [
+        {
+          "x": 11.282,
+          "y": 0.418
+        },
+        {
+          "x": 15.766,
+          "y": 0.418
+        },
+        {
+          "x": 18.835,
+          "y": 0.418
+        },
+        {
+          "x": 21.784,
+          "y": 0.297
+        },
+        {
+          "x": 30.856,
+          "y": 0.077
+        },
+        {
+          "x": 34.493,
+          "y": 0.067
+        },
+        {
+          "x": 37.579,
+          "y": 0.06
+        },
+        {
+          "x": 41.041,
+          "y": 0.06
+        },
+        {
+          "x": 45.183,
+          "y": 0.06
+        },
+        {
+          "x": 52.661,
+          "y": 0.06
+        },
+        {
+          "x": 61.26,
+          "y": -0.04
+        },
+        {
+          "x": 69.129,
+          "y": -0.146
+        }
+      ],
+      "firms": [
+        {
+          "firm": "日海智能",
+          "is_yiwei": false,
+          "x": 59.019,
+          "y": -0.914
+        },
+        {
+          "firm": "金溢科技",
+          "is_yiwei": false,
+          "x": 24.11,
+          "y": 0.31
+        },
+        {
+          "firm": "美格智能",
+          "is_yiwei": false,
+          "x": 41.014,
+          "y": -0.019
+        },
+        {
+          "firm": "锐明技术",
+          "is_yiwei": false,
+          "x": 36.38,
+          "y": 0.039
+        },
+        {
+          "firm": "高新兴",
+          "is_yiwei": false,
+          "x": 30.583,
+          "y": 0.255
+        },
+        {
+          "firm": "万集科技",
+          "is_yiwei": false,
+          "x": 29.859,
+          "y": 0.096
+        },
+        {
+          "firm": "移为通信",
+          "is_yiwei": true,
+          "x": 14.065,
+          "y": 0.703
+        },
+        {
+          "firm": "广和通",
+          "is_yiwei": false,
+          "x": 48.413,
+          "y": 0.033
+        },
+        {
+          "firm": "博实结",
+          "is_yiwei": false,
+          "x": 23.217,
+          "y": 0.396
+        },
+        {
+          "firm": "移远通信",
+          "is_yiwei": false,
+          "x": 58.571,
+          "y": -0.592
+        },
+        {
+          "firm": "映翰通",
+          "is_yiwei": false,
+          "x": 14.777,
+          "y": 0.567
+        },
+        {
+          "firm": "有方科技",
+          "is_yiwei": false,
+          "x": 47.91,
+          "y": -0.327
+        },
+        {
+          "firm": "三旺通信",
+          "is_yiwei": false,
+          "x": 18.258,
+          "y": 0.907
+        },
+        {
+          "firm": "利尔达",
+          "is_yiwei": false,
+          "x": 62.541,
+          "y": -0.913
+        }
+      ],
+      "note": "曲线=其它特征固定在中位、只动该杠杆的模型隐含响应(单调约束→低杠杆段更高估值);点=各家真实落点。关联级。"
+    }
+  },
+  "firm_narratives": [
+    {
+      "firm": "三旺通信",
+      "code": "688618.SH",
+      "excess": 0.907,
+      "text": "三旺通信超额估值+0.91(溢价)。能信的部分:杠杆/流动性+0.39(干净公式 + 公司层自助稳 + 三角验证,但仍是关联非因果)。⚠️ 名义贡献里 所有权/情绪+0.20、盈利能力+0.16 含营收/市值算术成分(盈利类 H3 已证伪),不作真驱动看。",
+      "trust": [
+        [
+          "杠杆/流动性",
+          0.387
+        ]
+      ],
+      "contaminated": [
+        [
+          "所有权/情绪",
+          0.198
+        ],
+        [
+          "盈利能力",
+          0.158
+        ],
+        [
+          "费用/研发",
+          0.054
+        ]
+      ]
+    },
+    {
+      "firm": "移为通信",
+      "code": "300590.SZ",
+      "excess": 0.703,
+      "text": "移为通信超额估值+0.70(溢价)。能信的部分:杠杆/流动性+0.38(干净公式 + 公司层自助稳 + 三角验证,但仍是关联非因果)。⚠️ 名义贡献里 盈利能力+0.11、市场流动性/筹码+0.06 含营收/市值算术成分(盈利类 H3 已证伪),不作真驱动看。",
+      "trust": [
+        [
+          "杠杆/流动性",
+          0.384
+        ]
+      ],
+      "contaminated": [
+        [
+          "盈利能力",
+          0.111
+        ],
+        [
+          "市场流动性/筹码",
+          0.06
+        ],
+        [
+          "费用/研发",
+          0.055
+        ]
+      ]
+    },
+    {
+      "firm": "映翰通",
+      "code": "688080.SH",
+      "excess": 0.567,
+      "text": "映翰通超额估值+0.57(溢价)。能信的部分:杠杆/流动性+0.38(干净公式 + 公司层自助稳 + 三角验证,但仍是关联非因果)。⚠️ 名义贡献里 盈利能力+0.13、所有权/情绪+0.06 含营收/市值算术成分(盈利类 H3 已证伪),不作真驱动看。",
+      "trust": [
+        [
+          "杠杆/流动性",
+          0.383
+        ]
+      ],
+      "contaminated": [
+        [
+          "盈利能力",
+          0.134
+        ],
+        [
+          "所有权/情绪",
+          0.062
+        ]
+      ]
+    },
+    {
+      "firm": "博实结",
+      "code": "301608.SZ",
+      "excess": 0.396,
+      "text": "博实结超额估值+0.40(溢价)。能信的部分:杠杆/流动性+0.21(干净公式 + 公司层自助稳 + 三角验证,但仍是关联非因果)。⚠️ 名义贡献里 所有权/情绪+0.18 含营收/市值算术成分(盈利类 H3 已证伪),不作真驱动看。",
+      "trust": [
+        [
+          "杠杆/流动性",
+          0.214
+        ]
+      ],
+      "contaminated": [
+        [
+          "所有权/情绪",
+          0.178
+        ]
+      ]
+    },
+    {
+      "firm": "金溢科技",
+      "code": "002869.SZ",
+      "excess": 0.31,
+      "text": "金溢科技超额估值+0.31(溢价)。能信的部分:杠杆/流动性+0.22(干净公式 + 公司层自助稳 + 三角验证,但仍是关联非因果)。⚠️ 名义贡献里 盈利能力+0.07、费用/研发+0.05 含营收/市值算术成分(盈利类 H3 已证伪),不作真驱动看。",
+      "trust": [
+        [
+          "杠杆/流动性",
+          0.216
+        ]
+      ],
+      "contaminated": [
+        [
+          "盈利能力",
+          0.067
+        ],
+        [
+          "费用/研发",
+          0.052
+        ]
+      ]
+    },
+    {
+      "firm": "高新兴",
+      "code": "300098.SZ",
+      "excess": 0.255,
+      "text": "高新兴超额估值+0.26(溢价)。能信的部分:杠杆/流动性+0.03(干净公式 + 公司层自助稳 + 三角验证,但仍是关联非因果)。⚠️ 名义贡献里 盈利能力+0.07、费用/研发+0.06 含营收/市值算术成分(盈利类 H3 已证伪),不作真驱动看。",
+      "trust": [
+        [
+          "杠杆/流动性",
+          0.032
+        ]
+      ],
+      "contaminated": [
+        [
+          "盈利能力",
+          0.067
+        ],
+        [
+          "费用/研发",
+          0.056
+        ]
+      ]
+    },
+    {
+      "firm": "万集科技",
+      "code": "300552.SZ",
+      "excess": 0.096,
+      "text": "万集科技超额估值+0.10(溢价)。能信的部分:杠杆/流动性+0.07(干净公式 + 公司层自助稳 + 三角验证,但仍是关联非因果)。⚠️ 名义贡献里 成长-0.07、盈利能力+0.06 含营收/市值算术成分(盈利类 H3 已证伪),不作真驱动看。",
+      "trust": [
+        [
+          "杠杆/流动性",
+          0.075
+        ]
+      ],
+      "contaminated": [
+        [
+          "成长",
+          -0.066
+        ],
+        [
+          "盈利能力",
+          0.057
+        ],
+        [
+          "市场流动性/筹码",
+          0.051
+        ]
+      ]
+    },
+    {
+      "firm": "锐明技术",
+      "code": "002970.SZ",
+      "excess": 0.039,
+      "text": "锐明技术超额估值+0.04(溢价)。能信的部分:杠杆/流动性-0.09(干净公式 + 公司层自助稳 + 三角验证,但仍是关联非因果)。⚠️ 名义贡献里 盈利能力+0.07 含营收/市值算术成分(盈利类 H3 已证伪),不作真驱动看。",
+      "trust": [
+        [
+          "杠杆/流动性",
+          -0.086
+        ]
+      ],
+      "contaminated": [
+        [
+          "盈利能力",
+          0.075
+        ]
+      ]
+    },
+    {
+      "firm": "广和通",
+      "code": "300638.SZ",
+      "excess": 0.033,
+      "text": "广和通超额估值+0.03(溢价)。能信的部分:杠杆/流动性-0.12(干净公式 + 公司层自助稳 + 三角验证,但仍是关联非因果)。⚠️ 名义贡献里 成长+0.05 含营收/市值算术成分(盈利类 H3 已证伪),不作真驱动看。",
+      "trust": [
+        [
+          "杠杆/流动性",
+          -0.118
+        ]
+      ],
+      "contaminated": [
+        [
+          "成长",
+          0.052
+        ]
+      ]
+    },
+    {
+      "firm": "美格智能",
+      "code": "002881.SZ",
+      "excess": -0.019,
+      "text": "美格智能超额估值-0.02(折让)。能信的部分:杠杆/流动性-0.09(干净公式 + 公司层自助稳 + 三角验证,但仍是关联非因果)。⚠️ 名义贡献里 所有权/情绪+0.06、盈利能力-0.06 含营收/市值算术成分(盈利类 H3 已证伪),不作真驱动看。",
+      "trust": [
+        [
+          "杠杆/流动性",
+          -0.092
+        ]
+      ],
+      "contaminated": [
+        [
+          "所有权/情绪",
+          0.059
+        ],
+        [
+          "盈利能力",
+          -0.056
+        ]
+      ]
+    },
+    {
+      "firm": "有方科技",
+      "code": "688159.SH",
+      "excess": -0.327,
+      "text": "有方科技超额估值-0.33(折让)。能信的部分:杠杆/流动性-0.12(干净公式 + 公司层自助稳 + 三角验证,但仍是关联非因果)。⚠️ 名义贡献里 盈利能力-0.17 含营收/市值算术成分(盈利类 H3 已证伪),不作真驱动看。",
+      "trust": [
+        [
+          "杠杆/流动性",
+          -0.121
+        ]
+      ],
+      "contaminated": [
+        [
+          "盈利能力",
+          -0.168
+        ]
+      ]
+    },
+    {
+      "firm": "移远通信",
+      "code": "603236.SH",
+      "excess": -0.592,
+      "text": "移远通信超额估值-0.59(折让)。能信的部分:杠杆/流动性-0.30(干净公式 + 公司层自助稳 + 三角验证,但仍是关联非因果)。⚠️ 名义贡献里 盈利能力-0.16、现金流质量-0.07 含营收/市值算术成分(盈利类 H3 已证伪),不作真驱动看。",
+      "trust": [
+        [
+          "杠杆/流动性",
+          -0.298
+        ]
+      ],
+      "contaminated": [
+        [
+          "盈利能力",
+          -0.156
+        ],
+        [
+          "现金流质量",
+          -0.068
+        ],
+        [
+          "市场流动性/筹码",
+          0.05
+        ]
+      ]
+    },
+    {
+      "firm": "利尔达",
+      "code": "920249.BJ",
+      "excess": -0.913,
+      "text": "利尔达超额估值-0.91(折让)。能信的部分:杠杆/流动性-0.33(干净公式 + 公司层自助稳 + 三角验证,但仍是关联非因果)。⚠️ 名义贡献里 盈利能力-0.22、费用/研发-0.10 含营收/市值算术成分(盈利类 H3 已证伪),不作真驱动看。",
+      "trust": [
+        [
+          "杠杆/流动性",
+          -0.326
+        ]
+      ],
+      "contaminated": [
+        [
+          "盈利能力",
+          -0.224
+        ],
+        [
+          "费用/研发",
+          -0.103
+        ],
+        [
+          "现金流质量",
+          -0.081
+        ]
+      ]
+    },
+    {
+      "firm": "日海智能",
+      "code": "002313.SZ",
+      "excess": -0.914,
+      "text": "日海智能超额估值-0.91(折让)。能信的部分:杠杆/流动性-0.29(干净公式 + 公司层自助稳 + 三角验证,但仍是关联非因果)。⚠️ 名义贡献里 盈利能力-0.15、所有权/情绪-0.13 含营收/市值算术成分(盈利类 H3 已证伪),不作真驱动看。",
+      "trust": [
+        [
+          "杠杆/流动性",
+          -0.292
+        ]
+      ],
+      "contaminated": [
+        [
+          "盈利能力",
+          -0.146
+        ],
+        [
+          "所有权/情绪",
+          -0.132
+        ],
+        [
+          "费用/研发",
+          -0.08
+        ]
+      ]
+    }
+  ],
+  "rerating_triggers": {
+    "r2_with_fe": 0.406,
+    "clean_triggers": [
+      {
+        "feat": "Δ海外占比",
+        "coef": -0.122,
+        "p": 0.0,
+        "contam": "干净",
+        "sig": true
+      },
+      {
+        "feat": "净利增速",
+        "coef": 0.115,
+        "p": 0.0,
+        "contam": "干净",
+        "sig": true
+      },
+      {
+        "feat": "Δ资产负债率",
+        "coef": -0.071,
+        "p": 0.036,
+        "contam": "干净",
+        "sig": true
+      },
+      {
+        "feat": "ΔROE",
+        "coef": -0.014,
+        "p": 0.412,
+        "contam": "干净",
+        "sig": false
+      }
+    ],
+    "contaminated_triggers": [
+      {
+        "feat": "Δ资产周转",
+        "coef": -0.224,
+        "p": 0.0,
+        "contam": "含营收",
+        "sig": true
+      },
+      {
+        "feat": "Δ毛利率",
+        "coef": -0.024,
+        "p": 0.665,
+        "contam": "含营收",
+        "sig": false
+      },
+      {
+        "feat": "Δ研发强度",
+        "coef": -0.018,
+        "p": 0.771,
+        "contam": "含营收",
+        "sig": false
+      },
+      {
+        "feat": "Δ净利率",
+        "coef": 0.011,
+        "p": 0.894,
+        "contam": "含营收",
+        "sig": false
+      }
+    ],
+    "note": "再定价(ΔlnPS)整体可解释 R²=0.406(其余是情绪/叙事)。干净触发里显著的:Δ海外占比、净利增速、Δ资产负债率;名义最强的 Δ资产周转/Δ毛利率含营收(PS 分母里就有营收→机械),不算真触发。"
+  }
+}

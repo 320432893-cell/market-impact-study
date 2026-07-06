@@ -1,0 +1,64 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-06-18>
+(/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/ctex/ctexrep.cls (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def))
+Document Class: ctexrep 2022/07/14 v2.5.10 Chinese adapter for class report (CTEX)
+(/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/ctex/ctexhook.sty) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/ctex/ctexpatch.sty) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/base/ts1enc.def)) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/ctex/config/ctexopts.cfg) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+(/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/base/size12.clo)) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def (/home/lz320432893/.TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.sty (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/home/lz320432893/.TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg))) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber.sty (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg)) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-report.def (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg)) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/ctex/ctex-cs4size.clo)) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/ctex/config/ctex.cfg) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty) (/home/lz320432893/.TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty (/home/lz320432893/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty))) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def))) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/caption/caption.sty (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/caption/caption3.sty)) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty) (/home/lz320432893/.TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty) (./main.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+
+LaTeX Font Warning: Font shape `TU/simhei.ttf(0)/b/n' undefined
+(Font)              using `TU/simhei.ttf(0)/m/n' instead on input line 48.
+
+[1] (./main.toc)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt):
+(fancyhdr)                Make it at least 12.64723pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.64723pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
+
+[1]
+第一章
+[2]
+第二章
+[3]
+第三章
+[4]
+第四章
+[5]
+第五章
+[6]
+第六章
+[7]
+第七章
+[8]
+第八章
+[9]
+第九章
+[10]
+第十章
+[11]
+第十一章
+[12]
+第十二章
+[13]
+第十三章
+[14]
+附录 A
+[15]
+附录 B
+[16]
+附录 C
+[17] (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+Output written on main.pdf (18 pages).
+Transcript written on main.log.

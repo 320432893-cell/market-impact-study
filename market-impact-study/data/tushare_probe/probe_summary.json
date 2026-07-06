@@ -1,0 +1,6163 @@
+{
+  "generated_at": "2026-06-13",
+  "company_names": [
+    "移为通信",
+    "移远通信",
+    "高新兴",
+    "广和通",
+    "日海智能",
+    "锐明技术",
+    "有方科技",
+    "美格智能",
+    "博实结"
+  ],
+  "resolved_count": 9,
+  "unresolved_names": [],
+  "probe_results": [
+    {
+      "api_name": "stock_basic",
+      "scope": "all_listed",
+      "status": "ok",
+      "row_count": 5528,
+      "min_date": "",
+      "max_date": "",
+      "field_count": 8,
+      "fields": "ts_code,symbol,name,area,industry,market,exchange,list_date",
+      "message": ""
+    },
+    {
+      "api_name": "daily",
+      "scope": "移为通信:300590.SZ",
+      "status": "ok",
+      "row_count": 2181,
+      "min_date": "20170111",
+      "max_date": "20260612",
+      "field_count": 11,
+      "fields": "ts_code,trade_date,open,high,low,close,pre_close,change,pct_chg,vol,amount",
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "移为通信:300590.SZ",
+      "status": "ok",
+      "row_count": 2181,
+      "min_date": "20170111",
+      "max_date": "20260612",
+      "field_count": 10,
+      "fields": "ts_code,trade_date,close,turnover_rate,volume_ratio,pe,pb,ps,total_mv,circ_mv",
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "移为通信:300590.SZ",
+      "status": "ok",
+      "row_count": 2285,
+      "min_date": "20170111",
+      "max_date": "20260612",
+      "field_count": 3,
+      "fields": "ts_code,trade_date,adj_factor",
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "移为通信:300590.SZ",
+      "status": "ok",
+      "row_count": 51,
+      "min_date": "20170418",
+      "max_date": "20260423",
+      "field_count": 11,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,report_type,total_revenue,revenue,operate_profit,total_profit,n_income,n_income_attr_p",
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "移为通信:300590.SZ",
+      "status": "ok",
+      "row_count": 55,
+      "min_date": "20170418",
+      "max_date": "20260423",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,total_assets,total_liab,total_hldr_eqy_inc_min_int,total_cur_assets,total_cur_liab",
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "移为通信:300590.SZ",
+      "status": "ok",
+      "row_count": 51,
+      "min_date": "20170418",
+      "max_date": "20260423",
+      "field_count": 8,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,n_cashflow_act,n_cashflow_inv_act,n_cash_flows_fnc_act,c_cash_equ_end_period",
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "移为通信:300590.SZ",
+      "status": "ok",
+      "row_count": 63,
+      "min_date": "20170427",
+      "max_date": "20260423",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,roe,roa,grossprofit_margin,netprofit_margin,rd_exp,ocfps,bps",
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "移为通信:300590.SZ",
+      "status": "ok",
+      "row_count": 25,
+      "min_date": "20170408",
+      "max_date": "20260130",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,type,p_change_min,p_change_max,net_profit_min,net_profit_max,summary,change_reason",
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "移为通信:300590.SZ",
+      "status": "ok",
+      "row_count": 6,
+      "min_date": "20170228",
+      "max_date": "20260312",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,revenue,operate_profit,total_profit,n_income,total_assets,total_hldr_eqy_exc_min_int,diluted_eps",
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "移为通信:300590.SZ",
+      "status": "ok",
+      "row_count": 34,
+      "min_date": "20170418",
+      "max_date": "20260423",
+      "field_count": 12,
+      "fields": "ts_code,ann_date,end_date,stk_div,stk_bo_rate,stk_co_rate,cash_div,cash_div_tax,record_date,ex_date,pay_date,div_proc",
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "移为通信:300590.SZ",
+      "status": "ok",
+      "row_count": 28,
+      "min_date": "20200428",
+      "max_date": "20241209",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,end_date,proc,exp_date,vol,amount,high_limit,low_limit",
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "移为通信:300590.SZ",
+      "status": "ok",
+      "row_count": 545,
+      "min_date": "20170113",
+      "max_date": "20260612",
+      "field_count": 7,
+      "fields": "ts_code,end_date,pledge_count,unrest_pledge,rest_pledge,total_share,pledge_ratio",
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "移为通信:300590.SZ",
+      "status": "ok",
+      "row_count": 87,
+      "min_date": "20170427",
+      "max_date": "20260507",
+      "field_count": 4,
+      "fields": "ts_code,ann_date,end_date,holder_num",
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "移为通信:300590.SZ",
+      "status": "error",
+      "row_count": 0,
+      "min_date": "",
+      "max_date": "",
+      "field_count": 0,
+      "fields": "",
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "移远通信:603236.SH",
+      "status": "ok",
+      "row_count": 1675,
+      "min_date": "20190716",
+      "max_date": "20260612",
+      "field_count": 11,
+      "fields": "ts_code,trade_date,open,high,low,close,pre_close,change,pct_chg,vol,amount",
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "移远通信:603236.SH",
+      "status": "ok",
+      "row_count": 1675,
+      "min_date": "20190716",
+      "max_date": "20260612",
+      "field_count": 10,
+      "fields": "ts_code,trade_date,close,turnover_rate,volume_ratio,pe,pb,ps,total_mv,circ_mv",
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "移远通信:603236.SH",
+      "status": "ok",
+      "row_count": 1675,
+      "min_date": "20190716",
+      "max_date": "20260612",
+      "field_count": 3,
+      "fields": "ts_code,trade_date,adj_factor",
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "移远通信:603236.SH",
+      "status": "ok",
+      "row_count": 44,
+      "min_date": "20190829",
+      "max_date": "20260424",
+      "field_count": 11,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,report_type,total_revenue,revenue,operate_profit,total_profit,n_income,n_income_attr_p",
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "移远通信:603236.SH",
+      "status": "ok",
+      "row_count": 38,
+      "min_date": "20190829",
+      "max_date": "20260424",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,total_assets,total_liab,total_hldr_eqy_inc_min_int,total_cur_assets,total_cur_liab",
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "移远通信:603236.SH",
+      "status": "ok",
+      "row_count": 47,
+      "min_date": "20190829",
+      "max_date": "20260424",
+      "field_count": 8,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,n_cashflow_act,n_cashflow_inv_act,n_cash_flows_fnc_act,c_cash_equ_end_period",
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "移远通信:603236.SH",
+      "status": "ok",
+      "row_count": 46,
+      "min_date": "20191031",
+      "max_date": "20260424",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,roe,roa,grossprofit_margin,netprofit_margin,rd_exp,ocfps,bps",
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "移远通信:603236.SH",
+      "status": "ok",
+      "row_count": 16,
+      "min_date": "20210130",
+      "max_date": "20250711",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,type,p_change_min,p_change_max,net_profit_min,net_profit_max,summary,change_reason",
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "移远通信:603236.SH",
+      "status": "ok",
+      "row_count": 2,
+      "min_date": "20220308",
+      "max_date": "20230413",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,revenue,operate_profit,total_profit,n_income,total_assets,total_hldr_eqy_exc_min_int,diluted_eps",
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "移远通信:603236.SH",
+      "status": "ok",
+      "row_count": 30,
+      "min_date": "20190829",
+      "max_date": "20260424",
+      "field_count": 12,
+      "fields": "ts_code,ann_date,end_date,stk_div,stk_bo_rate,stk_co_rate,cash_div,cash_div_tax,record_date,ex_date,pay_date,div_proc",
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "移远通信:603236.SH",
+      "status": "ok",
+      "row_count": 23,
+      "min_date": "20230822",
+      "max_date": "20241112",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,end_date,proc,exp_date,vol,amount,high_limit,low_limit",
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "移远通信:603236.SH",
+      "status": "ok",
+      "row_count": 504,
+      "min_date": "20190802",
+      "max_date": "20260612",
+      "field_count": 7,
+      "fields": "ts_code,end_date,pledge_count,unrest_pledge,rest_pledge,total_share,pledge_ratio",
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "移远通信:603236.SH",
+      "status": "ok",
+      "row_count": 32,
+      "min_date": "20190829",
+      "max_date": "20260424",
+      "field_count": 4,
+      "fields": "ts_code,ann_date,end_date,holder_num",
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "移远通信:603236.SH",
+      "status": "error",
+      "row_count": 0,
+      "min_date": "",
+      "max_date": "",
+      "field_count": 0,
+      "fields": "",
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "高新兴:300098.SZ",
+      "status": "ok",
+      "row_count": 3636,
+      "min_date": "20100728",
+      "max_date": "20260612",
+      "field_count": 11,
+      "fields": "ts_code,trade_date,open,high,low,close,pre_close,change,pct_chg,vol,amount",
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "高新兴:300098.SZ",
+      "status": "ok",
+      "row_count": 3636,
+      "min_date": "20100728",
+      "max_date": "20260612",
+      "field_count": 10,
+      "fields": "ts_code,trade_date,close,turnover_rate,volume_ratio,pe,pb,ps,total_mv,circ_mv",
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "高新兴:300098.SZ",
+      "status": "ok",
+      "row_count": 3854,
+      "min_date": "20100728",
+      "max_date": "20260612",
+      "field_count": 3,
+      "fields": "ts_code,trade_date,adj_factor",
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "高新兴:300098.SZ",
+      "status": "ok",
+      "row_count": 83,
+      "min_date": "20101026",
+      "max_date": "20260429",
+      "field_count": 11,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,report_type,total_revenue,revenue,operate_profit,total_profit,n_income,n_income_attr_p",
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "高新兴:300098.SZ",
+      "status": "ok",
+      "row_count": 97,
+      "min_date": "20101026",
+      "max_date": "20260429",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,total_assets,total_liab,total_hldr_eqy_inc_min_int,total_cur_assets,total_cur_liab",
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "高新兴:300098.SZ",
+      "status": "ok",
+      "row_count": 80,
+      "min_date": "20101026",
+      "max_date": "20260429",
+      "field_count": 8,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,n_cashflow_act,n_cashflow_inv_act,n_cash_flows_fnc_act,c_cash_equ_end_period",
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "高新兴:300098.SZ",
+      "status": "ok",
+      "row_count": 100,
+      "min_date": "20121025",
+      "max_date": "20260429",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,roe,roa,grossprofit_margin,netprofit_margin,rd_exp,ocfps,bps",
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "高新兴:300098.SZ",
+      "status": "ok",
+      "row_count": 68,
+      "min_date": "20120131",
+      "max_date": "20260131",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,type,p_change_min,p_change_max,net_profit_min,net_profit_max,summary,change_reason",
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "高新兴:300098.SZ",
+      "status": "ok",
+      "row_count": 11,
+      "min_date": "20110225",
+      "max_date": "20210415",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,revenue,operate_profit,total_profit,n_income,total_assets,total_hldr_eqy_exc_min_int,diluted_eps",
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "高新兴:300098.SZ",
+      "status": "ok",
+      "row_count": 33,
+      "min_date": "20110331",
+      "max_date": "20260418",
+      "field_count": 12,
+      "fields": "ts_code,ann_date,end_date,stk_div,stk_bo_rate,stk_co_rate,cash_div,cash_div_tax,record_date,ex_date,pay_date,div_proc",
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "高新兴:300098.SZ",
+      "status": "ok",
+      "row_count": 86,
+      "min_date": "20140410",
+      "max_date": "20241029",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,end_date,proc,exp_date,vol,amount,high_limit,low_limit",
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "高新兴:300098.SZ",
+      "status": "ok",
+      "row_count": 632,
+      "min_date": "20140307",
+      "max_date": "20260612",
+      "field_count": 7,
+      "fields": "ts_code,end_date,pledge_count,unrest_pledge,rest_pledge,total_share,pledge_ratio",
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "高新兴:300098.SZ",
+      "status": "ok",
+      "row_count": 182,
+      "min_date": "20101026",
+      "max_date": "20260429",
+      "field_count": 4,
+      "fields": "ts_code,ann_date,end_date,holder_num",
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "高新兴:300098.SZ",
+      "status": "error",
+      "row_count": 0,
+      "min_date": "",
+      "max_date": "",
+      "field_count": 0,
+      "fields": "",
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "广和通:300638.SZ",
+      "status": "ok",
+      "row_count": 2219,
+      "min_date": "20170413",
+      "max_date": "20260612",
+      "field_count": 11,
+      "fields": "ts_code,trade_date,open,high,low,close,pre_close,change,pct_chg,vol,amount",
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "广和通:300638.SZ",
+      "status": "ok",
+      "row_count": 2219,
+      "min_date": "20170413",
+      "max_date": "20260612",
+      "field_count": 10,
+      "fields": "ts_code,trade_date,close,turnover_rate,volume_ratio,pe,pb,ps,total_mv,circ_mv",
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "广和通:300638.SZ",
+      "status": "ok",
+      "row_count": 2226,
+      "min_date": "20170413",
+      "max_date": "20260612",
+      "field_count": 3,
+      "fields": "ts_code,trade_date,adj_factor",
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "广和通:300638.SZ",
+      "status": "ok",
+      "row_count": 56,
+      "min_date": "20170428",
+      "max_date": "20260424",
+      "field_count": 11,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,report_type,total_revenue,revenue,operate_profit,total_profit,n_income,n_income_attr_p",
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "广和通:300638.SZ",
+      "status": "ok",
+      "row_count": 53,
+      "min_date": "20170428",
+      "max_date": "20260424",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,total_assets,total_liab,total_hldr_eqy_inc_min_int,total_cur_assets,total_cur_liab",
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "广和通:300638.SZ",
+      "status": "ok",
+      "row_count": 56,
+      "min_date": "20170428",
+      "max_date": "20260424",
+      "field_count": 8,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,n_cashflow_act,n_cashflow_inv_act,n_cash_flows_fnc_act,c_cash_equ_end_period",
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "广和通:300638.SZ",
+      "status": "ok",
+      "row_count": 60,
+      "min_date": "20170825",
+      "max_date": "20260424",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,roe,roa,grossprofit_margin,netprofit_margin,rd_exp,ocfps,bps",
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "广和通:300638.SZ",
+      "status": "ok",
+      "row_count": 15,
+      "min_date": "20170713",
+      "max_date": "20240113",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,type,p_change_min,p_change_max,net_profit_min,net_profit_max,summary,change_reason",
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "广和通:300638.SZ",
+      "status": "ok",
+      "row_count": 3,
+      "min_date": "20180227",
+      "max_date": "20200228",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,revenue,operate_profit,total_profit,n_income,total_assets,total_hldr_eqy_exc_min_int,diluted_eps",
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "广和通:300638.SZ",
+      "status": "ok",
+      "row_count": 33,
+      "min_date": "20180413",
+      "max_date": "20260331",
+      "field_count": 12,
+      "fields": "ts_code,ann_date,end_date,stk_div,stk_bo_rate,stk_co_rate,cash_div,cash_div_tax,record_date,ex_date,pay_date,div_proc",
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "广和通:300638.SZ",
+      "status": "ok",
+      "row_count": 91,
+      "min_date": "20191205",
+      "max_date": "20260518",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,end_date,proc,exp_date,vol,amount,high_limit,low_limit",
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "广和通:300638.SZ",
+      "status": "ok",
+      "row_count": 487,
+      "min_date": "20170421",
+      "max_date": "20260612",
+      "field_count": 7,
+      "fields": "ts_code,end_date,pledge_count,unrest_pledge,rest_pledge,total_share,pledge_ratio",
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "广和通:300638.SZ",
+      "status": "ok",
+      "row_count": 87,
+      "min_date": "20170428",
+      "max_date": "20260424",
+      "field_count": 4,
+      "fields": "ts_code,ann_date,end_date,holder_num",
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "广和通:300638.SZ",
+      "status": "error",
+      "row_count": 0,
+      "min_date": "",
+      "max_date": "",
+      "field_count": 0,
+      "fields": "",
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "日海智能:002313.SZ",
+      "status": "ok",
+      "row_count": 3870,
+      "min_date": "20091203",
+      "max_date": "20260612",
+      "field_count": 11,
+      "fields": "ts_code,trade_date,open,high,low,close,pre_close,change,pct_chg,vol,amount",
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "日海智能:002313.SZ",
+      "status": "ok",
+      "row_count": 3870,
+      "min_date": "20091203",
+      "max_date": "20260612",
+      "field_count": 10,
+      "fields": "ts_code,trade_date,close,turnover_rate,volume_ratio,pe,pb,ps,total_mv,circ_mv",
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "日海智能:002313.SZ",
+      "status": "ok",
+      "row_count": 4012,
+      "min_date": "20091203",
+      "max_date": "20260612",
+      "field_count": 3,
+      "fields": "ts_code,trade_date,adj_factor",
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "日海智能:002313.SZ",
+      "status": "ok",
+      "row_count": 79,
+      "min_date": "20100329",
+      "max_date": "20260428",
+      "field_count": 11,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,report_type,total_revenue,revenue,operate_profit,total_profit,n_income,n_income_attr_p",
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "日海智能:002313.SZ",
+      "status": "ok",
+      "row_count": 94,
+      "min_date": "20100329",
+      "max_date": "20260428",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,total_assets,total_liab,total_hldr_eqy_inc_min_int,total_cur_assets,total_cur_liab",
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "日海智能:002313.SZ",
+      "status": "ok",
+      "row_count": 83,
+      "min_date": "20100329",
+      "max_date": "20260428",
+      "field_count": 8,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,n_cashflow_act,n_cashflow_inv_act,n_cash_flows_fnc_act,c_cash_equ_end_period",
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "日海智能:002313.SZ",
+      "status": "ok",
+      "row_count": 100,
+      "min_date": "20121024",
+      "max_date": "20260428",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,roe,roa,grossprofit_margin,netprofit_margin,rd_exp,ocfps,bps",
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "日海智能:002313.SZ",
+      "status": "ok",
+      "row_count": 67,
+      "min_date": "20100127",
+      "max_date": "20260131",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,type,p_change_min,p_change_max,net_profit_min,net_profit_max,summary,change_reason",
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "日海智能:002313.SZ",
+      "status": "ok",
+      "row_count": 12,
+      "min_date": "20100224",
+      "max_date": "20210415",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,revenue,operate_profit,total_profit,n_income,total_assets,total_hldr_eqy_exc_min_int,diluted_eps",
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "日海智能:002313.SZ",
+      "status": "ok",
+      "row_count": 32,
+      "min_date": "20100329",
+      "max_date": "20260423",
+      "field_count": 12,
+      "fields": "ts_code,ann_date,end_date,stk_div,stk_bo_rate,stk_co_rate,cash_div,cash_div_tax,record_date,ex_date,pay_date,div_proc",
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "日海智能:002313.SZ",
+      "status": "ok",
+      "row_count": 14,
+      "min_date": "20130517",
+      "max_date": "20140326",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,end_date,proc,exp_date,vol,amount,high_limit,low_limit",
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "日海智能:002313.SZ",
+      "status": "ok",
+      "row_count": 878,
+      "min_date": "20140307",
+      "max_date": "20260612",
+      "field_count": 7,
+      "fields": "ts_code,end_date,pledge_count,unrest_pledge,rest_pledge,total_share,pledge_ratio",
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "日海智能:002313.SZ",
+      "status": "ok",
+      "row_count": 76,
+      "min_date": "20100329",
+      "max_date": "20260428",
+      "field_count": 4,
+      "fields": "ts_code,ann_date,end_date,holder_num",
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "日海智能:002313.SZ",
+      "status": "error",
+      "row_count": 0,
+      "min_date": "",
+      "max_date": "",
+      "field_count": 0,
+      "fields": "",
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "锐明技术:002970.SZ",
+      "status": "ok",
+      "row_count": 1571,
+      "min_date": "20191217",
+      "max_date": "20260612",
+      "field_count": 11,
+      "fields": "ts_code,trade_date,open,high,low,close,pre_close,change,pct_chg,vol,amount",
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "锐明技术:002970.SZ",
+      "status": "ok",
+      "row_count": 1571,
+      "min_date": "20191217",
+      "max_date": "20260612",
+      "field_count": 10,
+      "fields": "ts_code,trade_date,close,turnover_rate,volume_ratio,pe,pb,ps,total_mv,circ_mv",
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "锐明技术:002970.SZ",
+      "status": "ok",
+      "row_count": 1571,
+      "min_date": "20191217",
+      "max_date": "20260612",
+      "field_count": 3,
+      "fields": "ts_code,trade_date,adj_factor",
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "锐明技术:002970.SZ",
+      "status": "ok",
+      "row_count": 37,
+      "min_date": "20200420",
+      "max_date": "20260428",
+      "field_count": 11,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,report_type,total_revenue,revenue,operate_profit,total_profit,n_income,n_income_attr_p",
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "锐明技术:002970.SZ",
+      "status": "ok",
+      "row_count": 38,
+      "min_date": "20200420",
+      "max_date": "20260428",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,total_assets,total_liab,total_hldr_eqy_inc_min_int,total_cur_assets,total_cur_liab",
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "锐明技术:002970.SZ",
+      "status": "ok",
+      "row_count": 43,
+      "min_date": "20200420",
+      "max_date": "20260428",
+      "field_count": 8,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,n_cashflow_act,n_cashflow_inv_act,n_cash_flows_fnc_act,c_cash_equ_end_period",
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "锐明技术:002970.SZ",
+      "status": "ok",
+      "row_count": 41,
+      "min_date": "20200420",
+      "max_date": "20260428",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,roe,roa,grossprofit_margin,netprofit_margin,rd_exp,ocfps,bps",
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "锐明技术:002970.SZ",
+      "status": "ok",
+      "row_count": 19,
+      "min_date": "20210415",
+      "max_date": "20260119",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,type,p_change_min,p_change_max,net_profit_min,net_profit_max,summary,change_reason",
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "锐明技术:002970.SZ",
+      "status": "ok",
+      "row_count": 3,
+      "min_date": "20200310",
+      "max_date": "20210304",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,revenue,operate_profit,total_profit,n_income,total_assets,total_hldr_eqy_exc_min_int,diluted_eps",
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "锐明技术:002970.SZ",
+      "status": "ok",
+      "row_count": 33,
+      "min_date": "20200420",
+      "max_date": "20260331",
+      "field_count": 12,
+      "fields": "ts_code,ann_date,end_date,stk_div,stk_bo_rate,stk_co_rate,cash_div,cash_div_tax,record_date,ex_date,pay_date,div_proc",
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "锐明技术:002970.SZ",
+      "status": "ok",
+      "row_count": 23,
+      "min_date": "20220428",
+      "max_date": "20240720",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,end_date,proc,exp_date,vol,amount,high_limit,low_limit",
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "锐明技术:002970.SZ",
+      "status": "ok",
+      "row_count": 237,
+      "min_date": "20220805",
+      "max_date": "20260612",
+      "field_count": 7,
+      "fields": "ts_code,end_date,pledge_count,unrest_pledge,rest_pledge,total_share,pledge_ratio",
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "锐明技术:002970.SZ",
+      "status": "ok",
+      "row_count": 43,
+      "min_date": "20191231",
+      "max_date": "20260428",
+      "field_count": 4,
+      "fields": "ts_code,ann_date,end_date,holder_num",
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "锐明技术:002970.SZ",
+      "status": "error",
+      "row_count": 0,
+      "min_date": "",
+      "max_date": "",
+      "field_count": 0,
+      "fields": "",
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "有方科技:688159.SH",
+      "status": "ok",
+      "row_count": 1545,
+      "min_date": "20200123",
+      "max_date": "20260612",
+      "field_count": 11,
+      "fields": "ts_code,trade_date,open,high,low,close,pre_close,change,pct_chg,vol,amount",
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "有方科技:688159.SH",
+      "status": "ok",
+      "row_count": 1545,
+      "min_date": "20200123",
+      "max_date": "20260612",
+      "field_count": 10,
+      "fields": "ts_code,trade_date,close,turnover_rate,volume_ratio,pe,pb,ps,total_mv,circ_mv",
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "有方科技:688159.SH",
+      "status": "ok",
+      "row_count": 1545,
+      "min_date": "20200123",
+      "max_date": "20260612",
+      "field_count": 3,
+      "fields": "ts_code,trade_date,adj_factor",
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "有方科技:688159.SH",
+      "status": "ok",
+      "row_count": 38,
+      "min_date": "20200415",
+      "max_date": "20260430",
+      "field_count": 11,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,report_type,total_revenue,revenue,operate_profit,total_profit,n_income,n_income_attr_p",
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "有方科技:688159.SH",
+      "status": "ok",
+      "row_count": 36,
+      "min_date": "20200415",
+      "max_date": "20260430",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,total_assets,total_liab,total_hldr_eqy_inc_min_int,total_cur_assets,total_cur_liab",
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "有方科技:688159.SH",
+      "status": "ok",
+      "row_count": 41,
+      "min_date": "20200415",
+      "max_date": "20260430",
+      "field_count": 8,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,n_cashflow_act,n_cashflow_inv_act,n_cash_flows_fnc_act,c_cash_equ_end_period",
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "有方科技:688159.SH",
+      "status": "ok",
+      "row_count": 41,
+      "min_date": "20200429",
+      "max_date": "20260430",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,roe,roa,grossprofit_margin,netprofit_margin,rd_exp,ocfps,bps",
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "有方科技:688159.SH",
+      "status": "ok",
+      "row_count": 19,
+      "min_date": "20200820",
+      "max_date": "20260131",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,type,p_change_min,p_change_max,net_profit_min,net_profit_max,summary,change_reason",
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "有方科技:688159.SH",
+      "status": "ok",
+      "row_count": 7,
+      "min_date": "20200229",
+      "max_date": "20260228",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,revenue,operate_profit,total_profit,n_income,total_assets,total_hldr_eqy_exc_min_int,diluted_eps",
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "有方科技:688159.SH",
+      "status": "ok",
+      "row_count": 23,
+      "min_date": "20200415",
+      "max_date": "20260430",
+      "field_count": 12,
+      "fields": "ts_code,ann_date,end_date,stk_div,stk_bo_rate,stk_co_rate,cash_div,cash_div_tax,record_date,ex_date,pay_date,div_proc",
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "有方科技:688159.SH",
+      "status": "ok",
+      "row_count": 5,
+      "min_date": "20240430",
+      "max_date": "20260430",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,end_date,proc,exp_date,vol,amount,high_limit,low_limit",
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "有方科技:688159.SH",
+      "status": "empty",
+      "row_count": 0,
+      "min_date": "",
+      "max_date": "",
+      "field_count": 7,
+      "fields": "ts_code,end_date,pledge_count,unrest_pledge,rest_pledge,total_share,pledge_ratio",
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "有方科技:688159.SH",
+      "status": "ok",
+      "row_count": 27,
+      "min_date": "20200415",
+      "max_date": "20260430",
+      "field_count": 4,
+      "fields": "ts_code,ann_date,end_date,holder_num",
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "有方科技:688159.SH",
+      "status": "error",
+      "row_count": 0,
+      "min_date": "",
+      "max_date": "",
+      "field_count": 0,
+      "fields": "",
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "美格智能:002881.SZ",
+      "status": "ok",
+      "row_count": 2179,
+      "min_date": "20170622",
+      "max_date": "20260612",
+      "field_count": 11,
+      "fields": "ts_code,trade_date,open,high,low,close,pre_close,change,pct_chg,vol,amount",
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "美格智能:002881.SZ",
+      "status": "ok",
+      "row_count": 2179,
+      "min_date": "20170622",
+      "max_date": "20260612",
+      "field_count": 10,
+      "fields": "ts_code,trade_date,close,turnover_rate,volume_ratio,pe,pb,ps,total_mv,circ_mv",
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "美格智能:002881.SZ",
+      "status": "ok",
+      "row_count": 2179,
+      "min_date": "20170622",
+      "max_date": "20260612",
+      "field_count": 3,
+      "fields": "ts_code,trade_date,adj_factor",
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "美格智能:002881.SZ",
+      "status": "ok",
+      "row_count": 52,
+      "min_date": "20170825",
+      "max_date": "20260430",
+      "field_count": 11,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,report_type,total_revenue,revenue,operate_profit,total_profit,n_income,n_income_attr_p",
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "美格智能:002881.SZ",
+      "status": "ok",
+      "row_count": 53,
+      "min_date": "20170825",
+      "max_date": "20260430",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,total_assets,total_liab,total_hldr_eqy_inc_min_int,total_cur_assets,total_cur_liab",
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "美格智能:002881.SZ",
+      "status": "ok",
+      "row_count": 56,
+      "min_date": "20170825",
+      "max_date": "20260430",
+      "field_count": 8,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,n_cashflow_act,n_cashflow_inv_act,n_cash_flows_fnc_act,c_cash_equ_end_period",
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "美格智能:002881.SZ",
+      "status": "ok",
+      "row_count": 63,
+      "min_date": "20170825",
+      "max_date": "20260430",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,roe,roa,grossprofit_margin,netprofit_margin,rd_exp,ocfps,bps",
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "美格智能:002881.SZ",
+      "status": "ok",
+      "row_count": 22,
+      "min_date": "20170825",
+      "max_date": "20250715",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,type,p_change_min,p_change_max,net_profit_min,net_profit_max,summary,change_reason",
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "美格智能:002881.SZ",
+      "status": "ok",
+      "row_count": 6,
+      "min_date": "20180227",
+      "max_date": "20250412",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,revenue,operate_profit,total_profit,n_income,total_assets,total_hldr_eqy_exc_min_int,diluted_eps",
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "美格智能:002881.SZ",
+      "status": "ok",
+      "row_count": 31,
+      "min_date": "20180427",
+      "max_date": "20260331",
+      "field_count": 12,
+      "fields": "ts_code,ann_date,end_date,stk_div,stk_bo_rate,stk_co_rate,cash_div,cash_div_tax,record_date,ex_date,pay_date,div_proc",
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "美格智能:002881.SZ",
+      "status": "ok",
+      "row_count": 56,
+      "min_date": "20210203",
+      "max_date": "20251202",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,end_date,proc,exp_date,vol,amount,high_limit,low_limit",
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "美格智能:002881.SZ",
+      "status": "ok",
+      "row_count": 537,
+      "min_date": "20170804",
+      "max_date": "20260612",
+      "field_count": 7,
+      "fields": "ts_code,end_date,pledge_count,unrest_pledge,rest_pledge,total_share,pledge_ratio",
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "美格智能:002881.SZ",
+      "status": "ok",
+      "row_count": 51,
+      "min_date": "20170804",
+      "max_date": "20260430",
+      "field_count": 4,
+      "fields": "ts_code,ann_date,end_date,holder_num",
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "美格智能:002881.SZ",
+      "status": "error",
+      "row_count": 0,
+      "min_date": "",
+      "max_date": "",
+      "field_count": 0,
+      "fields": "",
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "博实结:301608.SZ",
+      "status": "ok",
+      "row_count": 450,
+      "min_date": "20240801",
+      "max_date": "20260612",
+      "field_count": 11,
+      "fields": "ts_code,trade_date,open,high,low,close,pre_close,change,pct_chg,vol,amount",
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "博实结:301608.SZ",
+      "status": "ok",
+      "row_count": 450,
+      "min_date": "20240801",
+      "max_date": "20260612",
+      "field_count": 10,
+      "fields": "ts_code,trade_date,close,turnover_rate,volume_ratio,pe,pb,ps,total_mv,circ_mv",
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "博实结:301608.SZ",
+      "status": "ok",
+      "row_count": 450,
+      "min_date": "20240801",
+      "max_date": "20260612",
+      "field_count": 3,
+      "fields": "ts_code,trade_date,adj_factor",
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "博实结:301608.SZ",
+      "status": "ok",
+      "row_count": 10,
+      "min_date": "20240829",
+      "max_date": "20260421",
+      "field_count": 11,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,report_type,total_revenue,revenue,operate_profit,total_profit,n_income,n_income_attr_p",
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "博实结:301608.SZ",
+      "status": "ok",
+      "row_count": 10,
+      "min_date": "20240829",
+      "max_date": "20260421",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,total_assets,total_liab,total_hldr_eqy_inc_min_int,total_cur_assets,total_cur_liab",
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "博实结:301608.SZ",
+      "status": "ok",
+      "row_count": 14,
+      "min_date": "20240829",
+      "max_date": "20260421",
+      "field_count": 8,
+      "fields": "ts_code,ann_date,f_ann_date,end_date,n_cashflow_act,n_cashflow_inv_act,n_cash_flows_fnc_act,c_cash_equ_end_period",
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "博实结:301608.SZ",
+      "status": "ok",
+      "row_count": 9,
+      "min_date": "20241028",
+      "max_date": "20260421",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,roe,roa,grossprofit_margin,netprofit_margin,rd_exp,ocfps,bps",
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "博实结:301608.SZ",
+      "status": "empty",
+      "row_count": 0,
+      "min_date": "",
+      "max_date": "",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,type,p_change_min,p_change_max,net_profit_min,net_profit_max,summary,change_reason",
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "博实结:301608.SZ",
+      "status": "empty",
+      "row_count": 0,
+      "min_date": "",
+      "max_date": "",
+      "field_count": 10,
+      "fields": "ts_code,ann_date,end_date,revenue,operate_profit,total_profit,n_income,total_assets,total_hldr_eqy_exc_min_int,diluted_eps",
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "博实结:301608.SZ",
+      "status": "ok",
+      "row_count": 11,
+      "min_date": "20240829",
+      "max_date": "20260421",
+      "field_count": 12,
+      "fields": "ts_code,ann_date,end_date,stk_div,stk_bo_rate,stk_co_rate,cash_div,cash_div_tax,record_date,ex_date,pay_date,div_proc",
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "博实结:301608.SZ",
+      "status": "empty",
+      "row_count": 0,
+      "min_date": "",
+      "max_date": "",
+      "field_count": 9,
+      "fields": "ts_code,ann_date,end_date,proc,exp_date,vol,amount,high_limit,low_limit",
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "博实结:301608.SZ",
+      "status": "ok",
+      "row_count": 92,
+      "min_date": "20240927",
+      "max_date": "20260612",
+      "field_count": 7,
+      "fields": "ts_code,end_date,pledge_count,unrest_pledge,rest_pledge,total_share,pledge_ratio",
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "博实结:301608.SZ",
+      "status": "ok",
+      "row_count": 69,
+      "min_date": "20240814",
+      "max_date": "20260604",
+      "field_count": 4,
+      "fields": "ts_code,ann_date,end_date,holder_num",
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "博实结:301608.SZ",
+      "status": "error",
+      "row_count": 0,
+      "min_date": "",
+      "max_date": "",
+      "field_count": 0,
+      "fields": "",
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "index_daily",
+      "scope": "399006.SZ",
+      "status": "ok",
+      "row_count": 3892,
+      "min_date": "20100601",
+      "max_date": "20260612",
+      "field_count": 11,
+      "fields": "ts_code,trade_date,close,open,high,low,pre_close,change,pct_chg,vol,amount",
+      "message": ""
+    },
+    {
+      "api_name": "index_daily",
+      "scope": "000300.SH",
+      "status": "ok",
+      "row_count": 3991,
+      "min_date": "20100104",
+      "max_date": "20260612",
+      "field_count": 11,
+      "fields": "ts_code,trade_date,close,open,high,low,pre_close,change,pct_chg,vol,amount",
+      "message": ""
+    },
+    {
+      "api_name": "index_daily",
+      "scope": "000905.SH",
+      "status": "ok",
+      "row_count": 3991,
+      "min_date": "20100104",
+      "max_date": "20260612",
+      "field_count": 11,
+      "fields": "ts_code,trade_date,close,open,high,low,pre_close,change,pct_chg,vol,amount",
+      "message": ""
+    },
+    {
+      "api_name": "index_daily",
+      "scope": "000852.SH",
+      "status": "ok",
+      "row_count": 3991,
+      "min_date": "20100104",
+      "max_date": "20260612",
+      "field_count": 11,
+      "fields": "ts_code,trade_date,close,open,high,low,pre_close,change,pct_chg,vol,amount",
+      "message": ""
+    }
+  ],
+  "samples": [
+    {
+      "api_name": "stock_basic",
+      "scope": "all_listed",
+      "sample": [
+        {
+          "ts_code": "000001.SZ",
+          "symbol": "000001",
+          "name": "平安银行",
+          "area": "深圳",
+          "industry": "银行",
+          "market": "主板",
+          "exchange": "SZSE",
+          "list_date": "19910403"
+        },
+        {
+          "ts_code": "000002.SZ",
+          "symbol": "000002",
+          "name": "万科A",
+          "area": "深圳",
+          "industry": "全国地产",
+          "market": "主板",
+          "exchange": "SZSE",
+          "list_date": "19910129"
+        },
+        {
+          "ts_code": "000004.SZ",
+          "symbol": "000004",
+          "name": "*ST国华",
+          "area": "深圳",
+          "industry": "软件服务",
+          "market": "主板",
+          "exchange": "SZSE",
+          "list_date": "19901201"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "daily",
+      "scope": "移为通信:300590.SZ",
+      "sample": [
+        {
+          "ts_code": "300590.SZ",
+          "trade_date": "20260612",
+          "open": 14.59,
+          "high": 14.77,
+          "low": 14.09,
+          "close": 14.24,
+          "pre_close": 14.36,
+          "change": -0.12,
+          "pct_chg": -0.8357,
+          "vol": 147459.01,
+          "amount": 211355.87233
+        },
+        {
+          "ts_code": "300590.SZ",
+          "trade_date": "20260611",
+          "open": 14.25,
+          "high": 14.63,
+          "low": 14.06,
+          "close": 14.36,
+          "pre_close": 14.51,
+          "change": -0.15,
+          "pct_chg": -1.0338,
+          "vol": 135929.6,
+          "amount": 193940.128
+        },
+        {
+          "ts_code": "300590.SZ",
+          "trade_date": "20260610",
+          "open": 14.7,
+          "high": 15.11,
+          "low": 14.25,
+          "close": 14.51,
+          "pre_close": 15.1,
+          "change": -0.59,
+          "pct_chg": -3.9073,
+          "vol": 173968.3,
+          "amount": 254118.2166
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "移为通信:300590.SZ",
+      "sample": [
+        {
+          "ts_code": "300590.SZ",
+          "trade_date": "20260612",
+          "close": 14.24,
+          "turnover_rate": 4.1211,
+          "volume_ratio": 0.83,
+          "pe": 88.2833,
+          "pb": 3.5621,
+          "ps": 7.3866,
+          "total_mv": 658224.8301,
+          "circ_mv": 509527.9804
+        },
+        {
+          "ts_code": "300590.SZ",
+          "trade_date": "20260611",
+          "close": 14.36,
+          "turnover_rate": 3.7989,
+          "volume_ratio": 0.71,
+          "pe": 89.0272,
+          "pb": 3.5921,
+          "ps": 7.4489,
+          "total_mv": 663771.6686,
+          "circ_mv": 513821.7555
+        },
+        {
+          "ts_code": "300590.SZ",
+          "trade_date": "20260610",
+          "close": 14.51,
+          "turnover_rate": 4.862,
+          "volume_ratio": 0.86,
+          "pe": 89.9572,
+          "pb": 3.6296,
+          "ps": 7.5267,
+          "total_mv": 670705.2166,
+          "circ_mv": 519188.9744
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "移为通信:300590.SZ",
+      "sample": [
+        {
+          "ts_code": "300590.SZ",
+          "trade_date": "20260612",
+          "adj_factor": 5.9167
+        },
+        {
+          "ts_code": "300590.SZ",
+          "trade_date": "20260611",
+          "adj_factor": 5.9167
+        },
+        {
+          "ts_code": "300590.SZ",
+          "trade_date": "20260610",
+          "adj_factor": 5.9167
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "移为通信:300590.SZ",
+      "sample": [
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260423",
+          "f_ann_date": "20260423",
+          "end_date": "20260331",
+          "report_type": "1",
+          "total_revenue": 312463864.69,
+          "revenue": 312463864.69,
+          "operate_profit": 58236754.92,
+          "total_profit": 58268589.08,
+          "n_income": 51755684.51,
+          "n_income_attr_p": 51929933.23
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260423",
+          "f_ann_date": "20260423",
+          "end_date": "20251231",
+          "report_type": "1",
+          "total_revenue": 891101464.89,
+          "revenue": 891101464.89,
+          "operate_profit": 75908212.16,
+          "total_profit": 76696239.44,
+          "n_income": 74310726.33,
+          "n_income_attr_p": 74558287.84
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20251029",
+          "f_ann_date": "20251029",
+          "end_date": "20250930",
+          "report_type": "1",
+          "total_revenue": 582306591.12,
+          "revenue": 582306591.12,
+          "operate_profit": 64524464.84,
+          "total_profit": 64195573.63,
+          "n_income": 61502796.6,
+          "n_income_attr_p": 61625731.16
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "移为通信:300590.SZ",
+      "sample": [
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260423",
+          "f_ann_date": "20260423",
+          "end_date": "20260331",
+          "total_assets": 2215064733.55,
+          "total_liab": 326639989.43,
+          "total_hldr_eqy_inc_min_int": 1888424744.12,
+          "total_cur_assets": 1734161666.89,
+          "total_cur_liab": 315578303.05
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260423",
+          "f_ann_date": "20260423",
+          "end_date": "20251231",
+          "total_assets": 2173394752.48,
+          "total_liab": 336825692.87,
+          "total_hldr_eqy_inc_min_int": 1836569059.61,
+          "total_cur_assets": 1685632970.34,
+          "total_cur_liab": 327073169.41
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20251029",
+          "f_ann_date": "20251029",
+          "end_date": "20250930",
+          "total_assets": 2042099072.28,
+          "total_liab": 218637942.4,
+          "total_hldr_eqy_inc_min_int": 1823461129.88,
+          "total_cur_assets": 1650219023.06,
+          "total_cur_liab": 203880022.97
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "移为通信:300590.SZ",
+      "sample": [
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260423",
+          "f_ann_date": "20260423",
+          "end_date": "20260331",
+          "n_cashflow_act": -21774847.49,
+          "n_cashflow_inv_act": -167402758.94,
+          "n_cash_flows_fnc_act": -967442.36,
+          "c_cash_equ_end_period": 455625209.41
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260423",
+          "f_ann_date": "20260423",
+          "end_date": "20251231",
+          "n_cashflow_act": 160730106.52,
+          "n_cashflow_inv_act": -89928869.47,
+          "n_cash_flows_fnc_act": -104347336.63,
+          "c_cash_equ_end_period": 144704430.11
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20251029",
+          "f_ann_date": "20251029",
+          "end_date": "20250930",
+          "n_cashflow_act": 147537435.99,
+          "n_cashflow_inv_act": -41108189.01,
+          "n_cash_flows_fnc_act": -104286748.45,
+          "c_cash_equ_end_period": 180160763.02
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "移为通信:300590.SZ",
+      "sample": [
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260423",
+          "end_date": "20260331",
+          "roe": 2.7882,
+          "roa": 2.5502,
+          "grossprofit_margin": 40.815,
+          "netprofit_margin": 16.5637,
+          "rd_exp": null,
+          "ocfps": -0.0473,
+          "bps": 4.1061
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260423",
+          "end_date": "20251231",
+          "roe": 4.0325,
+          "roa": 2.9811,
+          "grossprofit_margin": 39.7032,
+          "netprofit_margin": 8.3392,
+          "rd_exp": 143632173.41,
+          "ocfps": 0.3495,
+          "bps": 3.9931
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20251029",
+          "end_date": "20250930",
+          "roe": 3.3448,
+          "roa": 2.6231,
+          "grossprofit_margin": 40.6537,
+          "netprofit_margin": 10.5619,
+          "rd_exp": null,
+          "ocfps": 0.3208,
+          "bps": 3.965
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "移为通信:300590.SZ",
+      "sample": [
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260130",
+          "end_date": "20251231",
+          "type": "预减",
+          "p_change_min": -58.0,
+          "p_change_max": -48.0,
+          "net_profit_min": 6662.0,
+          "net_profit_max": 8248.0,
+          "summary": "预计:净利润6662-8248",
+          "change_reason": "2025年上半年，受美国关税政策调整及地缘政治冲突等因素影响，全球贸易环境承压，公司营业收入同比有所下降。面对复杂的外部形势，公司迅速调整发展战略、优化经营策略、推进经营改善，2025年三季度、年度营收降幅持续收窄，公司综合毛利率维持在40%左右。公司2025年度净利润较上年同期相比变动的主要原因：1、各项费用同比有所增加。一方面，公司研发立项数量提升，研发人员投入、产品认证等相关研发费用增加；另一方面，公司加大区域市场的开发力度，市场推广、渠道建设等营销费用投入增加。2、多项因素对净利润形成阶段性影响。报告期内，公司计提存货减值准备、政府补贴同比下降、部分订单延期发货，上述因素共同对净利润造成一定影响。公司践行“新业务、新产品、新应用场景、新客户”的四新发展策略，以核心技术为驱动，持续推进产品线迭代升级与产品品类拓展，不断突破业务边界、拓宽发展空间，稳步推进全球市场布局与业务拓展。"
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20251015",
+          "end_date": "20250930",
+          "type": "预减",
+          "p_change_min": -55.0,
+          "p_change_max": -50.0,
+          "net_profit_min": 6027.0,
+          "net_profit_max": 6697.0,
+          "summary": "预计:净利润6027-6697",
+          "change_reason": "1、2025年，全球经济持续震荡。美国关税及地缘政治冲突对全球贸易的影响仍然存在，同时叠加新产品替代升级、客户需求波动等多方因素的影响，公司2025年上半年度的营业收入同比有所下降，随着公司“新产品、新技术、新客户、新应用场景”的落地，以及海外产能的逐步释放，公司业绩呈现恢复态势，第三季度营业收入同比上升。2、报告期内，公司各项费用同比增加。一是新项目开发推进，使得研发投入、产品认证等费用相应增长；二是营销、研发等人工成本增加；三是销售拓展增长导致费用增加。3、公司通过持续推进国产替代、生产工艺优化及技术迭代升级等多项措施，有效优化成本结构，提升运营效率。报告期内，公司整体毛利率保持在40%以上的较高水平。4、两轮车“新国标”已于9月1日起正式实施，9月至11月为销售过渡期，2025年12月1日之后，所有销售的电动自行车产品均必须符合新标准规定。公司符合“新国标”的两轮车产品已于第四季度开始出货。视频车联网、工业路由器、动物溯源产品的销售情况较上年同期均有所增长，新兴领域拓展顺利。5、公司旗下专注于前沿产业投资的子公司孵化的AI潮玩，植入自研AI智能体核心引擎，产品预计支持4G、wifi、BLE、星闪SLE等多通信制式，并提供主动式交互，争取尽快开展小批量出货的测试认证工作。6、报告期内，预计非经常性损益对公司净利润的影响金额约900万元。"
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20250715",
+          "end_date": "20250630",
+          "type": "预减",
+          "p_change_min": -70.0,
+          "p_change_max": -60.0,
+          "net_profit_min": 2961.0,
+          "net_profit_max": 3948.0,
+          "summary": "预计:净利润2961-3948",
+          "change_reason": "2025年上半年全球经济增长普遍放缓，叠加美国关税冲击和地缘冲突，对全球贸易产生了诸多负面影响。报告期内，公司实现营业收入近3.6亿元，同比下降近25%，营业收入减少导致毛利额减少5,000多万元。贸易摩擦、新产品升级替代、大客户季节性、周期性需求波动等多重因素叠加是导致公司收入下滑的主要原因。2025年上半年综合毛利率41%左右，近几年毛利率较为稳定。报告期内，公司各项费用同比增加了近2,000万元，主要源于几方面因素：一是新项目开发推进，使得研发投入、产品认证等费用相应增长；二是营销、研发等人工成本增加；三是受汇率波动折算的汇兑损益变化，财务费用有所增加；四是销售拓展增长导致费用增加。公司报告期内成立了全资子公司专注于前沿产业的投资，已在孵化AI潮玩相关技术和产品，后续公司会通过多种方式开展新技术、新产品、新应用场景、新客户的孵化和培育工作，重点围绕人工智能等战略新兴领域，为公司储备具有前瞻性的核心技术，为公司业务发展提供动能。报告期内，预计非经常性损益对公司净利润的影响金额近600万元。"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "移为通信:300590.SZ",
+      "sample": [
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260312",
+          "end_date": "20251231",
+          "revenue": 891101500.0,
+          "operate_profit": 76381700.0,
+          "total_profit": 77169700.0,
+          "n_income": 75144000.0,
+          "total_assets": 2176891200.0,
+          "total_hldr_eqy_exc_min_int": 1837102300.0,
+          "diluted_eps": 0.16
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20250415",
+          "end_date": "20241231",
+          "revenue": 966879882.73,
+          "operate_profit": 168765787.33,
+          "total_profit": 168598963.64,
+          "n_income": 158610043.82,
+          "total_assets": 2097921042.13,
+          "total_hldr_eqy_exc_min_int": 1861319098.69,
+          "diluted_eps": 0.35
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20240408",
+          "end_date": "20231231",
+          "revenue": 1015760387.49,
+          "operate_profit": 154085879.93,
+          "total_profit": 154438649.12,
+          "n_income": 146748172.08,
+          "total_assets": 2027351048.48,
+          "total_hldr_eqy_exc_min_int": 1765500984.3,
+          "diluted_eps": 0.32
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "移为通信:300590.SZ",
+      "sample": [
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260423",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.12,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "预案"
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260423",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.12,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "股东大会通过"
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260423",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.12,
+          "cash_div_tax": 0.12,
+          "record_date": "20260522",
+          "ex_date": "20260525",
+          "pay_date": "20260525",
+          "div_proc": "实施"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "移为通信:300590.SZ",
+      "sample": [
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20241209",
+          "end_date": "20241209",
+          "proc": "完成",
+          "exp_date": null,
+          "vol": 14842.0,
+          "amount": 94723.56,
+          "high_limit": null,
+          "low_limit": 6.05
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20241009",
+          "end_date": null,
+          "proc": "股东大会通过",
+          "exp_date": null,
+          "vol": null,
+          "amount": 94723.56,
+          "high_limit": null,
+          "low_limit": 6.05
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20241009",
+          "end_date": null,
+          "proc": "股东大会通过",
+          "exp_date": null,
+          "vol": null,
+          "amount": 89794.1,
+          "high_limit": null,
+          "low_limit": 6.05
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "移为通信:300590.SZ",
+      "sample": [
+        {
+          "ts_code": "300590.SZ",
+          "end_date": "20260612",
+          "pledge_count": 0,
+          "unrest_pledge": 0.0,
+          "rest_pledge": 0.0,
+          "total_share": 46223.6538,
+          "pledge_ratio": 0.0
+        },
+        {
+          "ts_code": "300590.SZ",
+          "end_date": "20260605",
+          "pledge_count": 0,
+          "unrest_pledge": 0.0,
+          "rest_pledge": 0.0,
+          "total_share": 46223.6538,
+          "pledge_ratio": 0.0
+        },
+        {
+          "ts_code": "300590.SZ",
+          "end_date": "20260529",
+          "pledge_count": 0,
+          "unrest_pledge": 0.0,
+          "rest_pledge": 0.0,
+          "total_share": 46223.6538,
+          "pledge_ratio": 0.0
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "移为通信:300590.SZ",
+      "sample": [
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260507",
+          "end_date": "20260430",
+          "holder_num": 40424
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260423",
+          "end_date": "20260331",
+          "holder_num": 33141
+        },
+        {
+          "ts_code": "300590.SZ",
+          "ann_date": "20260407",
+          "end_date": "20260331",
+          "holder_num": 33141
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "移为通信:300590.SZ",
+      "sample": null,
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "移远通信:603236.SH",
+      "sample": [
+        {
+          "ts_code": "603236.SH",
+          "trade_date": "20260612",
+          "open": 56.36,
+          "high": 56.74,
+          "low": 55.05,
+          "close": 55.5,
+          "pre_close": 56.15,
+          "change": -0.65,
+          "pct_chg": -1.1576,
+          "vol": 102550.68,
+          "amount": 572935.964
+        },
+        {
+          "ts_code": "603236.SH",
+          "trade_date": "20260611",
+          "open": 54.71,
+          "high": 56.5,
+          "low": 53.42,
+          "close": 56.15,
+          "pre_close": 55.82,
+          "change": 0.33,
+          "pct_chg": 0.5912,
+          "vol": 100445.44,
+          "amount": 556828.184
+        },
+        {
+          "ts_code": "603236.SH",
+          "trade_date": "20260610",
+          "open": 57.15,
+          "high": 57.52,
+          "low": 55.31,
+          "close": 55.82,
+          "pre_close": 58.15,
+          "change": -2.33,
+          "pct_chg": -4.0069,
+          "vol": 125805.15,
+          "amount": 705868.963
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "移远通信:603236.SH",
+      "sample": [
+        {
+          "ts_code": "603236.SH",
+          "trade_date": "20260612",
+          "close": 55.5,
+          "turnover_rate": 2.7995,
+          "volume_ratio": 0.66,
+          "pe": 26.7168,
+          "pb": 3.2476,
+          "ps": 0.9193,
+          "total_mv": 2236387.9679,
+          "circ_mv": 2033079.9738
+        },
+        {
+          "ts_code": "603236.SH",
+          "trade_date": "20260611",
+          "close": 56.15,
+          "turnover_rate": 2.742,
+          "volume_ratio": 0.55,
+          "pe": 27.0297,
+          "pb": 3.2856,
+          "ps": 0.9301,
+          "total_mv": 2262579.899,
+          "circ_mv": 2056890.8203
+        },
+        {
+          "ts_code": "603236.SH",
+          "trade_date": "20260610",
+          "close": 55.82,
+          "turnover_rate": 3.4343,
+          "volume_ratio": 0.63,
+          "pe": 26.8709,
+          "pb": 3.2663,
+          "ps": 0.9246,
+          "total_mv": 2249282.457,
+          "circ_mv": 2044802.2367
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "移远通信:603236.SH",
+      "sample": [
+        {
+          "ts_code": "603236.SH",
+          "trade_date": "20260612",
+          "adj_factor": 4.1562
+        },
+        {
+          "ts_code": "603236.SH",
+          "trade_date": "20260611",
+          "adj_factor": 4.1562
+        },
+        {
+          "ts_code": "603236.SH",
+          "trade_date": "20260610",
+          "adj_factor": 4.1562
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "移远通信:603236.SH",
+      "sample": [
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "f_ann_date": "20260424",
+          "end_date": "20260331",
+          "report_type": "1",
+          "total_revenue": 6749238340.99,
+          "revenue": 6749238340.99,
+          "operate_profit": 134525165.93,
+          "total_profit": 133267629.89,
+          "n_income": 139330061.72,
+          "n_income_attr_p": 141326852.47
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "f_ann_date": "20260424",
+          "end_date": "20251231",
+          "report_type": "1",
+          "total_revenue": 24326466639.93,
+          "revenue": 24326466639.93,
+          "operate_profit": 815764813.98,
+          "total_profit": 814402027.35,
+          "n_income": 827021394.43,
+          "n_income_attr_p": 837071075.08
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20251024",
+          "f_ann_date": "20251024",
+          "end_date": "20250930",
+          "report_type": "1",
+          "total_revenue": 17876802028.53,
+          "revenue": 17876802028.53,
+          "operate_profit": 724889351.37,
+          "total_profit": 721755697.96,
+          "n_income": 727116066.33,
+          "n_income_attr_p": 733474744.34
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "移远通信:603236.SH",
+      "sample": [
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "f_ann_date": "20260424",
+          "end_date": "20260331",
+          "total_assets": 18950539852.97,
+          "total_liab": 11985753732.03,
+          "total_hldr_eqy_inc_min_int": 6964786120.94,
+          "total_cur_assets": 15600043085.48,
+          "total_cur_liab": 10940257375.64
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "f_ann_date": "20260424",
+          "end_date": "20260331",
+          "total_assets": 18950539852.97,
+          "total_liab": 11985753732.03,
+          "total_hldr_eqy_inc_min_int": 6964786120.94,
+          "total_cur_assets": 15600043085.48,
+          "total_cur_liab": 10940257375.64
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "f_ann_date": "20260424",
+          "end_date": "20251231",
+          "total_assets": 16914382041.4,
+          "total_liab": 10091379036.1,
+          "total_hldr_eqy_inc_min_int": 6823003005.3,
+          "total_cur_assets": 13641779612.09,
+          "total_cur_liab": 9097945603.51
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "移远通信:603236.SH",
+      "sample": [
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "f_ann_date": "20260424",
+          "end_date": "20260331",
+          "n_cashflow_act": -421521176.98,
+          "n_cashflow_inv_act": -319010924.33,
+          "n_cash_flows_fnc_act": 588239591.9,
+          "c_cash_equ_end_period": 2222583196.4
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "f_ann_date": "20260424",
+          "end_date": "20260331",
+          "n_cashflow_act": -421521176.98,
+          "n_cashflow_inv_act": -319010924.33,
+          "n_cash_flows_fnc_act": 588239591.9,
+          "c_cash_equ_end_period": 2222583196.4
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "f_ann_date": "20260424",
+          "end_date": "20251231",
+          "n_cashflow_act": -658201710.81,
+          "n_cashflow_inv_act": -741084015.49,
+          "n_cash_flows_fnc_act": 1903492258.6,
+          "c_cash_equ_end_period": 2377011821.7
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "移远通信:603236.SH",
+      "sample": [
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "end_date": "20260331",
+          "roe": 2.0412,
+          "roa": 0.8076,
+          "grossprofit_margin": 17.0881,
+          "netprofit_margin": 2.0644,
+          "rd_exp": null,
+          "ocfps": -1.4645,
+          "bps": 24.3054
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "end_date": "20260331",
+          "roe": 2.0412,
+          "roa": 0.8076,
+          "grossprofit_margin": 17.0881,
+          "netprofit_margin": 2.0644,
+          "rd_exp": null,
+          "ocfps": -1.4645,
+          "bps": 24.3054
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "end_date": "20251231",
+          "roe": 15.3748,
+          "roa": 5.7628,
+          "grossprofit_margin": 17.414,
+          "netprofit_margin": 3.3997,
+          "rd_exp": 1951386752.82,
+          "ocfps": -2.2868,
+          "bps": 23.8062
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "移远通信:603236.SH",
+      "sample": [
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20250711",
+          "end_date": "20250630",
+          "type": "预增",
+          "p_change_min": 121.13,
+          "p_change_max": 121.13,
+          "net_profit_min": 46300.0,
+          "net_profit_max": 46300.0,
+          "summary": "预计:净利润46300",
+          "change_reason": "（一）主营业务影响随着5G、AI技术的加速渗透，公司紧抓物联网行业的发展机遇，从模组向多元化业务拓展，已从模组供应商转变为全球物联网综合解决方案供应商。通过多元化业务布局，公司增强市场覆盖的广度，挖掘新的业绩增长点。公司预计2025年半年度可实现营业收入114.50亿元左右，同比增长约38.81%。同时，在经营管理层面，公司加强成本管控与效益提升，推动业务从“规模优先”向“规模与效益平衡”转变，实现经营质量的全面优化。（二）非经营性损益的影响非经营性损益对公司本期业绩预告没有重大影响。（三）会计处理的影响会计处理对公司本次业绩预告没有重大影响。（四）其他影响公司不存在其他对本次业绩预告构成重大影响的因素。"
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20250410",
+          "end_date": "20250331",
+          "type": "预增",
+          "p_change_min": 265.19,
+          "p_change_max": 265.19,
+          "net_profit_min": 20000.0,
+          "net_profit_max": 20000.0,
+          "summary": "预计:净利润20000",
+          "change_reason": "（一）主营业务影响：公司专注于为全球物联网客户提供综合解决方案，在5G通信、车载互联、短距离通信及卫星通信等领域持续引领技术前沿。同时，公司聚焦工业智能、智慧农业、AI大模型及边缘计算等应用领域，通过前瞻性布局与深度场景化研发，在通信模组业务及智能化解决方案板块均实现稳健增长。公司预计2025年第一季度可实现营业收入52.00亿元左右，同比增长约31.50%。（二）非经营性损益的影响：预计报告期内公司非经常性损益对净利润的影响金额为1,200.00万元左右，主要为收到的补贴。"
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20250123",
+          "end_date": "20241231",
+          "type": "预增",
+          "p_change_min": 495.33,
+          "p_change_max": 495.33,
+          "net_profit_min": 54000.0,
+          "net_profit_max": 54000.0,
+          "summary": "预计:净利润54000",
+          "change_reason": "（一）主营业务影响公司专注于为全球物联网客户提供综合解决方案。报告期内，物联网市场需求整体呈现复苏态势，边缘计算、混合现实、大模型等技术与物联网加速融合的趋势愈发显著。公司始终坚持技术创新，积极引领行业发展方向，在通信模组业务和智能化解决方案领域均实现了良好的增长。公司预计2024年年度可实现营业收入185.60亿元左右，同比增长约33.90%。（二）非经营性损益的影响预计报告期内公司非经常性损益对净利润的影响金额为5,800.00万元左右，主要为收到的补贴。（三）会计处理的影响会计处理对公司本次业绩预告没有重大影响。（四）其他影响公司不存在其他对本次业绩预告构成重大影响的因素。"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "移远通信:603236.SH",
+      "sample": [
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20230413",
+          "end_date": "20221231",
+          "revenue": 14230246500.0,
+          "operate_profit": 611422400.0,
+          "total_profit": 614229400.0,
+          "n_income": 623801300.0,
+          "total_assets": 10275680400.0,
+          "total_hldr_eqy_exc_min_int": 3721698900.0,
+          "diluted_eps": 3.3
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20220308",
+          "end_date": "20211231",
+          "revenue": 11210242700.0,
+          "operate_profit": 358540600.0,
+          "total_profit": 358895100.0,
+          "n_income": 351476900.0,
+          "total_assets": 8119637100.0,
+          "total_hldr_eqy_exc_min_int": 3201878200.0,
+          "diluted_eps": 2.76
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "移远通信:603236.SH",
+      "sample": [
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "end_date": "20251231",
+          "stk_div": 0.4,
+          "stk_bo_rate": null,
+          "stk_co_rate": 0.4,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.38,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "预案"
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "end_date": "20251231",
+          "stk_div": 0.4,
+          "stk_bo_rate": null,
+          "stk_co_rate": 0.4,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.38,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "股东大会通过"
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "end_date": "20251231",
+          "stk_div": 0.4,
+          "stk_bo_rate": null,
+          "stk_co_rate": 0.4,
+          "cash_div": 0.38,
+          "cash_div_tax": 0.38,
+          "record_date": "20260529",
+          "ex_date": "20260601",
+          "pay_date": "20260601",
+          "div_proc": "实施"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "移远通信:603236.SH",
+      "sample": [
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20241112",
+          "end_date": "20230928",
+          "proc": "完成",
+          "exp_date": null,
+          "vol": 441500.0,
+          "amount": 20846500.0,
+          "high_limit": 48.59,
+          "low_limit": 45.56
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20241112",
+          "end_date": "20240325",
+          "proc": "完成",
+          "exp_date": null,
+          "vol": 2475752.0,
+          "amount": 84994100.0,
+          "high_limit": 41.8,
+          "low_limit": 30.59
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20240827",
+          "end_date": "20240325",
+          "proc": "完成",
+          "exp_date": null,
+          "vol": 2475752.0,
+          "amount": 84994100.0,
+          "high_limit": 41.8,
+          "low_limit": 30.59
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "移远通信:603236.SH",
+      "sample": [
+        {
+          "ts_code": "603236.SH",
+          "end_date": "20260612",
+          "pledge_count": 1,
+          "unrest_pledge": 39.75,
+          "rest_pledge": 0.0,
+          "total_share": 40295.28,
+          "pledge_ratio": 0.1
+        },
+        {
+          "ts_code": "603236.SH",
+          "end_date": "20260605",
+          "pledge_count": 1,
+          "unrest_pledge": 39.75,
+          "rest_pledge": 0.0,
+          "total_share": 40295.28,
+          "pledge_ratio": 0.1
+        },
+        {
+          "ts_code": "603236.SH",
+          "end_date": "20260529",
+          "pledge_count": 1,
+          "unrest_pledge": 39.75,
+          "rest_pledge": 0.0,
+          "total_share": 40295.28,
+          "pledge_ratio": 0.1
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "移远通信:603236.SH",
+      "sample": [
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "end_date": "20260331",
+          "holder_num": 50676
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20260424",
+          "end_date": "20251231",
+          "holder_num": 45781
+        },
+        {
+          "ts_code": "603236.SH",
+          "ann_date": "20251024",
+          "end_date": "20250930",
+          "holder_num": 42375
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "移远通信:603236.SH",
+      "sample": null,
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "高新兴:300098.SZ",
+      "sample": [
+        {
+          "ts_code": "300098.SZ",
+          "trade_date": "20260612",
+          "open": 5.01,
+          "high": 5.05,
+          "low": 4.93,
+          "close": 4.96,
+          "pre_close": 4.9,
+          "change": 0.06,
+          "pct_chg": 1.2245,
+          "vol": 363220.06,
+          "amount": 181175.31607
+        },
+        {
+          "ts_code": "300098.SZ",
+          "trade_date": "20260611",
+          "open": 5.08,
+          "high": 5.1,
+          "low": 4.85,
+          "close": 4.9,
+          "pre_close": 5.1,
+          "change": -0.2,
+          "pct_chg": -3.9216,
+          "vol": 410199.98,
+          "amount": 202142.88268
+        },
+        {
+          "ts_code": "300098.SZ",
+          "trade_date": "20260610",
+          "open": 5.18,
+          "high": 5.25,
+          "low": 5.03,
+          "close": 5.1,
+          "pre_close": 5.24,
+          "change": -0.14,
+          "pct_chg": -2.6718,
+          "vol": 383980.08,
+          "amount": 196507.86942
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "高新兴:300098.SZ",
+      "sample": [
+        {
+          "ts_code": "300098.SZ",
+          "trade_date": "20260612",
+          "close": 4.96,
+          "turnover_rate": 2.3559,
+          "volume_ratio": 0.84,
+          "pe": null,
+          "pb": 3.2556,
+          "ps": 4.3338,
+          "total_mv": 861940.0084,
+          "circ_mv": 764704.6282
+        },
+        {
+          "ts_code": "300098.SZ",
+          "trade_date": "20260611",
+          "close": 4.9,
+          "turnover_rate": 2.6606,
+          "volume_ratio": 0.94,
+          "pe": null,
+          "pb": 3.2162,
+          "ps": 4.2814,
+          "total_mv": 851513.3148,
+          "circ_mv": 755454.169
+        },
+        {
+          "ts_code": "300098.SZ",
+          "trade_date": "20260610",
+          "close": 5.1,
+          "turnover_rate": 2.4906,
+          "volume_ratio": 0.87,
+          "pe": null,
+          "pb": 3.3475,
+          "ps": 4.4562,
+          "total_mv": 886268.9603,
+          "circ_mv": 786289.033
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "高新兴:300098.SZ",
+      "sample": [
+        {
+          "ts_code": "300098.SZ",
+          "trade_date": "20260612",
+          "adj_factor": 15.394
+        },
+        {
+          "ts_code": "300098.SZ",
+          "trade_date": "20260611",
+          "adj_factor": 15.394
+        },
+        {
+          "ts_code": "300098.SZ",
+          "trade_date": "20260610",
+          "adj_factor": 15.394
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "高新兴:300098.SZ",
+      "sample": [
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260429",
+          "f_ann_date": "20260429",
+          "end_date": "20260331",
+          "report_type": "1",
+          "total_revenue": 510149252.47,
+          "revenue": 510149252.47,
+          "operate_profit": 35070448.06,
+          "total_profit": 34866415.22,
+          "n_income": 28267495.33,
+          "n_income_attr_p": 23156527.8
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260429",
+          "f_ann_date": "20260429",
+          "end_date": "20260331",
+          "report_type": "1",
+          "total_revenue": 510149252.47,
+          "revenue": 510149252.47,
+          "operate_profit": 35070448.06,
+          "total_profit": 34866415.22,
+          "n_income": 28267495.33,
+          "n_income_attr_p": 23156527.8
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260418",
+          "f_ann_date": "20260418",
+          "end_date": "20251231",
+          "report_type": "1",
+          "total_revenue": 1988863118.72,
+          "revenue": 1988863118.72,
+          "operate_profit": -5365361.55,
+          "total_profit": -6094700.46,
+          "n_income": -19718733.21,
+          "n_income_attr_p": -32309407.35
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "高新兴:300098.SZ",
+      "sample": [
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260429",
+          "f_ann_date": "20260429",
+          "end_date": "20260331",
+          "total_assets": 5065011218.74,
+          "total_liab": 2290483972.61,
+          "total_hldr_eqy_inc_min_int": 2774527246.13,
+          "total_cur_assets": 3150123023.73,
+          "total_cur_liab": 1887661797.71
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260429",
+          "f_ann_date": "20260429",
+          "end_date": "20260331",
+          "total_assets": 5065011218.74,
+          "total_liab": 2290483972.61,
+          "total_hldr_eqy_inc_min_int": 2774527246.13,
+          "total_cur_assets": 3150123023.73,
+          "total_cur_liab": 1887661797.71
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260418",
+          "f_ann_date": "20260418",
+          "end_date": "20251231",
+          "total_assets": 5033827884.33,
+          "total_liab": 2287664438.08,
+          "total_hldr_eqy_inc_min_int": 2746163446.25,
+          "total_cur_assets": 3069733779.82,
+          "total_cur_liab": 1880322498.76
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "高新兴:300098.SZ",
+      "sample": [
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260429",
+          "f_ann_date": "20260429",
+          "end_date": "20260331",
+          "n_cashflow_act": 35370929.28,
+          "n_cashflow_inv_act": -17836689.49,
+          "n_cash_flows_fnc_act": -19084684.12,
+          "c_cash_equ_end_period": 377871619.32
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260429",
+          "f_ann_date": "20260429",
+          "end_date": "20260331",
+          "n_cashflow_act": 35370929.28,
+          "n_cashflow_inv_act": -17836689.49,
+          "n_cash_flows_fnc_act": -19084684.12,
+          "c_cash_equ_end_period": 377871619.32
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260418",
+          "f_ann_date": "20260418",
+          "end_date": "20251231",
+          "n_cashflow_act": 157297786.87,
+          "n_cashflow_inv_act": -111926951.32,
+          "n_cash_flows_fnc_act": -56564239.21,
+          "c_cash_equ_end_period": 379834919.15
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "高新兴:300098.SZ",
+      "sample": [
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260429",
+          "end_date": "20260331",
+          "roe": 0.8785,
+          "roa": 0.619,
+          "grossprofit_margin": 32.3498,
+          "netprofit_margin": 5.541,
+          "rd_exp": null,
+          "ocfps": 0.0204,
+          "bps": 1.5235
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260418",
+          "end_date": "20251231",
+          "roe": -1.2272,
+          "roa": -0.6282,
+          "grossprofit_margin": 33.104,
+          "netprofit_margin": -0.9915,
+          "rd_exp": 257421031.78,
+          "ocfps": 0.0905,
+          "bps": 1.5103
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260418",
+          "end_date": "20251231",
+          "roe": -1.2272,
+          "roa": -0.6282,
+          "grossprofit_margin": 33.104,
+          "netprofit_margin": -0.9915,
+          "rd_exp": 257421031.78,
+          "ocfps": 0.0905,
+          "bps": 1.5103
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "高新兴:300098.SZ",
+      "sample": [
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260131",
+          "end_date": "20251231",
+          "type": "续亏",
+          "p_change_min": 84.8,
+          "p_change_max": 92.4,
+          "net_profit_min": -3600.0,
+          "net_profit_max": -1800.0,
+          "summary": "预计:净利润-3600--1800",
+          "change_reason": "本报告期内，公司业绩情况说明如下：公司坚持走物联网产业集群协同发展之路。报告期内，公司大力支持车载电子业务发展，车载终端板块实现快速增长，业务结构不断优化，带动公司整体营业收入提升、毛利额增加；公司持续完善内部管理体系、优化组织能力建设，通过推进运营提效、成本及费用管控等举措，费效比较上年同期大幅下降，净利润同比实现大幅减亏。同时公司积极推进出海业务布局，车载终端、公共安全相关业务海外拓展均取得良好成效。此外，公司针对历史项目应收账款制定并落实多项回款举措，大力推进长账龄款项回收工作，取得显著成效，经营性现金流量净额同比实现较大幅度提升。报告期内，预计公司非经常性损益金额约为2,450万元，主要为政府补助及收回单独进行减值测试的长账龄应收款项。"
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20250123",
+          "end_date": "20241231",
+          "type": "续亏",
+          "p_change_min": -209.9274,
+          "p_change_max": -113.0751,
+          "net_profit_min": -32000.0,
+          "net_profit_max": -22000.0,
+          "summary": "预计:净利润-32000--22000",
+          "change_reason": "本报告期内，公司业绩情况说明如下：报告期内，公司重点发力物联网大交通板块，车载通信终端及铁路轨交业务获得稳健增长，其中车联网海外业务发展势头较好；受国内整体市场需求放缓等因素影响，公司严格限制系统集成业务，主动减少毛利率较低和需垫付资金的业务，侧重于周期较短、回款良好、无需垫资的产品及服务业务，因此公共安全业务规模所有下降。公司坚定秉持物联网产业集群协同发展之路，采取稳健务实的经营策略，报告期内积极提效降费，销售、管理、研发三项费用预计较上年度有一定减少。但考虑到未来车载业务的发展需求，针对核心车厂客户投入了较大的研发资源，同时由于公共安全业务的较多项目出现严重延期，叠加客户回款不及预期导致的信用减值，综合导致公司2024年度整体业绩预计亏损。报告期内，预计公司非经常性损益金额约为6,150万元，主要为处置子公司产生投资收益及政府补助，上年同期政府补助为1,246万元。"
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20240416",
+          "end_date": "20240331",
+          "type": "扭亏",
+          "p_change_min": 124.6334,
+          "p_change_max": 136.7262,
+          "net_profit_min": 550.0,
+          "net_profit_max": 820.0,
+          "summary": "预计:净利润550-820",
+          "change_reason": "2024年一季度，公司以原控股子公司高新兴讯美（重庆）科技有限公司（以下简称“讯美科技”）的股权参股投资图灵新智算（广州）科技有限公司的交易完成股权交割，公司不再将讯美科技纳入集团财务报表的合并范围内，预计本次交易对公司2024年一季度产生约5,000万元的投资收益（非经常性损益），另公司收到政府补助约240万元，综上对公司归母净利润产生影响较大。"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "高新兴:300098.SZ",
+      "sample": [
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20210415",
+          "end_date": "20201231",
+          "revenue": 2326086500.0,
+          "operate_profit": -1203609600.0,
+          "total_profit": -1193475900.0,
+          "n_income": -1102759800.0,
+          "total_assets": 6169043200.0,
+          "total_hldr_eqy_exc_min_int": 3335395500.0,
+          "diluted_eps": -0.63
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20200229",
+          "end_date": "20191231",
+          "revenue": 2698876600.0,
+          "operate_profit": -1218507100.0,
+          "total_profit": -1223556900.0,
+          "n_income": -1161948300.0,
+          "total_assets": 7891999800.0,
+          "total_hldr_eqy_exc_min_int": 4470343300.0,
+          "diluted_eps": -0.68
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20190228",
+          "end_date": "20181231",
+          "revenue": 3559147600.0,
+          "operate_profit": 556375600.0,
+          "total_profit": 601794600.0,
+          "n_income": 540175900.0,
+          "total_assets": 8436365400.0,
+          "total_hldr_eqy_exc_min_int": 5598351600.0,
+          "diluted_eps": 0.31
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "高新兴:300098.SZ",
+      "sample": [
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260418",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.0,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "预案"
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260418",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.0,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "股东大会通过"
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20250819",
+          "end_date": "20250630",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.0,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "预案"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "高新兴:300098.SZ",
+      "sample": [
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20241029",
+          "end_date": "20241029",
+          "proc": "完成",
+          "exp_date": null,
+          "vol": 3395300.0,
+          "amount": 15397285.0,
+          "high_limit": 4.63,
+          "low_limit": 4.21
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20231204",
+          "end_date": "20231130",
+          "proc": "实施",
+          "exp_date": null,
+          "vol": 3395300.0,
+          "amount": 15397285.0,
+          "high_limit": 4.63,
+          "low_limit": 4.21
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20231101",
+          "end_date": "20231031",
+          "proc": "实施",
+          "exp_date": null,
+          "vol": 120000.0,
+          "amount": 513200.0,
+          "high_limit": 4.29,
+          "low_limit": 4.27
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "高新兴:300098.SZ",
+      "sample": [
+        {
+          "ts_code": "300098.SZ",
+          "end_date": "20260612",
+          "pledge_count": 0,
+          "unrest_pledge": 0.0,
+          "rest_pledge": 0.0,
+          "total_share": 173778.2275,
+          "pledge_ratio": 0.0
+        },
+        {
+          "ts_code": "300098.SZ",
+          "end_date": "20260605",
+          "pledge_count": 0,
+          "unrest_pledge": 0.0,
+          "rest_pledge": 0.0,
+          "total_share": 173778.2275,
+          "pledge_ratio": 0.0
+        },
+        {
+          "ts_code": "300098.SZ",
+          "end_date": "20260529",
+          "pledge_count": 0,
+          "unrest_pledge": 0.0,
+          "rest_pledge": 0.0,
+          "total_share": 173778.2275,
+          "pledge_ratio": 0.0
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "高新兴:300098.SZ",
+      "sample": [
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260418",
+          "end_date": "20260331",
+          "holder_num": 84852
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260429",
+          "end_date": "20260331",
+          "holder_num": 84852
+        },
+        {
+          "ts_code": "300098.SZ",
+          "ann_date": "20260418",
+          "end_date": "20251231",
+          "holder_num": 86863
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "高新兴:300098.SZ",
+      "sample": null,
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "广和通:300638.SZ",
+      "sample": [
+        {
+          "ts_code": "300638.SZ",
+          "trade_date": "20260612",
+          "open": 19.94,
+          "high": 20.4,
+          "low": 19.62,
+          "close": 19.69,
+          "pre_close": 19.4,
+          "change": 0.29,
+          "pct_chg": 1.4948,
+          "vol": 130060.94,
+          "amount": 259240.87274
+        },
+        {
+          "ts_code": "300638.SZ",
+          "trade_date": "20260611",
+          "open": 20.38,
+          "high": 20.49,
+          "low": 19.31,
+          "close": 19.4,
+          "pre_close": 20.49,
+          "change": -1.09,
+          "pct_chg": -5.3197,
+          "vol": 163535.79,
+          "amount": 320785.11756
+        },
+        {
+          "ts_code": "300638.SZ",
+          "trade_date": "20260610",
+          "open": 21.3,
+          "high": 21.47,
+          "low": 20.36,
+          "close": 20.49,
+          "pre_close": 21.58,
+          "change": -1.09,
+          "pct_chg": -5.051,
+          "vol": 148863.75,
+          "amount": 308236.03084
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "广和通:300638.SZ",
+      "sample": [
+        {
+          "ts_code": "300638.SZ",
+          "trade_date": "20260612",
+          "close": 19.69,
+          "turnover_rate": 2.4519,
+          "volume_ratio": 0.88,
+          "pe": 51.0215,
+          "pb": 2.9329,
+          "ps": 2.534,
+          "total_mv": 1770654.4468,
+          "circ_mv": 1044453.4588
+        },
+        {
+          "ts_code": "300638.SZ",
+          "trade_date": "20260611",
+          "close": 19.4,
+          "turnover_rate": 3.083,
+          "volume_ratio": 1.16,
+          "pe": 50.2701,
+          "pb": 2.8897,
+          "ps": 2.4967,
+          "total_mv": 1744575.7374,
+          "circ_mv": 1029070.447
+        },
+        {
+          "ts_code": "300638.SZ",
+          "trade_date": "20260610",
+          "close": 20.49,
+          "turnover_rate": 2.8064,
+          "volume_ratio": 1.02,
+          "pe": 53.0945,
+          "pb": 3.0521,
+          "ps": 2.6369,
+          "total_mv": 1842595.7144,
+          "circ_mv": 1086889.3535
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "广和通:300638.SZ",
+      "sample": [
+        {
+          "ts_code": "300638.SZ",
+          "trade_date": "20260612",
+          "adj_factor": 8.8996
+        },
+        {
+          "ts_code": "300638.SZ",
+          "trade_date": "20260611",
+          "adj_factor": 8.8996
+        },
+        {
+          "ts_code": "300638.SZ",
+          "trade_date": "20260610",
+          "adj_factor": 8.8996
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "广和通:300638.SZ",
+      "sample": [
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260424",
+          "f_ann_date": "20260424",
+          "end_date": "20260331",
+          "report_type": "1",
+          "total_revenue": 1678195179.38,
+          "revenue": 1678195179.38,
+          "operate_profit": 6602022.92,
+          "total_profit": 6502111.14,
+          "n_income": 13883149.03,
+          "n_income_attr_p": 9666203.81
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260331",
+          "f_ann_date": "20260331",
+          "end_date": "20251231",
+          "report_type": "1",
+          "total_revenue": 6987612096.68,
+          "revenue": 6987612096.68,
+          "operate_profit": 370867312.93,
+          "total_profit": 367936721.35,
+          "n_income": 345867519.78,
+          "n_income_attr_p": 347040640.51
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20251030",
+          "f_ann_date": "20251030",
+          "end_date": "20250930",
+          "report_type": "1",
+          "total_revenue": 5365678789.76,
+          "revenue": 5365678789.76,
+          "operate_profit": 339318228.98,
+          "total_profit": 338318604.54,
+          "n_income": 315278337.83,
+          "n_income_attr_p": 316185901.83
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "广和通:300638.SZ",
+      "sample": [
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260424",
+          "f_ann_date": "20260424",
+          "end_date": "20260331",
+          "total_assets": 10057282362.05,
+          "total_liab": 3798288957.8,
+          "total_hldr_eqy_inc_min_int": 6258993404.25,
+          "total_cur_assets": 8543650774.76,
+          "total_cur_liab": 3691284886.39
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260331",
+          "f_ann_date": "20260331",
+          "end_date": "20251231",
+          "total_assets": 9689464050.15,
+          "total_liab": 3421973821.49,
+          "total_hldr_eqy_inc_min_int": 6267490228.66,
+          "total_cur_assets": 8242417253.08,
+          "total_cur_liab": 3255628201.2
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20251030",
+          "f_ann_date": "20251030",
+          "end_date": "20250930",
+          "total_assets": 7436499571.2,
+          "total_liab": 3757766461.41,
+          "total_hldr_eqy_inc_min_int": 3678733109.79,
+          "total_cur_assets": 6028921448.27,
+          "total_cur_liab": 3574607602.43
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "广和通:300638.SZ",
+      "sample": [
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260424",
+          "f_ann_date": "20260424",
+          "end_date": "20260331",
+          "n_cashflow_act": -1043794008.77,
+          "n_cashflow_inv_act": 1423360684.07,
+          "n_cash_flows_fnc_act": 230306537.09,
+          "c_cash_equ_end_period": 1866454455.8
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260424",
+          "f_ann_date": "20260424",
+          "end_date": "20260331",
+          "n_cashflow_act": -1043794008.77,
+          "n_cashflow_inv_act": 1423360684.07,
+          "n_cash_flows_fnc_act": 230306537.09,
+          "c_cash_equ_end_period": 1866454455.8
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260331",
+          "f_ann_date": "20260331",
+          "end_date": "20251231",
+          "n_cashflow_act": 353307653.06,
+          "n_cashflow_inv_act": -1973126234.87,
+          "n_cash_flows_fnc_act": 2194508402.79,
+          "c_cash_equ_end_period": 1282115632.59
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "广和通:300638.SZ",
+      "sample": [
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260424",
+          "end_date": "20260331",
+          "roe": 0.1546,
+          "roa": -0.0127,
+          "grossprofit_margin": 13.2768,
+          "netprofit_margin": 0.8273,
+          "rd_exp": null,
+          "ocfps": -1.1607,
+          "bps": 6.9467
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260331",
+          "end_date": "20251231",
+          "roe": 7.0365,
+          "roa": 4.2056,
+          "grossprofit_margin": 16.3872,
+          "netprofit_margin": 4.9497,
+          "rd_exp": 521704304.59,
+          "ocfps": 0.3929,
+          "bps": 6.9609
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20251030",
+          "end_date": "20250930",
+          "roe": 8.692,
+          "roa": 4.65,
+          "grossprofit_margin": 17.1367,
+          "netprofit_margin": 5.8758,
+          "rd_exp": null,
+          "ocfps": 0.3888,
+          "bps": 4.7959
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "广和通:300638.SZ",
+      "sample": [
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20240113",
+          "end_date": "20231231",
+          "type": "预增",
+          "p_change_min": 48.16,
+          "p_change_max": 64.63,
+          "net_profit_min": 54000.0,
+          "net_profit_max": 60000.0,
+          "summary": "预计:净利润54000-60000",
+          "change_reason": "公司紧密围绕战略目标与核心价值观，持续深耕物联网行业，内生+外延双向驱动，锐凌无线并表及公司在车载、FWA等行业发展良好；坚持以客户为导向，加大研发投入，获得客户认可，在报告期内营业收入和净利润实现持续增长。预计2023年度非经常性损益对公司净利润的影响金额约为3,000万元。"
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20240113",
+          "end_date": "20231231",
+          "type": "预增",
+          "p_change_min": 48.16,
+          "p_change_max": 64.63,
+          "net_profit_min": 54000.0,
+          "net_profit_max": 60000.0,
+          "summary": "预计:净利润54000-60000",
+          "change_reason": "公司紧密围绕战略目标与核心价值观，持续深耕物联网行业，内生+外延双向驱动，锐凌无线并表及公司在车载、FWA等行业发展良好；坚持以客户为导向，加大研发投入，获得客户认可，在报告期内营业收入和净利润实现持续增长。预计2023年度非经常性损益对公司净利润的影响金额约为3,000万元。"
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20210125",
+          "end_date": "20201231",
+          "type": "预增",
+          "p_change_min": 60.0,
+          "p_change_max": 80.0,
+          "net_profit_min": 27212.0,
+          "net_profit_max": 30613.0,
+          "summary": "预计净利润27212-30613万",
+          "change_reason": "公司一方面持续加大研发投入,丰富产品线,另一方面加大市场投入,积极拓展市场空间,报告期内营业收入和净利润实现持续增长."
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "广和通:300638.SZ",
+      "sample": [
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20200228",
+          "end_date": "20191231",
+          "revenue": 1914574200.0,
+          "operate_profit": 170228800.0,
+          "total_profit": 181635800.0,
+          "n_income": 170009000.0,
+          "total_assets": 1930442800.0,
+          "total_hldr_eqy_exc_min_int": 1304825500.0,
+          "diluted_eps": 1.4
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20190223",
+          "end_date": "20181231",
+          "revenue": 1249101100.0,
+          "operate_profit": 96856900.0,
+          "total_profit": 96259800.0,
+          "n_income": 86796900.0,
+          "total_assets": 1002910900.0,
+          "total_hldr_eqy_exc_min_int": 448360700.0,
+          "diluted_eps": 0.72
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20180227",
+          "end_date": "20171231",
+          "revenue": 563304500.0,
+          "operate_profit": 45603600.0,
+          "total_profit": 47423200.0,
+          "n_income": 43686900.0,
+          "total_assets": 613103100.0,
+          "total_hldr_eqy_exc_min_int": 368193900.0,
+          "diluted_eps": 0.58
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "广和通:300638.SZ",
+      "sample": [
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260331",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.234,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "预案"
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260331",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.234,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "股东大会通过"
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260331",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.234,
+          "cash_div_tax": 0.234,
+          "record_date": "20260608",
+          "ex_date": "20260609",
+          "pay_date": "20260609",
+          "div_proc": "实施"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "广和通:300638.SZ",
+      "sample": [
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260518",
+          "end_date": null,
+          "proc": "股东大会通过",
+          "exp_date": null,
+          "vol": null,
+          "amount": 7101120.0,
+          "high_limit": 10.4,
+          "low_limit": 10.4
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260331",
+          "end_date": null,
+          "proc": "预案",
+          "exp_date": null,
+          "vol": null,
+          "amount": 7101120.0,
+          "high_limit": 10.4,
+          "low_limit": 10.4
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20251230",
+          "end_date": "20251229",
+          "proc": "完成",
+          "exp_date": null,
+          "vol": 1267898.0,
+          "amount": 12476776.62,
+          "high_limit": 10.4,
+          "low_limit": 9.04
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "广和通:300638.SZ",
+      "sample": [
+        {
+          "ts_code": "300638.SZ",
+          "end_date": "20260612",
+          "pledge_count": 4,
+          "unrest_pledge": 5584.93,
+          "rest_pledge": 0.0,
+          "total_share": 76418.56,
+          "pledge_ratio": 7.31
+        },
+        {
+          "ts_code": "300638.SZ",
+          "end_date": "20260605",
+          "pledge_count": 4,
+          "unrest_pledge": 5656.93,
+          "rest_pledge": 0.0,
+          "total_share": 76418.56,
+          "pledge_ratio": 7.4
+        },
+        {
+          "ts_code": "300638.SZ",
+          "end_date": "20260529",
+          "pledge_count": 4,
+          "unrest_pledge": 5656.93,
+          "rest_pledge": 0.0,
+          "total_share": 76418.56,
+          "pledge_ratio": 7.4
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "广和通:300638.SZ",
+      "sample": [
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260424",
+          "end_date": "20260331",
+          "holder_num": 84295
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260331",
+          "end_date": "20260228",
+          "holder_num": 90396
+        },
+        {
+          "ts_code": "300638.SZ",
+          "ann_date": "20260331",
+          "end_date": "20251231",
+          "holder_num": 97298
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "广和通:300638.SZ",
+      "sample": null,
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "日海智能:002313.SZ",
+      "sample": [
+        {
+          "ts_code": "002313.SZ",
+          "trade_date": "20260612",
+          "open": 8.26,
+          "high": 8.41,
+          "low": 8.09,
+          "close": 8.15,
+          "pre_close": 8.21,
+          "change": -0.06,
+          "pct_chg": -0.7308,
+          "vol": 72397.0,
+          "amount": 59458.883
+        },
+        {
+          "ts_code": "002313.SZ",
+          "trade_date": "20260611",
+          "open": 8.27,
+          "high": 8.43,
+          "low": 8.08,
+          "close": 8.21,
+          "pre_close": 8.42,
+          "change": -0.21,
+          "pct_chg": -2.4941,
+          "vol": 72972.0,
+          "amount": 59768.733
+        },
+        {
+          "ts_code": "002313.SZ",
+          "trade_date": "20260610",
+          "open": 8.67,
+          "high": 8.78,
+          "low": 8.24,
+          "close": 8.42,
+          "pre_close": 8.79,
+          "change": -0.37,
+          "pct_chg": -4.2093,
+          "vol": 81396.0,
+          "amount": 68693.201
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "日海智能:002313.SZ",
+      "sample": [
+        {
+          "ts_code": "002313.SZ",
+          "trade_date": "20260612",
+          "close": 8.15,
+          "turnover_rate": 1.9338,
+          "volume_ratio": 0.84,
+          "pe": null,
+          "pb": 39.7887,
+          "ps": 1.1079,
+          "total_mv": 305136.0,
+          "circ_mv": 305114.5451
+        },
+        {
+          "ts_code": "002313.SZ",
+          "trade_date": "20260611",
+          "close": 8.21,
+          "turnover_rate": 1.9492,
+          "volume_ratio": 0.83,
+          "pe": null,
+          "pb": 40.0816,
+          "ps": 1.116,
+          "total_mv": 307382.4,
+          "circ_mv": 307360.7872
+        },
+        {
+          "ts_code": "002313.SZ",
+          "trade_date": "20260610",
+          "close": 8.42,
+          "turnover_rate": 2.1742,
+          "volume_ratio": 0.92,
+          "pe": null,
+          "pb": 41.1068,
+          "ps": 1.1446,
+          "total_mv": 315244.8,
+          "circ_mv": 315222.6344
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "日海智能:002313.SZ",
+      "sample": [
+        {
+          "ts_code": "002313.SZ",
+          "trade_date": "20260612",
+          "adj_factor": 2.686
+        },
+        {
+          "ts_code": "002313.SZ",
+          "trade_date": "20260611",
+          "adj_factor": 2.686
+        },
+        {
+          "ts_code": "002313.SZ",
+          "trade_date": "20260610",
+          "adj_factor": 2.686
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "日海智能:002313.SZ",
+      "sample": [
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260428",
+          "f_ann_date": "20260428",
+          "end_date": "20260331",
+          "report_type": "1",
+          "total_revenue": 670314229.97,
+          "revenue": 670314229.97,
+          "operate_profit": 9805000.65,
+          "total_profit": 9867592.15,
+          "n_income": 9853512.67,
+          "n_income_attr_p": 9859696.13
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260423",
+          "f_ann_date": "20260423",
+          "end_date": "20251231",
+          "report_type": "1",
+          "total_revenue": 2754267373.77,
+          "revenue": 2754267373.77,
+          "operate_profit": -224867641.47,
+          "total_profit": -263458715.42,
+          "n_income": -227764993.96,
+          "n_income_attr_p": -227846304.37
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20251027",
+          "f_ann_date": "20251027",
+          "end_date": "20250930",
+          "report_type": "1",
+          "total_revenue": 2006986116.74,
+          "revenue": 2006986116.74,
+          "operate_profit": -27410663.88,
+          "total_profit": -50637307.85,
+          "n_income": -54710530.98,
+          "n_income_attr_p": -54795112.06
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "日海智能:002313.SZ",
+      "sample": [
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260428",
+          "f_ann_date": "20260428",
+          "end_date": "20260331",
+          "total_assets": 3065000885.59,
+          "total_liab": 2993153917.62,
+          "total_hldr_eqy_inc_min_int": 71846967.97,
+          "total_cur_assets": 2106009352.65,
+          "total_cur_liab": 2468397067.38
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260423",
+          "f_ann_date": "20260423",
+          "end_date": "20251231",
+          "total_assets": 3061852947.47,
+          "total_liab": 3003389807.64,
+          "total_hldr_eqy_inc_min_int": 58463139.83,
+          "total_cur_assets": 2089597518.45,
+          "total_cur_liab": 2463438032.13
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20251027",
+          "f_ann_date": "20251027",
+          "end_date": "20250930",
+          "total_assets": 3025837732.39,
+          "total_liab": 3017291088.98,
+          "total_hldr_eqy_inc_min_int": 8546643.41,
+          "total_cur_assets": 1958021976.64,
+          "total_cur_liab": 2456911458.23
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "日海智能:002313.SZ",
+      "sample": [
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260428",
+          "f_ann_date": "20260428",
+          "end_date": "20260331",
+          "n_cashflow_act": -77548828.12,
+          "n_cashflow_inv_act": 5290340.27,
+          "n_cash_flows_fnc_act": 24151618.73,
+          "c_cash_equ_end_period": 310793827.86
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260428",
+          "f_ann_date": "20260428",
+          "end_date": "20260331",
+          "n_cashflow_act": -77548828.12,
+          "n_cashflow_inv_act": 5290340.27,
+          "n_cash_flows_fnc_act": 24151618.73,
+          "c_cash_equ_end_period": 310793827.86
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260423",
+          "f_ann_date": "20260423",
+          "end_date": "20251231",
+          "n_cashflow_act": 179113049.04,
+          "n_cashflow_inv_act": 260769706.13,
+          "n_cash_flows_fnc_act": -216218186.92,
+          "c_cash_equ_end_period": 360762502.09
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "日海智能:002313.SZ",
+      "sample": [
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260428",
+          "end_date": "20260331",
+          "roe": 14.0864,
+          "roa": 0.6666,
+          "grossprofit_margin": 13.5906,
+          "netprofit_margin": 1.47,
+          "rd_exp": null,
+          "ocfps": -0.2071,
+          "bps": 0.2048
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260423",
+          "end_date": "20251231",
+          "roe": -351.1435,
+          "roa": -6.0681,
+          "grossprofit_margin": 16.484,
+          "netprofit_margin": -8.2695,
+          "rd_exp": 240123165.82,
+          "ocfps": 0.4784,
+          "bps": 0.1691
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20251027",
+          "end_date": "20250930",
+          "roe": -137.238,
+          "roa": 0.1221,
+          "grossprofit_margin": 16.8221,
+          "netprofit_margin": -2.726,
+          "rd_exp": null,
+          "ocfps": 0.4795,
+          "bps": 0.0357
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "日海智能:002313.SZ",
+      "sample": [
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260131",
+          "end_date": "20251231",
+          "type": "续亏",
+          "p_change_min": -86.9376,
+          "p_change_max": -64.505,
+          "net_profit_min": -25000.0,
+          "net_profit_max": -22000.0,
+          "summary": "预计:净利润-25000--22000",
+          "change_reason": "1.报告期内，受行业竞争格局变动影响，市场竞争加剧，公司营业收入较上年同期有所下降，毛利额同比减少，毛利额未能覆盖费用支出，导致利润亏损。此外，公司按照相关规定对应收款项进行计提减值损失。2.报告期内，公司持续推进降本增效与精简结构，通过组织调整提升运营效率，相关调整产生阶段性配套支出。未来公司将聚焦主营业务，持续降本增效，盘活资产价值，增强资金流动性，保障公司可持续健康发展。"
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260131",
+          "end_date": "20251231",
+          "type": "续亏",
+          "p_change_min": -86.9376,
+          "p_change_max": -64.505,
+          "net_profit_min": -25000.0,
+          "net_profit_max": -22000.0,
+          "summary": "预计:净利润-25000--22000",
+          "change_reason": "1.报告期内，受行业竞争格局变动影响，市场竞争加剧，公司营业收入较上年同期有所下降，毛利额同比减少，毛利额未能覆盖费用支出，导致利润亏损。此外，公司按照相关规定对应收款项进行计提减值损失。2.报告期内，公司持续推进降本增效与精简结构，通过组织调整提升运营效率，相关调整产生阶段性配套支出。未来公司将聚焦主营业务，持续降本增效，盘活资产价值，增强资金流动性，保障公司可持续健康发展。"
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20250715",
+          "end_date": "20250630",
+          "type": "续亏",
+          "p_change_min": -31.5215,
+          "p_change_max": 21.0871,
+          "net_profit_min": -5000.0,
+          "net_profit_max": -3000.0,
+          "summary": "预计:净利润-5000--3000",
+          "change_reason": "1、报告期内，受行业竞争格局变动影响，市场竞争加剧，公司营业收入较去年同期出现下降，毛利额减少，收入未能覆盖成本费用支出，导致利润亏损；2、报告期内，公司持续深化降本增效举措，加强费用预算管理，期间费用同比下降；3、报告期内，公司采取多种措施，加大对应收账款的催收力度，应收款回款金额有所增加，使得应收款项计提的信用减值损失同比减少。报告期内，虽然公司因收入下滑导致亏损，但公司积极采取措施有效遏制亏损幅度进一步扩大。未来公司将扎实推进降本增效，盘活、提升资产价值，增强资金流动性，保障公司可持续健康发展。"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "日海智能:002313.SZ",
+      "sample": [
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20210415",
+          "end_date": "20201231",
+          "revenue": 3788305800.0,
+          "operate_profit": -589758400.0,
+          "total_profit": -586050000.0,
+          "n_income": -548408700.0,
+          "total_assets": 7379394500.0,
+          "total_hldr_eqy_exc_min_int": 2668970100.0,
+          "diluted_eps": -1.6
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20200307",
+          "end_date": "20191231",
+          "revenue": 4731932200.0,
+          "operate_profit": 79982100.0,
+          "total_profit": 88694000.0,
+          "n_income": 78924600.0,
+          "total_assets": 7642518900.0,
+          "total_hldr_eqy_exc_min_int": 2101598000.0,
+          "diluted_eps": 0.25
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20190228",
+          "end_date": "20181231",
+          "revenue": 4420088800.0,
+          "operate_profit": 87014600.0,
+          "total_profit": 88970800.0,
+          "n_income": 71697000.0,
+          "total_assets": 6885899500.0,
+          "total_hldr_eqy_exc_min_int": 2030067800.0,
+          "diluted_eps": 0.23
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "日海智能:002313.SZ",
+      "sample": [
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260423",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.0,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "预案"
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260423",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.0,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "股东大会通过"
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20250827",
+          "end_date": "20250630",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.0,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "预案"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "日海智能:002313.SZ",
+      "sample": [
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20140326",
+          "end_date": "20140325",
+          "proc": "完成",
+          "exp_date": null,
+          "vol": 67600.0,
+          "amount": 369717.92,
+          "high_limit": 5.4692,
+          "low_limit": 5.4692
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20140326",
+          "end_date": "20140325",
+          "proc": "完成",
+          "exp_date": null,
+          "vol": 67600.0,
+          "amount": 369717.92,
+          "high_limit": 5.4692,
+          "low_limit": 5.4692
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20140326",
+          "end_date": "20140325",
+          "proc": "完成",
+          "exp_date": null,
+          "vol": 6165900.0,
+          "amount": 33722730.0,
+          "high_limit": 5.4692,
+          "low_limit": 5.4692
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "日海智能:002313.SZ",
+      "sample": [
+        {
+          "ts_code": "002313.SZ",
+          "end_date": "20260612",
+          "pledge_count": 0,
+          "unrest_pledge": 0.0,
+          "rest_pledge": 0.0,
+          "total_share": 37440.0,
+          "pledge_ratio": 0.0
+        },
+        {
+          "ts_code": "002313.SZ",
+          "end_date": "20260605",
+          "pledge_count": 0,
+          "unrest_pledge": 0.0,
+          "rest_pledge": 0.0,
+          "total_share": 37440.0,
+          "pledge_ratio": 0.0
+        },
+        {
+          "ts_code": "002313.SZ",
+          "end_date": "20260529",
+          "pledge_count": 0,
+          "unrest_pledge": 0.0,
+          "rest_pledge": 0.0,
+          "total_share": 37440.0,
+          "pledge_ratio": 0.0
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "日海智能:002313.SZ",
+      "sample": [
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260428",
+          "end_date": "20260331",
+          "holder_num": 41443
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260423",
+          "end_date": "20260331",
+          "holder_num": 41443
+        },
+        {
+          "ts_code": "002313.SZ",
+          "ann_date": "20260423",
+          "end_date": "20251231",
+          "holder_num": 46079
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "日海智能:002313.SZ",
+      "sample": null,
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "锐明技术:002970.SZ",
+      "sample": [
+        {
+          "ts_code": "002970.SZ",
+          "trade_date": "20260612",
+          "open": 65.5,
+          "high": 66.38,
+          "low": 62.0,
+          "close": 62.0,
+          "pre_close": 63.92,
+          "change": -1.92,
+          "pct_chg": -3.0038,
+          "vol": 49426.55,
+          "amount": 316239.4165
+        },
+        {
+          "ts_code": "002970.SZ",
+          "trade_date": "20260611",
+          "open": 65.48,
+          "high": 65.93,
+          "low": 63.13,
+          "close": 63.92,
+          "pre_close": 65.81,
+          "change": -1.89,
+          "pct_chg": -2.8719,
+          "vol": 47678.05,
+          "amount": 306174.00916
+        },
+        {
+          "ts_code": "002970.SZ",
+          "trade_date": "20260610",
+          "open": 67.9,
+          "high": 70.0,
+          "low": 65.02,
+          "close": 65.81,
+          "pre_close": 66.83,
+          "change": -1.02,
+          "pct_chg": -1.5263,
+          "vol": 90968.02,
+          "amount": 616481.50391
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "锐明技术:002970.SZ",
+      "sample": [
+        {
+          "ts_code": "002970.SZ",
+          "trade_date": "20260612",
+          "close": 62.0,
+          "turnover_rate": 3.9107,
+          "volume_ratio": 0.78,
+          "pe": 29.8002,
+          "pb": 5.6253,
+          "ps": 4.604,
+          "total_mv": 1140372.2,
+          "circ_mv": 783596.0396
+        },
+        {
+          "ts_code": "002970.SZ",
+          "trade_date": "20260611",
+          "close": 63.92,
+          "turnover_rate": 3.7724,
+          "volume_ratio": 0.76,
+          "pe": 30.723,
+          "pb": 5.7995,
+          "ps": 4.7466,
+          "total_mv": 1175686.952,
+          "circ_mv": 807862.2395
+        },
+        {
+          "ts_code": "002970.SZ",
+          "trade_date": "20260610",
+          "close": 65.81,
+          "turnover_rate": 7.2675,
+          "volume_ratio": 1.57,
+          "pe": 31.4223,
+          "pb": 5.9315,
+          "ps": 4.8546,
+          "total_mv": 1202447.823,
+          "circ_mv": 823747.1921
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "锐明技术:002970.SZ",
+      "sample": [
+        {
+          "ts_code": "002970.SZ",
+          "trade_date": "20260612",
+          "adj_factor": 2.1674
+        },
+        {
+          "ts_code": "002970.SZ",
+          "trade_date": "20260611",
+          "adj_factor": 2.1674
+        },
+        {
+          "ts_code": "002970.SZ",
+          "trade_date": "20260610",
+          "adj_factor": 2.1674
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "锐明技术:002970.SZ",
+      "sample": [
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260428",
+          "f_ann_date": "20260428",
+          "end_date": "20260331",
+          "report_type": "1",
+          "total_revenue": 557699063.63,
+          "revenue": 557699063.63,
+          "operate_profit": 39336891.26,
+          "total_profit": 39514138.78,
+          "n_income": 43888446.96,
+          "n_income_attr_p": 43463275.44
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260331",
+          "f_ann_date": "20260331",
+          "end_date": "20251231",
+          "report_type": "1",
+          "total_revenue": 2476928402.34,
+          "revenue": 2476928402.34,
+          "operate_profit": 397667528.93,
+          "total_profit": 396946966.38,
+          "n_income": 388504827.83,
+          "n_income_attr_p": 382673238.64
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20251023",
+          "f_ann_date": "20251023",
+          "end_date": "20250930",
+          "report_type": "1",
+          "total_revenue": 1692742137.04,
+          "revenue": 1692742137.04,
+          "operate_profit": 288601019.86,
+          "total_profit": 288291790.67,
+          "n_income": 278781431.29,
+          "n_income_attr_p": 274044553.89
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "锐明技术:002970.SZ",
+      "sample": [
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260428",
+          "f_ann_date": "20260428",
+          "end_date": "20260331",
+          "total_assets": 3617678712.43,
+          "total_liab": 1485817431.66,
+          "total_hldr_eqy_inc_min_int": 2131861280.77,
+          "total_cur_assets": 2894587659.87,
+          "total_cur_liab": 1461733355.51
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260331",
+          "f_ann_date": "20260331",
+          "end_date": "20251231",
+          "total_assets": 3252382190.28,
+          "total_liab": 1186684997.86,
+          "total_hldr_eqy_inc_min_int": 2065697192.42,
+          "total_cur_assets": 2557425376.7,
+          "total_cur_liab": 1157937050.45
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20251023",
+          "f_ann_date": "20251023",
+          "end_date": "20250930",
+          "total_assets": 3164764364.93,
+          "total_liab": 1247531812.35,
+          "total_hldr_eqy_inc_min_int": 1917232552.58,
+          "total_cur_assets": 2506279220.16,
+          "total_cur_liab": 1170033819.85
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "锐明技术:002970.SZ",
+      "sample": [
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260428",
+          "f_ann_date": "20260428",
+          "end_date": "20260331",
+          "n_cashflow_act": -239127007.17,
+          "n_cashflow_inv_act": -56184942.09,
+          "n_cash_flows_fnc_act": 317983611.21,
+          "c_cash_equ_end_period": 1257352777.36
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260428",
+          "f_ann_date": "20260428",
+          "end_date": "20260331",
+          "n_cashflow_act": -239127007.17,
+          "n_cashflow_inv_act": -56184942.09,
+          "n_cash_flows_fnc_act": 317983611.21,
+          "c_cash_equ_end_period": 1257352777.36
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260331",
+          "f_ann_date": "20260331",
+          "end_date": "20251231",
+          "n_cashflow_act": 398322851.82,
+          "n_cashflow_inv_act": -84751357.91,
+          "n_cash_flows_fnc_act": -22694049.73,
+          "c_cash_equ_end_period": 1239327333.44
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "锐明技术:002970.SZ",
+      "sample": [
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260428",
+          "end_date": "20260331",
+          "roe": 2.0658,
+          "roa": 1.1824,
+          "grossprofit_margin": 41.7051,
+          "netprofit_margin": 7.8696,
+          "rd_exp": null,
+          "ocfps": -1.3137,
+          "bps": 11.7395
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260331",
+          "end_date": "20251231",
+          "roe": 20.3778,
+          "roa": 12.4519,
+          "grossprofit_margin": 45.1804,
+          "netprofit_margin": 15.6849,
+          "rd_exp": 285805853.11,
+          "ocfps": 2.1956,
+          "bps": 11.4158
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20251023",
+          "end_date": "20250930",
+          "roe": 15.1896,
+          "roa": 9.1332,
+          "grossprofit_margin": 47.9142,
+          "netprofit_margin": 16.4692,
+          "rd_exp": null,
+          "ocfps": 1.5206,
+          "bps": 10.6488
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "锐明技术:002970.SZ",
+      "sample": [
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260119",
+          "end_date": "20251231",
+          "type": "略增",
+          "p_change_min": 27.58,
+          "p_change_max": 37.92,
+          "net_profit_min": 37000.0,
+          "net_profit_max": 40000.0,
+          "summary": "预计:净利润37000-40000",
+          "change_reason": "本报告期内，公司预计归属于上市公司股东的净利润同比增长27.58%至37.92%，扣除非经常性损益后的净利润同比增长24.88%至35.99%，净利润较快增长，主要原因如下：1.主营业务收入同比增长：公司海外、国内和前装业务在本报告期均实现全面增长；2.毛利额同比增长：主要是高毛利率的海外和前装业务的占比提升，推动毛利额的快速增长。"
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20250711",
+          "end_date": "20250630",
+          "type": "预增",
+          "p_change_min": 53.64,
+          "p_change_max": 77.9,
+          "net_profit_min": 19000.0,
+          "net_profit_max": 22000.0,
+          "summary": "预计:净利润19000-22000",
+          "change_reason": "本报告期内,公司预计归属于上市公司股东的净利润同比大幅增长,主要原因如下:1、主营业务收入同比增长:主要得益于海外业务的快速增长和前装业务的大幅增长;2、毛利额同比增长:主要是高毛利率的海外业务和前装业务的销售占比提升,驱动毛利额显著增长。"
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20250115",
+          "end_date": "20241231",
+          "type": "预增",
+          "p_change_min": 174.67,
+          "p_change_max": 191.35,
+          "net_profit_min": 28000.0,
+          "net_profit_max": 29700.0,
+          "summary": "预计:净利润28000-29700",
+          "change_reason": "本报告期内，公司预计归属于上市公司股东的净利润同比大幅增长，主要原因如下：1、海外业务增长：公司紧跟全球行业趋势，不断进行技术、产品的创新，有效保障海外业务的持续增长；2、毛利额增长：公司持续增长的海外业务中主要为高毛利率产品，从而拉动毛利额增长。3、经营效率提升：公司不断提升经营管理效率，费用率显著降低。"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "锐明技术:002970.SZ",
+      "sample": [
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20210304",
+          "end_date": "20201231",
+          "revenue": 1608955037.3,
+          "operate_profit": 260405295.39,
+          "total_profit": 257339670.11,
+          "n_income": 234287160.89,
+          "total_assets": 2281052918.8,
+          "total_hldr_eqy_exc_min_int": 1546877287.88,
+          "diluted_eps": 1.36
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20200718",
+          "end_date": "20200630",
+          "revenue": 615542276.41,
+          "operate_profit": 99143574.66,
+          "total_profit": 98305612.54,
+          "n_income": 85561013.62,
+          "total_assets": 2103192979.41,
+          "total_hldr_eqy_exc_min_int": 1396986300.61,
+          "diluted_eps": 0.85
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20200310",
+          "end_date": "20191231",
+          "revenue": 1563664857.96,
+          "operate_profit": 230452902.86,
+          "total_profit": 230742624.22,
+          "n_income": 194935616.08,
+          "total_assets": 2057805421.81,
+          "total_hldr_eqy_exc_min_int": 1379575104.12,
+          "diluted_eps": 3.01
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "锐明技术:002970.SZ",
+      "sample": [
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260331",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.6,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "预案"
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260331",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.6,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "股东大会通过"
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260331",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.6,
+          "cash_div_tax": 0.6,
+          "record_date": "20260428",
+          "ex_date": "20260429",
+          "pay_date": "20260429",
+          "div_proc": "实施"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "锐明技术:002970.SZ",
+      "sample": [
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20240720",
+          "end_date": "20240719",
+          "proc": "完成",
+          "exp_date": null,
+          "vol": 96000.0,
+          "amount": 2602560.0,
+          "high_limit": 27.11,
+          "low_limit": 27.11
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20240516",
+          "end_date": "20240516",
+          "proc": "完成",
+          "exp_date": null,
+          "vol": 1834000.0,
+          "amount": 40398923.0,
+          "high_limit": 24.32,
+          "low_limit": 18.89
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20240515",
+          "end_date": null,
+          "proc": "股东大会通过",
+          "exp_date": null,
+          "vol": null,
+          "amount": 2602560.0,
+          "high_limit": 27.11,
+          "low_limit": 27.11
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "锐明技术:002970.SZ",
+      "sample": [
+        {
+          "ts_code": "002970.SZ",
+          "end_date": "20260612",
+          "pledge_count": 0,
+          "unrest_pledge": 0.0,
+          "rest_pledge": 0.0,
+          "total_share": 18393.1,
+          "pledge_ratio": 0.0
+        },
+        {
+          "ts_code": "002970.SZ",
+          "end_date": "20260605",
+          "pledge_count": 0,
+          "unrest_pledge": 0.0,
+          "rest_pledge": 0.0,
+          "total_share": 18271.5062,
+          "pledge_ratio": 0.0
+        },
+        {
+          "ts_code": "002970.SZ",
+          "end_date": "20260605",
+          "pledge_count": 0,
+          "unrest_pledge": 0.0,
+          "rest_pledge": 0.0,
+          "total_share": 18393.1,
+          "pledge_ratio": 0.0
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "锐明技术:002970.SZ",
+      "sample": [
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260428",
+          "end_date": "20260331",
+          "holder_num": 17394
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260331",
+          "end_date": "20260228",
+          "holder_num": 17405
+        },
+        {
+          "ts_code": "002970.SZ",
+          "ann_date": "20260331",
+          "end_date": "20251231",
+          "holder_num": 23820
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "锐明技术:002970.SZ",
+      "sample": null,
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "有方科技:688159.SH",
+      "sample": [
+        {
+          "ts_code": "688159.SH",
+          "trade_date": "20260612",
+          "open": 43.16,
+          "high": 44.94,
+          "low": 43.0,
+          "close": 43.29,
+          "pre_close": 42.31,
+          "change": 0.98,
+          "pct_chg": 2.3162,
+          "vol": 40053.03,
+          "amount": 176040.501
+        },
+        {
+          "ts_code": "688159.SH",
+          "trade_date": "20260611",
+          "open": 42.82,
+          "high": 43.09,
+          "low": 41.03,
+          "close": 42.31,
+          "pre_close": 43.35,
+          "change": -1.04,
+          "pct_chg": -2.3991,
+          "vol": 32118.55,
+          "amount": 134990.137
+        },
+        {
+          "ts_code": "688159.SH",
+          "trade_date": "20260610",
+          "open": 43.45,
+          "high": 44.98,
+          "low": 42.7,
+          "close": 43.35,
+          "pre_close": 43.75,
+          "change": -0.4,
+          "pct_chg": -0.9143,
+          "vol": 34744.0,
+          "amount": 151254.922
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "有方科技:688159.SH",
+      "sample": [
+        {
+          "ts_code": "688159.SH",
+          "trade_date": "20260612",
+          "close": 43.29,
+          "turnover_rate": 4.3194,
+          "volume_ratio": 1.05,
+          "pe": 147.1042,
+          "pb": 4.296,
+          "ps": 1.6722,
+          "total_mv": 402202.2818,
+          "circ_mv": 401423.0618
+        },
+        {
+          "ts_code": "688159.SH",
+          "trade_date": "20260611",
+          "close": 42.31,
+          "turnover_rate": 3.4637,
+          "volume_ratio": 0.83,
+          "pe": 143.774,
+          "pb": 4.1987,
+          "ps": 1.6343,
+          "total_mv": 393097.2174,
+          "circ_mv": 392335.6374
+        },
+        {
+          "ts_code": "688159.SH",
+          "trade_date": "20260610",
+          "close": 43.35,
+          "turnover_rate": 3.7468,
+          "volume_ratio": 0.86,
+          "pe": 147.3081,
+          "pb": 4.3019,
+          "ps": 1.6745,
+          "total_mv": 402759.7347,
+          "circ_mv": 401979.4347
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "有方科技:688159.SH",
+      "sample": [
+        {
+          "ts_code": "688159.SH",
+          "trade_date": "20260612",
+          "adj_factor": 1.0028
+        },
+        {
+          "ts_code": "688159.SH",
+          "trade_date": "20260611",
+          "adj_factor": 1.0028
+        },
+        {
+          "ts_code": "688159.SH",
+          "trade_date": "20260610",
+          "adj_factor": 1.0028
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "有方科技:688159.SH",
+      "sample": [
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260430",
+          "f_ann_date": "20260430",
+          "end_date": "20260331",
+          "report_type": "1",
+          "total_revenue": 549091583.49,
+          "revenue": 549091583.49,
+          "operate_profit": 31417909.96,
+          "total_profit": 31418250.82,
+          "n_income": 27458482.92,
+          "n_income_attr_p": 27806020.27
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260430",
+          "f_ann_date": "20260430",
+          "end_date": "20251231",
+          "report_type": "1",
+          "total_revenue": 2405293805.69,
+          "revenue": 2405293805.69,
+          "operate_profit": 21080763.54,
+          "total_profit": 20649127.89,
+          "n_income": 25609078.17,
+          "n_income_attr_p": 27341325.51
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20251030",
+          "f_ann_date": "20260430",
+          "end_date": "20250930",
+          "report_type": "1",
+          "total_revenue": 2175314798.15,
+          "revenue": 2175314798.15,
+          "operate_profit": 90729171.85,
+          "total_profit": 89753293.51,
+          "n_income": 81796837.53,
+          "n_income_attr_p": 83425548.09
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "有方科技:688159.SH",
+      "sample": [
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260430",
+          "f_ann_date": "20260430",
+          "end_date": "20260331",
+          "total_assets": 3014762363.25,
+          "total_liab": 2081331790.53,
+          "total_hldr_eqy_inc_min_int": 933430572.72,
+          "total_cur_assets": 2570381612.48,
+          "total_cur_liab": 1575093214.07
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260430",
+          "f_ann_date": "20260430",
+          "end_date": "20251231",
+          "total_assets": 2506231548.18,
+          "total_liab": 1611459401.1,
+          "total_hldr_eqy_inc_min_int": 894772147.08,
+          "total_cur_assets": 2051859293.0,
+          "total_cur_liab": 1372506198.7
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20251030",
+          "f_ann_date": "20251030",
+          "end_date": "20250930",
+          "total_assets": 2538899632.03,
+          "total_liab": 1591806385.9,
+          "total_hldr_eqy_inc_min_int": 947093246.13,
+          "total_cur_assets": 2100160438.52,
+          "total_cur_liab": 1388160483.79
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "有方科技:688159.SH",
+      "sample": [
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260430",
+          "f_ann_date": "20260430",
+          "end_date": "20260331",
+          "n_cashflow_act": -379211560.53,
+          "n_cashflow_inv_act": -4337732.89,
+          "n_cash_flows_fnc_act": 164635137.51,
+          "c_cash_equ_end_period": 403162142.67
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260430",
+          "f_ann_date": "20260430",
+          "end_date": "20251231",
+          "n_cashflow_act": 81945588.23,
+          "n_cashflow_inv_act": -42904692.01,
+          "n_cash_flows_fnc_act": 360500987.23,
+          "c_cash_equ_end_period": 622557891.87
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20251030",
+          "f_ann_date": "20251030",
+          "end_date": "20250930",
+          "n_cashflow_act": 150494123.71,
+          "n_cashflow_inv_act": -35550767.41,
+          "n_cash_flows_fnc_act": 179966303.72,
+          "c_cash_equ_end_period": 517925668.44
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "有方科技:688159.SH",
+      "sample": [
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260430",
+          "end_date": "20260331",
+          "roe": 3.0332,
+          "roa": 1.7873,
+          "grossprofit_margin": 20.119,
+          "netprofit_margin": 5.0007,
+          "rd_exp": 27583974.8,
+          "ocfps": -4.0815,
+          "bps": 10.0768
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260430",
+          "end_date": "20251231",
+          "roe": 3.1204,
+          "roa": 2.5117,
+          "grossprofit_margin": 13.2216,
+          "netprofit_margin": 1.0647,
+          "rd_exp": 88954094.7,
+          "ocfps": 0.882,
+          "bps": 9.657
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20251030",
+          "end_date": "20250930",
+          "roe": 9.2455,
+          "roa": 5.3595,
+          "grossprofit_margin": 12.1907,
+          "netprofit_margin": 3.7602,
+          "rd_exp": 66953725.88,
+          "ocfps": 1.6198,
+          "bps": 10.219
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "有方科技:688159.SH",
+      "sample": [
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260131",
+          "end_date": "20251231",
+          "type": "预减",
+          "p_change_min": -73.07,
+          "p_change_max": -73.07,
+          "net_profit_min": 2700.0,
+          "net_profit_max": 2700.0,
+          "summary": "预计:净利润2700",
+          "change_reason": "本年度公司持续深耕海外物联网无线通信模组和终端市场，在海外电力模组和智能终端的带动下，公司海外收入和毛利实现增长，物联网业务实现盈亏平衡；公司的云产品业务在持续拓展，但受竞争和存储价格上涨的影响，利润有所减少。公司对于涉及诉讼和仲裁的应收账款基于审慎原则对坏账准备充分计提，以及公司2025年股权激励计划的实施导致本年度股份支付费用大幅增加，上述原因合计影响金额约5,000万元，导致净利润同比下降。"
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260131",
+          "end_date": "20251231",
+          "type": "预减",
+          "p_change_min": -73.07,
+          "p_change_max": -73.07,
+          "net_profit_min": 2700.0,
+          "net_profit_max": 2700.0,
+          "summary": "预计:净利润2700",
+          "change_reason": "本年度公司持续深耕海外物联网无线通信模组和终端市场，在海外电力模组和智能终端的带动下，公司海外收入和毛利实现增长，物联网业务实现盈亏平衡；公司的云产品业务在持续拓展，但受竞争和存储价格上涨的影响，利润有所减少。公司对于涉及诉讼和仲裁的应收账款基于审慎原则对坏账准备充分计提，以及公司2025年股权激励计划的实施导致本年度股份支付费用大幅增加，上述原因合计影响金额约5,000万元，导致净利润同比下降。"
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20250125",
+          "end_date": "20241231",
+          "type": "扭亏",
+          "p_change_min": 365.41,
+          "p_change_max": 365.41,
+          "net_profit_min": 10200.0,
+          "net_profit_max": 10200.0,
+          "summary": "预计:净利润10200",
+          "change_reason": "报告期内，公司归属于母公司的净利润实现增长，主要原因系公司持续深化云管端架构的战略布局，挖掘客户在存储和智算等方面的需求，公司云基础设施收入实现大幅增长，此外，物联网下游应用行业需求持续复苏，公司也持续拓展海外物联网市场，公司无线通信产品收入也同比实现增长。同时，公司严格控制费用，除财务费用因业务发展借款增加而增加外，销售费用、管理费用变动比例较小，净利润实现了增长。"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "有方科技:688159.SH",
+      "sample": [
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260228",
+          "end_date": "20251231",
+          "revenue": 2405293805.69,
+          "operate_profit": 21080763.54,
+          "total_profit": 20649127.89,
+          "n_income": 27341325.51,
+          "total_assets": 2506231548.18,
+          "total_hldr_eqy_exc_min_int": 897222117.03,
+          "diluted_eps": 0.3
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20250228",
+          "end_date": "20241231",
+          "revenue": 3064351091.9,
+          "operate_profit": 102566088.94,
+          "total_profit": 102494638.81,
+          "n_income": 97366175.09,
+          "total_assets": 1812500079.7,
+          "total_hldr_eqy_exc_min_int": 853956917.96,
+          "diluted_eps": 1.06
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20240228",
+          "end_date": "20231231",
+          "revenue": 931924935.66,
+          "operate_profit": -56132096.51,
+          "total_profit": -56148920.21,
+          "n_income": -38431553.37,
+          "total_assets": 1569234163.27,
+          "total_hldr_eqy_exc_min_int": 745110131.34,
+          "diluted_eps": -0.42
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "有方科技:688159.SH",
+      "sample": [
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260430",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.0,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "预案"
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260430",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.0,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "股东大会通过"
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20250828",
+          "end_date": "20250630",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.0,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "预案"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "有方科技:688159.SH",
+      "sample": [
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260430",
+          "end_date": null,
+          "proc": "预案",
+          "exp_date": null,
+          "vol": null,
+          "amount": 1648350.0,
+          "high_limit": 11.1,
+          "low_limit": 11.1
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20250701",
+          "end_date": "20250703",
+          "proc": "完成",
+          "exp_date": null,
+          "vol": 20250.0,
+          "amount": 226800.0,
+          "high_limit": 11.2,
+          "low_limit": 11.2
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20250430",
+          "end_date": null,
+          "proc": "预案",
+          "exp_date": null,
+          "vol": null,
+          "amount": 226800.0,
+          "high_limit": 11.2,
+          "low_limit": 11.2
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "有方科技:688159.SH",
+      "sample": [
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260430",
+          "end_date": "20260331",
+          "holder_num": 11257
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20260430",
+          "end_date": "20251231",
+          "holder_num": 11493
+        },
+        {
+          "ts_code": "688159.SH",
+          "ann_date": "20251030",
+          "end_date": "20250930",
+          "holder_num": 9900
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "有方科技:688159.SH",
+      "sample": null,
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "美格智能:002881.SZ",
+      "sample": [
+        {
+          "ts_code": "002881.SZ",
+          "trade_date": "20260612",
+          "open": 41.73,
+          "high": 42.6,
+          "low": 40.3,
+          "close": 40.36,
+          "pre_close": 41.03,
+          "change": -0.67,
+          "pct_chg": -1.633,
+          "vol": 112694.4,
+          "amount": 465348.91179
+        },
+        {
+          "ts_code": "002881.SZ",
+          "trade_date": "20260611",
+          "open": 42.7,
+          "high": 43.0,
+          "low": 40.52,
+          "close": 41.03,
+          "pre_close": 43.66,
+          "change": -2.63,
+          "pct_chg": -6.0238,
+          "vol": 124722.96,
+          "amount": 517696.34805
+        },
+        {
+          "ts_code": "002881.SZ",
+          "trade_date": "20260610",
+          "open": 43.26,
+          "high": 46.0,
+          "low": 43.25,
+          "close": 43.66,
+          "pre_close": 44.3,
+          "change": -0.64,
+          "pct_chg": -1.4447,
+          "vol": 123928.22,
+          "amount": 549419.72904
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "美格智能:002881.SZ",
+      "sample": [
+        {
+          "ts_code": "002881.SZ",
+          "trade_date": "20260612",
+          "close": 40.36,
+          "turnover_rate": 6.1944,
+          "volume_ratio": 0.86,
+          "pe": 85.4055,
+          "pb": 4.4711,
+          "ps": 3.2529,
+          "total_mv": 1218911.1492,
+          "circ_mv": 734262.861
+        },
+        {
+          "ts_code": "002881.SZ",
+          "trade_date": "20260611",
+          "close": 41.03,
+          "turnover_rate": 6.8556,
+          "volume_ratio": 0.99,
+          "pe": 86.8233,
+          "pb": 4.5453,
+          "ps": 3.3069,
+          "total_mv": 1239145.7991,
+          "circ_mv": 746452.0611
+        },
+        {
+          "ts_code": "002881.SZ",
+          "trade_date": "20260610",
+          "close": 43.66,
+          "turnover_rate": 6.8119,
+          "volume_ratio": 0.9,
+          "pe": 92.3886,
+          "pb": 4.8367,
+          "ps": 3.5189,
+          "total_mv": 1318574.3502,
+          "circ_mv": 794299.2198
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "美格智能:002881.SZ",
+      "sample": [
+        {
+          "ts_code": "002881.SZ",
+          "trade_date": "20260612",
+          "adj_factor": 2.2476
+        },
+        {
+          "ts_code": "002881.SZ",
+          "trade_date": "20260611",
+          "adj_factor": 2.2476
+        },
+        {
+          "ts_code": "002881.SZ",
+          "trade_date": "20260610",
+          "adj_factor": 2.2476
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "美格智能:002881.SZ",
+      "sample": [
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20260430",
+          "f_ann_date": "20260430",
+          "end_date": "20260331",
+          "report_type": "1",
+          "total_revenue": 927593580.41,
+          "revenue": 927593580.41,
+          "operate_profit": 59052240.19,
+          "total_profit": 59026621.53,
+          "n_income": 46654696.32,
+          "n_income_attr_p": 46654696.32
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20260430",
+          "f_ann_date": "20260430",
+          "end_date": "20260331",
+          "report_type": "1",
+          "total_revenue": 927593580.41,
+          "revenue": 927593580.41,
+          "operate_profit": 59052240.19,
+          "total_profit": 59026621.53,
+          "n_income": 46654696.32,
+          "n_income_attr_p": 46654696.32
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20260331",
+          "f_ann_date": "20260331",
+          "end_date": "20251231",
+          "report_type": "1",
+          "total_revenue": 3747132452.49,
+          "revenue": 3747132452.49,
+          "operate_profit": 155856736.17,
+          "total_profit": 155887598.85,
+          "n_income": 142720411.53,
+          "n_income_attr_p": 142720411.53
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "美格智能:002881.SZ",
+      "sample": [
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20260430",
+          "f_ann_date": "20260430",
+          "end_date": "20260331",
+          "total_assets": 4408690788.4,
+          "total_liab": 1682547896.0,
+          "total_hldr_eqy_inc_min_int": 2726142892.4,
+          "total_cur_assets": 3915642920.94,
+          "total_cur_liab": 1652508057.97
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20260331",
+          "f_ann_date": "20260331",
+          "end_date": "20251231",
+          "total_assets": 2967047960.36,
+          "total_liab": 1264571788.12,
+          "total_hldr_eqy_inc_min_int": 1702476172.24,
+          "total_cur_assets": 2472262936.64,
+          "total_cur_liab": 1232078219.8
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20251028",
+          "f_ann_date": "20251028",
+          "end_date": "20250930",
+          "total_assets": 2850665992.24,
+          "total_liab": 1169339879.43,
+          "total_hldr_eqy_inc_min_int": 1681326112.81,
+          "total_cur_assets": 2375527927.21,
+          "total_cur_liab": 1143310299.81
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "美格智能:002881.SZ",
+      "sample": [
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20260430",
+          "f_ann_date": "20260430",
+          "end_date": "20260331",
+          "n_cashflow_act": -191761861.95,
+          "n_cashflow_inv_act": -48381418.39,
+          "n_cash_flows_fnc_act": 1243164423.69,
+          "c_cash_equ_end_period": 1313306045.61
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20260430",
+          "f_ann_date": "20260430",
+          "end_date": "20260331",
+          "n_cashflow_act": -191761861.95,
+          "n_cashflow_inv_act": -48381418.39,
+          "n_cash_flows_fnc_act": 1243164423.69,
+          "c_cash_equ_end_period": 1313306045.61
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20260331",
+          "f_ann_date": "20260331",
+          "end_date": "20251231",
+          "n_cashflow_act": 32494874.53,
+          "n_cashflow_inv_act": -43539178.0,
+          "n_cash_flows_fnc_act": -28380231.94,
+          "c_cash_equ_end_period": 309614248.55
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "美格智能:002881.SZ",
+      "sample": [
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20260430",
+          "end_date": "20260331",
+          "roe": 2.107,
+          "roa": 1.6583,
+          "grossprofit_margin": 17.5021,
+          "netprofit_margin": 5.0296,
+          "rd_exp": null,
+          "ocfps": -0.635,
+          "bps": 9.0268
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20260331",
+          "end_date": "20251231",
+          "roe": 8.7302,
+          "roa": 5.587,
+          "grossprofit_margin": 14.1214,
+          "netprofit_margin": 3.8088,
+          "rd_exp": 235981455.97,
+          "ocfps": 0.1241,
+          "bps": 6.5041
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20251028",
+          "end_date": "20250930",
+          "roe": 6.9677,
+          "roa": 4.455,
+          "grossprofit_margin": 13.1342,
+          "netprofit_margin": 4.0113,
+          "rd_exp": null,
+          "ocfps": 0.1574,
+          "bps": 6.4019
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "forecast",
+      "scope": "美格智能:002881.SZ",
+      "sample": [
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20250715",
+          "end_date": "20250630",
+          "type": "预增",
+          "p_change_min": 109.07,
+          "p_change_max": 153.87,
+          "net_profit_min": 7000.0,
+          "net_profit_max": 8500.0,
+          "summary": "预计:净利润7000-8500",
+          "change_reason": "报告期内，公司面向智能汽车、5G移动宽带、海外IoT智能化领域的产品出货量继续高速增长，高算力模组在端侧AI领域的应用持续深入，国内及海外市场均衡发展，公司2025年半年度营业收入和净利润较上年同期均持续增长。"
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20250412",
+          "end_date": "20250331",
+          "type": "预增",
+          "p_change_min": 518.53,
+          "p_change_max": 704.09,
+          "net_profit_min": 4000.0,
+          "net_profit_max": 5200.0,
+          "summary": "预计:净利润4000-5200",
+          "change_reason": "1、报告期内，公司面向智能汽车、5GFWA、海外IoT智能化领域的产品出货量继续高速增长，高算力模组在端侧AI领域的应用持续深入，国内及海外市场均衡发展，带动公司营收规模和净利润大幅增长。2、预计报告期内非经常性损益对当期净利润的影响约为130万元，主要为政府补助。"
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20250123",
+          "end_date": "20241231",
+          "type": "预增",
+          "p_change_min": 73.62,
+          "p_change_max": 120.12,
+          "net_profit_min": 11200.0,
+          "net_profit_max": 14200.0,
+          "summary": "预计:净利润11200-14200",
+          "change_reason": "1、2024年，公司高算力模组产品在云服务器、无人机、机器视觉、人形机器人等端侧AI领域的应用不断拓展，高算力产品营收规模迅速扩大；面向智能汽车的通信+计算一体的5G智能座舱模组和车规级通信模组出货量高速增长。海外业务营收持续高速增长，主要得益于海外客户对智能化\\深度定制产品需求的持续增长及海外运营商5G产品需求的不断攀升。2、报告期内，受美金汇率持续升值影响，公司预计确认汇兑损失约为2,850万元，2023年约为611万，汇兑损失同期增加2,239万元。报告期内，公司按照权益法预计对部分参股公司确认投资亏损约为1,200-1,300万元，2023年确认投资亏损约为608万元，投资损失同期增加592-692万元。报告期内，预计非经常性损益金额约为320万元，2023年约为2,754万元，同期减少2,434万元。"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "express",
+      "scope": "美格智能:002881.SZ",
+      "sample": [
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20250412",
+          "end_date": "20241231",
+          "revenue": 2941374900.0,
+          "operate_profit": 125782100.0,
+          "total_profit": 124419800.0,
+          "n_income": 135879000.0,
+          "total_assets": 2750354900.0,
+          "total_hldr_eqy_exc_min_int": 1567336900.0,
+          "diluted_eps": 0.5192
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20220408",
+          "end_date": "20211231",
+          "revenue": 1969075000.0,
+          "operate_profit": 113638200.0,
+          "total_profit": 113633800.0,
+          "n_income": 118184100.0,
+          "total_assets": 1502641300.0,
+          "total_hldr_eqy_exc_min_int": 689346600.0,
+          "diluted_eps": 0.6506
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20210409",
+          "end_date": "20201231",
+          "revenue": 1120845600.0,
+          "operate_profit": 16552300.0,
+          "total_profit": 15083300.0,
+          "n_income": 28714700.0,
+          "total_assets": 978006700.0,
+          "total_hldr_eqy_exc_min_int": 581275500.0,
+          "diluted_eps": 0.1583
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "美格智能:002881.SZ",
+      "sample": [
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20260331",
+          "end_date": "20251231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.1,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "预案"
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20250828",
+          "end_date": "20250630",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.0,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "预案"
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20250428",
+          "end_date": "20241231",
+          "stk_div": 0.0,
+          "stk_bo_rate": null,
+          "stk_co_rate": null,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.13,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "预案"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "repurchase",
+      "scope": "美格智能:002881.SZ",
+      "sample": [
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20251202",
+          "end_date": "20251201",
+          "proc": "完成",
+          "exp_date": null,
+          "vol": 30000.0,
+          "amount": 316511.37,
+          "high_limit": null,
+          "low_limit": 10.42
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20251122",
+          "end_date": "20251113",
+          "proc": "完成",
+          "exp_date": null,
+          "vol": 844400.0,
+          "amount": 30494562.0,
+          "high_limit": 45.68,
+          "low_limit": 29.01
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20251115",
+          "end_date": "20251113",
+          "proc": "完成",
+          "exp_date": null,
+          "vol": 844400.0,
+          "amount": 30494562.0,
+          "high_limit": 45.68,
+          "low_limit": 29.01
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "美格智能:002881.SZ",
+      "sample": [
+        {
+          "ts_code": "002881.SZ",
+          "end_date": "20260612",
+          "pledge_count": 7,
+          "unrest_pledge": 1510.0,
+          "rest_pledge": 0.0,
+          "total_share": 26181.17,
+          "pledge_ratio": 5.77
+        },
+        {
+          "ts_code": "002881.SZ",
+          "end_date": "20260605",
+          "pledge_count": 7,
+          "unrest_pledge": 1510.0,
+          "rest_pledge": 0.0,
+          "total_share": 26181.17,
+          "pledge_ratio": 5.77
+        },
+        {
+          "ts_code": "002881.SZ",
+          "end_date": "20260529",
+          "pledge_count": 7,
+          "unrest_pledge": 1510.0,
+          "rest_pledge": 0.0,
+          "total_share": 26175.97,
+          "pledge_ratio": 5.77
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "美格智能:002881.SZ",
+      "sample": [
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20260430",
+          "end_date": "20260331",
+          "holder_num": 51347
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20260331",
+          "end_date": "20260228",
+          "holder_num": 52330
+        },
+        {
+          "ts_code": "002881.SZ",
+          "ann_date": "20260331",
+          "end_date": "20251231",
+          "holder_num": 52059
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "美格智能:002881.SZ",
+      "sample": null,
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "daily",
+      "scope": "博实结:301608.SZ",
+      "sample": [
+        {
+          "ts_code": "301608.SZ",
+          "trade_date": "20260612",
+          "open": 49.01,
+          "high": 49.74,
+          "low": 48.61,
+          "close": 48.89,
+          "pre_close": 48.6,
+          "change": 0.29,
+          "pct_chg": 0.5967,
+          "vol": 13394.9,
+          "amount": 65897.06165
+        },
+        {
+          "ts_code": "301608.SZ",
+          "trade_date": "20260611",
+          "open": 49.52,
+          "high": 49.52,
+          "low": 47.68,
+          "close": 48.6,
+          "pre_close": 49.54,
+          "change": -0.94,
+          "pct_chg": -1.8975,
+          "vol": 14688.03,
+          "amount": 71059.76338
+        },
+        {
+          "ts_code": "301608.SZ",
+          "trade_date": "20260610",
+          "open": 50.01,
+          "high": 50.45,
+          "low": 48.4,
+          "close": 49.54,
+          "pre_close": 50.5,
+          "change": -0.96,
+          "pct_chg": -1.901,
+          "vol": 18487.74,
+          "amount": 91195.94988
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "daily_basic",
+      "scope": "博实结:301608.SZ",
+      "sample": [
+        {
+          "ts_code": "301608.SZ",
+          "trade_date": "20260612",
+          "close": 48.89,
+          "turnover_rate": 2.251,
+          "volume_ratio": 0.71,
+          "pe": 27.618,
+          "pb": 2.9678,
+          "ps": 3.7876,
+          "total_mv": 648257.4439,
+          "circ_mv": 290926.5598
+        },
+        {
+          "ts_code": "301608.SZ",
+          "trade_date": "20260611",
+          "close": 48.6,
+          "turnover_rate": 2.4683,
+          "volume_ratio": 0.8,
+          "pe": 27.4542,
+          "pb": 2.9502,
+          "ps": 3.7652,
+          "total_mv": 644412.186,
+          "circ_mv": 289200.8756
+        },
+        {
+          "ts_code": "301608.SZ",
+          "trade_date": "20260610",
+          "close": 49.54,
+          "turnover_rate": 3.1069,
+          "volume_ratio": 1.0,
+          "pe": 27.9852,
+          "pb": 3.0073,
+          "ps": 3.838,
+          "total_mv": 656876.1254,
+          "circ_mv": 294794.4728
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "adj_factor",
+      "scope": "博实结:301608.SZ",
+      "sample": [
+        {
+          "ts_code": "301608.SZ",
+          "trade_date": "20260612",
+          "adj_factor": 1.5307
+        },
+        {
+          "ts_code": "301608.SZ",
+          "trade_date": "20260611",
+          "adj_factor": 1.5307
+        },
+        {
+          "ts_code": "301608.SZ",
+          "trade_date": "20260610",
+          "adj_factor": 1.5307
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "income",
+      "scope": "博实结:301608.SZ",
+      "sample": [
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260421",
+          "f_ann_date": "20260421",
+          "end_date": "20260331",
+          "report_type": "1",
+          "total_revenue": 418161767.32,
+          "revenue": 418161767.32,
+          "operate_profit": 59919819.81,
+          "total_profit": 60005605.02,
+          "n_income": 55103121.14,
+          "n_income_attr_p": 55103121.14
+        },
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260421",
+          "f_ann_date": "20260421",
+          "end_date": "20260331",
+          "report_type": "1",
+          "total_revenue": 418161767.32,
+          "revenue": 418161767.32,
+          "operate_profit": 59919819.81,
+          "total_profit": 60005605.02,
+          "n_income": 55103121.14,
+          "n_income_attr_p": 55103121.14
+        },
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260421",
+          "f_ann_date": "20260421",
+          "end_date": "20251231",
+          "report_type": "1",
+          "total_revenue": 1711517711.87,
+          "revenue": 1711517711.87,
+          "operate_profit": 260886748.46,
+          "total_profit": 260860812.81,
+          "n_income": 234722619.86,
+          "n_income_attr_p": 234722619.86
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "balancesheet",
+      "scope": "博实结:301608.SZ",
+      "sample": [
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260421",
+          "f_ann_date": "20260421",
+          "end_date": "20260331",
+          "total_assets": 2928260937.94,
+          "total_liab": 703985262.6,
+          "total_hldr_eqy_inc_min_int": 2224275675.34,
+          "total_cur_assets": 2442926309.93,
+          "total_cur_liab": 699654381.49
+        },
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260421",
+          "f_ann_date": "20260421",
+          "end_date": "20260331",
+          "total_assets": 2928260937.94,
+          "total_liab": 703985262.6,
+          "total_hldr_eqy_inc_min_int": 2224275675.34,
+          "total_cur_assets": 2442926309.93,
+          "total_cur_liab": 699654381.49
+        },
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260421",
+          "f_ann_date": "20260421",
+          "end_date": "20251231",
+          "total_assets": 2860436199.29,
+          "total_liab": 691263645.09,
+          "total_hldr_eqy_inc_min_int": 2169172554.2,
+          "total_cur_assets": 2381644786.44,
+          "total_cur_liab": 686710494.32
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "cashflow",
+      "scope": "博实结:301608.SZ",
+      "sample": [
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260421",
+          "f_ann_date": "20260421",
+          "end_date": "20260331",
+          "n_cashflow_act": -5212007.55,
+          "n_cashflow_inv_act": -599373494.07,
+          "n_cash_flows_fnc_act": -348114.58,
+          "c_cash_equ_end_period": 375803038.39
+        },
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260421",
+          "f_ann_date": "20260421",
+          "end_date": "20260331",
+          "n_cashflow_act": -5212007.55,
+          "n_cashflow_inv_act": -599373494.07,
+          "n_cash_flows_fnc_act": -348114.58,
+          "c_cash_equ_end_period": 375803038.39
+        },
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260421",
+          "f_ann_date": "20260421",
+          "end_date": "20251231",
+          "n_cashflow_act": 316054323.51,
+          "n_cashflow_inv_act": -210050933.01,
+          "n_cash_flows_fnc_act": -67448696.99,
+          "c_cash_equ_end_period": 983208649.75
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "fina_indicator",
+      "scope": "博实结:301608.SZ",
+      "sample": [
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260421",
+          "end_date": "20260331",
+          "roe": 2.5084,
+          "roa": 2.0135,
+          "grossprofit_margin": 24.5389,
+          "netprofit_margin": 13.1775,
+          "rd_exp": null,
+          "ocfps": -0.0586,
+          "bps": 24.9947
+        },
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260421",
+          "end_date": "20251231",
+          "roe": 11.2344,
+          "roa": 9.5951,
+          "grossprofit_margin": 24.2315,
+          "netprofit_margin": 13.7143,
+          "rd_exp": 110088937.26,
+          "ocfps": 3.5516,
+          "bps": 24.3755
+        },
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20251024",
+          "end_date": "20250930",
+          "roe": 8.7516,
+          "roa": 7.6275,
+          "grossprofit_margin": 23.8439,
+          "netprofit_margin": 14.1891,
+          "rd_exp": null,
+          "ocfps": 2.5077,
+          "bps": 23.7659
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "dividend",
+      "scope": "博实结:301608.SZ",
+      "sample": [
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260421",
+          "end_date": "20251231",
+          "stk_div": 0.49,
+          "stk_bo_rate": null,
+          "stk_co_rate": 0.49,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.44949,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "预案"
+        },
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260421",
+          "end_date": "20251231",
+          "stk_div": 0.49,
+          "stk_bo_rate": null,
+          "stk_co_rate": 0.49,
+          "cash_div": 0.0,
+          "cash_div_tax": 0.44949,
+          "record_date": null,
+          "ex_date": null,
+          "pay_date": null,
+          "div_proc": "股东大会通过"
+        },
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260421",
+          "end_date": "20251231",
+          "stk_div": 0.49,
+          "stk_bo_rate": null,
+          "stk_co_rate": 0.49,
+          "cash_div": 0.44949,
+          "cash_div_tax": 0.44949,
+          "record_date": "20260519",
+          "ex_date": "20260520",
+          "pay_date": "20260520",
+          "div_proc": "实施"
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "pledge_stat",
+      "scope": "博实结:301608.SZ",
+      "sample": [
+        {
+          "ts_code": "301608.SZ",
+          "end_date": "20260612",
+          "pledge_count": 2,
+          "unrest_pledge": 149.0,
+          "rest_pledge": 0.0,
+          "total_share": 13259.51,
+          "pledge_ratio": 1.12
+        },
+        {
+          "ts_code": "301608.SZ",
+          "end_date": "20260605",
+          "pledge_count": 2,
+          "unrest_pledge": 149.0,
+          "rest_pledge": 0.0,
+          "total_share": 13259.51,
+          "pledge_ratio": 1.12
+        },
+        {
+          "ts_code": "301608.SZ",
+          "end_date": "20260529",
+          "pledge_count": 2,
+          "unrest_pledge": 149.0,
+          "rest_pledge": 0.0,
+          "total_share": 13259.51,
+          "pledge_ratio": 1.12
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "stk_holdernumber",
+      "scope": "博实结:301608.SZ",
+      "sample": [
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260604",
+          "end_date": "20260529",
+          "holder_num": 9615
+        },
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260526",
+          "end_date": "20260520",
+          "holder_num": 9205
+        },
+        {
+          "ts_code": "301608.SZ",
+          "ann_date": "20260513",
+          "end_date": "20260508",
+          "holder_num": 9232
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "anns_d",
+      "scope": "博实结:301608.SZ",
+      "sample": null,
+      "message": "抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+    },
+    {
+      "api_name": "index_daily",
+      "scope": "399006.SZ",
+      "sample": [
+        {
+          "ts_code": "399006.SZ",
+          "trade_date": "20260612",
+          "close": 3830.353,
+          "open": 3921.0888,
+          "high": 3921.5348,
+          "low": 3822.4219,
+          "pre_close": 3811.246,
+          "change": 19.107,
+          "pct_chg": 0.5013,
+          "vol": 230246099.0,
+          "amount": 805740233.1
+        },
+        {
+          "ts_code": "399006.SZ",
+          "trade_date": "20260611",
+          "close": 3811.246,
+          "open": 3839.1872,
+          "high": 3910.278,
+          "low": 3755.6132,
+          "pre_close": 3854.7935,
+          "change": -43.5475,
+          "pct_chg": -1.1297,
+          "vol": 198465340.0,
+          "amount": 649928667.5
+        },
+        {
+          "ts_code": "399006.SZ",
+          "trade_date": "20260610",
+          "close": 3854.7935,
+          "open": 3897.73,
+          "high": 3928.3596,
+          "low": 3818.3123,
+          "pre_close": 3961.7493,
+          "change": -106.9558,
+          "pct_chg": -2.6997,
+          "vol": 203947086.0,
+          "amount": 648811830.1
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "index_daily",
+      "scope": "000300.SH",
+      "sample": [
+        {
+          "ts_code": "000300.SH",
+          "trade_date": "20260612",
+          "close": 4777.3206,
+          "open": 4784.6396,
+          "high": 4809.8606,
+          "low": 4757.5574,
+          "pre_close": 4722.4122,
+          "change": 54.9084,
+          "pct_chg": 1.1627,
+          "vol": 335922063.0,
+          "amount": 871477325.201
+        },
+        {
+          "ts_code": "000300.SH",
+          "trade_date": "20260611",
+          "close": 4722.4122,
+          "open": 4730.072,
+          "high": 4766.1728,
+          "low": 4685.5014,
+          "pre_close": 4748.5932,
+          "change": -26.181,
+          "pct_chg": -0.5513,
+          "vol": 247177059.0,
+          "amount": 653931756.259
+        },
+        {
+          "ts_code": "000300.SH",
+          "trade_date": "20260610",
+          "close": 4748.5932,
+          "open": 4753.1154,
+          "high": 4786.5162,
+          "low": 4718.9946,
+          "pre_close": 4801.8106,
+          "change": -53.2174,
+          "pct_chg": -1.1083,
+          "vol": 259297109.0,
+          "amount": 694628416.057
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "index_daily",
+      "scope": "000905.SH",
+      "sample": [
+        {
+          "ts_code": "000905.SH",
+          "trade_date": "20260612",
+          "close": 8106.203,
+          "open": 8189.2103,
+          "high": 8258.9084,
+          "low": 8098.7805,
+          "pre_close": 8035.7788,
+          "change": 70.4242,
+          "pct_chg": 0.8764,
+          "vol": 266244080.0,
+          "amount": 668679920.724
+        },
+        {
+          "ts_code": "000905.SH",
+          "trade_date": "20260611",
+          "close": 8035.7788,
+          "open": 8025.608,
+          "high": 8091.6829,
+          "low": 7965.0233,
+          "pre_close": 8063.8637,
+          "change": -28.0849,
+          "pct_chg": -0.3483,
+          "vol": 196857776.0,
+          "amount": 512698921.093
+        },
+        {
+          "ts_code": "000905.SH",
+          "trade_date": "20260610",
+          "close": 8063.8637,
+          "open": 8094.1367,
+          "high": 8148.255,
+          "low": 7973.547,
+          "pre_close": 8176.1785,
+          "change": -112.3148,
+          "pct_chg": -1.3737,
+          "vol": 210910098.0,
+          "amount": 509158413.552
+        }
+      ],
+      "message": ""
+    },
+    {
+      "api_name": "index_daily",
+      "scope": "000852.SH",
+      "sample": [
+        {
+          "ts_code": "000852.SH",
+          "trade_date": "20260612",
+          "close": 8202.7991,
+          "open": 8294.8972,
+          "high": 8348.786,
+          "low": 8181.4174,
+          "pre_close": 8159.4548,
+          "change": 43.3443,
+          "pct_chg": 0.5312,
+          "vol": 328599085.0,
+          "amount": 717319013.093
+        },
+        {
+          "ts_code": "000852.SH",
+          "trade_date": "20260611",
+          "close": 8159.4548,
+          "open": 8158.4598,
+          "high": 8223.5272,
+          "low": 8084.9,
+          "pre_close": 8198.7232,
+          "change": -39.2684,
+          "pct_chg": -0.479,
+          "vol": 271163953.0,
+          "amount": 577080601.081
+        },
+        {
+          "ts_code": "000852.SH",
+          "trade_date": "20260610",
+          "close": 8198.7232,
+          "open": 8232.0235,
+          "high": 8285.2864,
+          "low": 8103.0099,
+          "pre_close": 8318.6978,
+          "change": -119.9746,
+          "pct_chg": -1.4422,
+          "vol": 286844566.0,
+          "amount": 582026561.182
+        }
+      ],
+      "message": ""
+    }
+  ]
+}

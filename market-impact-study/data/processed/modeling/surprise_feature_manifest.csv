@@ -1,0 +1,9 @@
+﻿feature,missing_rate,ic_train,ic_test,n_train,n_test,sign_stable
+surprise_fcst_pchg_mid,0.438,0.0521,-0.1282,2550,730,False
+surprise_fcst_pchg_abs,0.438,0.0313,-0.1642,2550,730,False
+surprise_fcst_dir,0.093,0.0533,,3579,1478,False
+surprise_fcst_recent,0.0,,,3905,1620,False
+surprise_earn_yoy,0.046,0.0724,-0.0004,3769,1605,False
+surprise_earn_yoy_vs_self,0.115,-0.0645,-0.0765,3397,1538,True
+surprise_fcst_pchg_mid__xsrank,0.439,0.0974,-0.0322,2547,730,False
+surprise_earn_yoy_vs_self__xsrank,0.115,0.016,-0.1212,3397,1538,False

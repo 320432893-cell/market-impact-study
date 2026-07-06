@@ -1,0 +1,6 @@
+*.pyc
+.cache/
+.venv/
+__pycache__/
+scratch/
+tmp/

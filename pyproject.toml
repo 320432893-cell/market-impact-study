@@ -1,0 +1,42 @@
+[project]
+name = "market-impact-study"
+version = "0.1.0"
+requires-python = ">=3.12,<3.14"
+# 版本钉在母本(on-call-assistant)验证过的组合;econml 母本亦未装(5 个 CATE 脚本历史遗留,复活时单独解决)
+dependencies = [
+    "pandas>=3.0.3",
+    "numpy>=2.4",
+    "scipy>=1.17",
+    "statsmodels>=0.14.6",
+    "scikit-learn>=1.8",
+    "lightgbm>=4.6",
+    "shap>=0.52",
+    "numba>=0.65",
+    "tushare>=1.4.29",
+    "akshare>=1.18",
+]
+
+[tool.uv]
+# 只为真实目标平台解析:WSL2(linux) + 未来的 Apple Silicon Mac;排除 darwin-x86_64 的假想冲突
+environments = [
+    "sys_platform == 'linux'",
+    "sys_platform == 'darwin' and platform_machine == 'arm64'",
+]
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pre-commit>=4.6.0",
+    "import-linter>=2.0",
+    "detect-secrets>=1.5.0",
+    "pip-audit>=2.7.0",
+    "ruff>=0.15.13",
+    "basedpyright>=1.38.2",
+    "semgrep>=1.133.0",
+    "radon>=6.0.1",
+    "vulture>=2.14",
+    "deptry>=0.23.0",
+]

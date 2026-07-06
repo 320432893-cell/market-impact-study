@@ -1,0 +1,454 @@
+# Tooling contract registry.
+# Human use: read this file to see which tool owns which mechanical check.
+# AI/CI use: .ai-config/tools/check_rule_tool_contracts.py verifies these contracts.
+
+[metadata]
+version = 1
+owner_rule = ".ai-config/AGENTS.md"
+human_doc = "docs/TOOLING_CONTRACTS.md"
+checker = ".ai-config/tools/check_rule_tool_contracts.py"
+unified_entrypoint = "tools/check.py"
+
+[[tools]]
+id = "python-compile"
+kind = "python-stdlib"
+purpose = "Fast syntax/importability-adjacent smoke check by byte-compiling market-impact-study, tests, and tools."
+rule = ".ai-config/AGENTS.md"
+configured_in = ["tools/check.py"]
+pre_commit_hook = "python-compile"
+entrypoint_commands = ["uv run python -m compileall -q market-impact-study tests tools"]
+ci_commands = ["uv run python -m compileall -q market-impact-study tests tools"]
+run_mode = "pre-commit+ci"
+scope = "market-impact-study, tests, and tools Python files."
+boundary = "Only catches syntax and bytecode compilation failures; it does not replace tests, typing, or runtime checks."
+
+[[tools]]
+id = "pre-commit-basic-hooks"
+kind = "pre-commit-hook-bundle"
+purpose = "Repository hygiene checks from pre-commit-hooks: large files, JSON/YAML/TOML syntax, EOF newline, and trailing whitespace."
+rule = ".ai-config/AGENTS.md"
+configured_in = [".pre-commit-config.yaml"]
+pre_commit_hooks = [
+    "check-added-large-files",
+    "check-json",
+    "check-yaml",
+    "check-toml",
+    "end-of-file-fixer",
+    "trailing-whitespace",
+]
+run_mode = "pre-commit"
+scope = "Generic repository hygiene checks maintained by the external pre-commit-hooks package."
+boundary = "Mechanical file hygiene only; ownership stays in pre-commit config, not project semantics."
+
+[[tools]]
+id = "rule-tool-contracts"
+kind = "project-static-tool"
+purpose = "Validate AI rules, tool registry, hooks, static rules, CI, and pre-commit wiring contracts."
+rule = ".ai-config/AGENTS.md"
+configured_in = [".ai-config/tools/check_rule_tool_contracts.py", ".ai-config/config/tooling.registry.toml", "tools/check.py"]
+pre_commit_hook = "rule-tool-contracts"
+entrypoint_commands = ["uv run python .ai-config/tools/check_rule_tool_contracts.py"]
+ci_commands = ["uv run python .ai-config/tools/check_rule_tool_contracts.py"]
+run_mode = "pre-commit+ci+manual"
+scope = "AI rule files, tool registry, hook manifest/tests, Semgrep rulesets, CI, pre-commit trigger regex, and deleted-rule stale references."
+boundary = "Mechanical contract validation only; it does not decide whether a rule or tool policy is desirable."
+
+[[tools]]
+id = "coverage-audit"
+kind = "project-static-tool"
+purpose = "Detect new Python code directories that are not mapped to the unified quality gate."
+rule = ".ai-config/AGENTS.md"
+configured_in = ["tools/check.py"]
+pre_commit_hook = "coverage-audit"
+entrypoint_commands = ["python3 tools/check.py coverage-audit"]
+run_mode = "pre-commit+manual"
+scope = "Top-level Python code directories, excluding caches, virtualenvs, generated data, and support files."
+boundary = "Reports missing tool coverage; it does not decide whether a new directory should become production code or support code."
+
+[[tools]]
+id = "changed"
+kind = "project-static-tool"
+purpose = "Automatically run fixed static checks and registered path triggers for changed, staged, and untracked code files."
+rule = ".ai-config/AGENTS.md"
+configured_in = ["tools/check.py"]
+entrypoint_commands = ["python3 tools/check.py changed"]
+manual_commands = ["python3 tools/check.py changed"]
+run_mode = "manual"
+scope = "Changed, staged, and untracked code files; path triggers decide special checks."
+boundary = "Uses local git state and may run broader fixed checks such as Semgrep/import-linter. Rule/tooling/hook changes force contract or hook regression checks; expensive or data-dependent checks stay path-triggered."
+
+[[tools]]
+id = "ruff"
+kind = "python-dev-tool"
+package = "ruff"
+purpose = "Python lint, formatting, import sorting, common bug patterns, complexity checks."
+rule = ".ai-config/AGENTS.md"
+configured_in = [".ruff.toml"]
+pre_commit_hooks = ["ruff-check", "ruff-format", "ruff-staged"]
+entrypoint_commands = ["uv run ruff check .", "uv run ruff format --check .", "uv run ruff check --no-fix --force-exclude"]
+manual_commands = ["uv run ruff check .", "uv run ruff format --check ."]
+run_mode = "changed-file-pre-commit+manual"
+scope = "Staged Python files are checked without autofix before commit. Full check and format remain manual until the historical backlog is green."
+boundary = "Does not decide architecture, ownership, business semantics, or user intent."
+relaxed = true
+relaxed_reason = "全量 ruff check/format 在历史代码上仍有 backlog；先用 ruff-staged 只卡新增改动，避免全量门禁淹没提交。"
+reopen_when = "历史 ruff backlog 清零后，把全量 `uv run ruff check .` / `ruff format --check .` 从 manual 升为 pre-commit+ci 阻塞。"
+
+[[tools]]
+id = "market-impact-basedpyright"
+kind = "python-dev-tool"
+package = "basedpyright"
+purpose = "Type, signature, optionality, and pandas-script type regression checks for selected market-impact study scripts."
+rule = ".ai-config/AGENTS.md"
+configured_in = ["tools/check.py", "market-impact-study/.basedpyright-baseline.json"]
+entrypoint_commands = ["uv run basedpyright market-impact-study/build_management_signal_tables.py --baselinefile market-impact-study/.basedpyright-baseline.json"]
+manual_commands = ["uv run basedpyright market-impact-study/build_management_signal_tables.py --baselinefile market-impact-study/.basedpyright-baseline.json"]
+run_mode = "changed-file+manual"
+scope = "Currently covers market-impact-study/build_management_signal_tables.py with a baseline for existing pandas typing backlog."
+boundary = "Blocks newly introduced typing regressions for covered scripts; the baseline must be reduced over time and does not prove data semantics."
+relaxed = true
+relaxed_reason = "pandas 脚本存在历史 typing backlog，用 baseline 文件冻结存量、只卡新增回归；非全量 blocking。"
+reopen_when = "baseline 逐步缩减到 0 后移除 --baselinefile，使该脚本类型检查转为全量阻塞。"
+
+[[tools]]
+id = "detect-secrets"
+kind = "python-dev-tool"
+package = "detect-secrets"
+purpose = "Secret leakage scan and baseline audit."
+rule = ".ai-config/AGENTS.md"
+configured_in = [".secrets.baseline", ".pre-commit-config.yaml"]
+pre_commit_hook = "detect-secrets"
+entrypoint_commands = ["uv run detect-secrets scan --baseline .secrets.baseline --exclude-files '^(uv\\\\.lock|\\\\.secrets\\\\.baseline|\\\\.ai-config/config/settings\\\\.json\\\\.template)$'", "uv run detect-secrets audit .secrets.baseline --report"]
+ci_commands = ["uv run detect-secrets scan --baseline .secrets.baseline --exclude-files '^(uv\\\\.lock|\\\\.secrets\\\\.baseline|\\\\.ai-config/config/settings\\\\.json\\\\.template)$'", "uv run detect-secrets audit .secrets.baseline --report"]
+run_mode = "pre-commit+ci"
+boundary = "Does not decide whether a found value is safe to publish; human review is still required."
+
+[[tools]]
+id = "semgrep"
+kind = "python-dev-tool"
+package = "semgrep"
+purpose = "Project static guardrails that are too specific for Ruff."
+rule = ".ai-config/AGENTS.md"
+configured_in = [".semgrep"]
+pre_commit_hook = "semgrep"
+entrypoint_commands = ["uv run semgrep --disable-version-check --metrics=off --config .semgrep --no-git-ignore market-impact-study tests tools .ai-config"]
+ci_commands = ["uv run semgrep --disable-version-check --metrics=off --config .semgrep --no-git-ignore market-impact-study tests tools .ai-config"]
+run_mode = "pre-commit+ci"
+scope = "market-impact-study, tests, tools, and .ai-config."
+boundary = "Use for stable static patterns only; do not encode broad business semantics."
+
+[[tools]]
+id = "dependency-change-approval"
+kind = "project-static-tool"
+purpose = "Block staged dependency or lock-file changes until the user has explicitly approved the dependency/toolchain impact."
+rule = ".ai-config/AGENTS.md"
+configured_in = [".pre-commit-config.yaml", "tools/check.py"]
+pre_commit_hook = "dependency-change-approval"
+entrypoint_commands = ["python3 tools/check.py dependency-change-approval"]
+run_mode = "pre-commit"
+scope = "Only pyproject.toml and uv.lock staged changes. Override after discussion with ONCALL_ALLOW_DEPENDENCY_CHANGE=1."
+boundary = "Checks that approval was made explicit; it cannot judge whether the dependency decision is good."
+
+[[tools]]
+id = "pip-audit"
+kind = "python-dev-tool"
+package = "pip-audit"
+purpose = "Dependency vulnerability audit."
+rule = ".ai-config/AGENTS.md"
+configured_in = ["pyproject.toml", "uv.lock"]
+pre_commit_hook = "pip-audit"
+entrypoint_commands = ["uv run pip-audit --strict"]
+ci_commands = ["uv run pip-audit --strict"]
+run_mode = "manual-pre-commit+ci"
+boundary = "Vulnerability triage still needs human decision for ignore, upgrade, or mitigation."
+
+[[tools]]
+id = "pytest"
+kind = "python-dev-tool"
+package = "pytest"
+purpose = "Unit and integration tests."
+rule = ".ai-config/AGENTS.md"
+configured_in = ["pyproject.toml"]
+entrypoint_commands = ["uv run pytest tests"]
+ci_commands = ["uv run pytest tests"]
+run_mode = "ci"
+scope = "Stable automated tests under tests/. Script-style validation under scripts/ remains manual or changed-file scoped until it is refactored into stable tests."
+boundary = "CI runs the stable tests/ suite only; service-dependent or data-preparation scripts must not be implied by the default pytest contract."
+
+[[tools]]
+id = "market-impact-validation"
+kind = "project-static-tool"
+purpose = "Rebuild-independent data quality and CAR spot checks for the market-impact study outputs."
+rule = ".ai-config/rules/process/modes.index.md"
+configured_in = ["market-impact-study/validate_market_outputs.py", "tools/check.py"]
+entrypoint_commands = ["uv run python market-impact-study/validate_market_outputs.py"]
+manual_commands = ["uv run python market-impact-study/validate_market_outputs.py"]
+run_mode = "manual"
+scope = "Requires collected market-impact-study/data files, so it is not part of CI by default."
+boundary = "Validates generated data consistency and CAR spot calculations; it does not prove event causality or CFO narrative correctness."
+
+[[path_triggers]]
+id = "market-impact-study-data-validation"
+tool = "market-impact-validation"
+paths = ["market-impact-study/**"]
+run_mode = "changed-data-present"
+required_paths = [
+    "market-impact-study/data/raw/tushare/daily",
+    "market-impact-study/data/processed/event_candidates.csv",
+    "market-impact-study/data/processed/event_analysis_groups_scored.csv",
+]
+purpose = "Run market-impact data consistency checks when study code changes and local collected data exists."
+
+[[tools]]
+id = "dirty-diff-review"
+kind = "project-static-tool"
+purpose = "Dirty diff additions smell scanner for 80/20 AI-human engineering approach discussion."
+rule = ".ai-config/AGENTS.md"
+configured_in = [".ai-config/tools/dirty_diff_review.py"]
+entrypoint_commands = ["python3 .ai-config/tools/dirty_diff_review.py"]
+manual_commands = ["python3 .ai-config/tools/dirty_diff_review.py"]
+run_mode = "post-edit-hook+manual"
+scope = "Reads current git diff additions and reports high-ROI smells without modifying files."
+boundary = "Heuristic discussion trigger only; not a blocker and not a refactoring decision engine."
+
+[[tools]]
+id = "radon"
+kind = "python-dev-tool"
+package = "radon"
+purpose = "Complexity and maintainability smell scan for dirty-code triage."
+rule = ".ai-config/rules/engineering/code.index.md"
+configured_in = ["pyproject.toml"]
+entrypoint_commands = ["uv run radon cc market-impact-study -s -n C", "uv run radon mi market-impact-study -s"]
+manual_commands = ["uv run radon cc market-impact-study -s -n C", "uv run radon mi market-impact-study -s"]
+run_mode = "manual"
+scope = "Use for 80/20 complexity triage in market-impact-study before choosing local patch vs decomposition/refactor."
+boundary = "Complexity score suggests discussion; it does not mandate a refactor."
+
+[[tools]]
+id = "vulture"
+kind = "python-dev-tool"
+package = "vulture"
+purpose = "Likely dead code and unused symbol scan."
+rule = ".ai-config/rules/engineering/code.index.md"
+configured_in = ["pyproject.toml"]
+entrypoint_commands = ["uv run vulture market-impact-study --min-confidence 80"]
+manual_commands = ["uv run vulture market-impact-study --min-confidence 80"]
+run_mode = "manual"
+scope = "Use for cleanup discussion in market-impact-study; old projects may have dynamic entry points and compatibility hooks."
+boundary = "Never delete solely from Vulture output without checking runtime entry points and tests."
+
+[[tools]]
+id = "deptry"
+kind = "python-dev-tool"
+package = "deptry"
+purpose = "Dependency hygiene: unused, missing, and transitive dependency drift."
+rule = ".ai-config/rules/engineering/code.index.md"
+configured_in = ["pyproject.toml"]
+entrypoint_commands = ["uv run deptry ."]
+manual_commands = ["uv run deptry ."]
+run_mode = "manual"
+scope = "Use for dependency debt triage."
+boundary = "Dynamic imports, optional providers, and script-only dependencies need human review."
+
+[[tools]]
+id = "module-boundary"
+kind = "project-static-tool"
+purpose = "检查 Python 文件职责声明块（changed 要求当前四项格式）+ 文件行数硬闸：changed 模式 ≥ 600 行阻塞(存量超限挂 oversized.baseline·计数型棘轮只减不增)，full 模式仅 WARNING；tests/ 不强加职责块，按 ≥ 600 行只报膨胀 WARNING。"
+rule = ".ai-config/AGENTS.md"
+configured_in = ["tools/check_module_boundary.py", "tools/check.py", ".ai-config/config/oversized.baseline.json"]
+entrypoint_commands = ["python3 tools/check_module_boundary.py", "python3 tools/check_module_boundary.py --changed"]
+manual_commands = ["python3 tools/check_module_boundary.py"]
+run_mode = "changed+manual"
+scope = "职责块检查覆盖 app/, scripts/, market-impact-study/, and tools/ Python files, excluding __init__.py, conftest.py, and test files; 膨胀行数检查另对 tests/ 测试文件按更高阈值生效。"
+boundary = "changed 模式：缺四项职责声明阻塞 + 文件 ≥600 行阻塞(在册存量未长大则挂账 WARNING，新增/长大才阻塞)；full 模式行数仅 WARNING、兼容旧字段名；不校验注释内容准确性。职责注释全量补全仍按 relaxed(见下)。"
+relaxed = true
+relaxed_reason = "relaxed 仅指『职责注释全量补全』：存量 22 文件尚无注释，full-scan 保持 manual 不阻塞；行数硬闸与新文件四项声明已是 changed 模式阻塞，不在 relaxed 范围。"
+reopen_when = "存量文件职责注释补全后升为 pre-commit WARNING blocking。"
+
+[[tools]]
+id = "code-identity"
+kind = "project-static-tool"
+purpose = "拦截明显代码身份边界违规：正式代码 import tests/tools/archive/temp，以及临时探针缺生命周期条件。"
+rule = ".ai-config/AGENTS.md"
+configured_in = ["tools/check_code_identity.py", "tools/check.py"]
+entrypoint_commands = ["python3 tools/check_code_identity.py"]
+manual_commands = ["python3 tools/check_code_identity.py"]
+run_mode = "changed"
+scope = "app, scripts, market-impact-study, tools, and tests Python files."
+boundary = "只检查通用硬边界；不判断业务模块归属、不判断 tools 是否变胖，模糊身份变化由 AGENTS.md 写入前闸门和人工审查裁判。"
+
+[[tools]]
+id = "test-meta"
+kind = "project-static-tool"
+purpose = "检查 tests/ 下测试文件是否声明生命周期、业务场景、依赖环境、运行方式和 oracle 输出形状；本次新增/改动测试缺失会阻塞，存量只 WARNING。"
+rule = ".ai-config/AGENTS.md"
+configured_in = ["tools/check.py"]
+entrypoint_commands = ["python3 tools/check.py test-meta"]
+manual_commands = ["python3 tools/check.py test-meta"]
+run_mode = "changed+manual"
+scope = "pytest testpaths 下匹配 python_files 模式的测试文件。"
+boundary = "只检测测试复现元信息和 oracle 输出标记是否存在，不校验内容是否准确，也不运行测试。"
+relaxed = true
+relaxed_reason = "存量测试尚未补全业务场景/用时声明，先保持 manual WARNING 不阻塞；新测试由 AGENTS.md §3 规则约束。"
+reopen_when = "存量测试补全业务场景与用时声明后升为 pre-commit WARNING blocking。"
+
+[[tools]]
+id = "lifecycle"
+kind = "project-static-tool"
+purpose = "身份标注 forcing：非正式区(scripts/devtools/tmp/probes)文件缺 # lifecycle: 身份标注、或标 devtool 却不在 devtools/。changed 模式阻塞新增缺标注/错位；full 模式 sweep + 存量挂 baseline 棘轮(只减不增)。expires 日期/superseded 标记那套已删(理想情况设计·0 使用)。"
+rule = ".ai-config/AGENTS.md"
+configured_in = ["tools/check_lifecycle.py", "tools/check.py", ".pre-commit-config.yaml"]
+pre_commit_hook = "lifecycle"
+entrypoint_commands = ["python3 tools/check_lifecycle.py", "python3 tools/check_lifecycle.py --changed"]
+ci_commands = ["python3 tools/check_lifecycle.py"]
+manual_commands = ["python3 tools/check_lifecycle.py"]
+run_mode = "changed+ci+manual"
+scope = "非正式区(scripts/devtools/tmp/probes) Python 文件；排除 tools/.ai-config/tests/scratch 等。"
+boundary = "只查身份标注是否存在 + devtool 是否住对地方；不删文件、不归档。旧码清理交「取代纪律」的状态推导(死码+重复块+晋升门)，不再靠 expires/superseded 标记。"
+
+[[tools]]
+id = "regression"
+kind = "project-static-tool"
+purpose = "status=fixed 的生产事故必须有引用其 ID 的回归测试，否则不算修好；缺则 CI 阻塞。"
+rule = ".ai-config/AGENTS.md"
+configured_in = ["tools/check_regression.py", "tools/check.py", "docs/INCIDENTS.md"]
+entrypoint_commands = ["python3 tools/check_regression.py"]
+ci_commands = ["python3 tools/check_regression.py"]
+manual_commands = ["python3 tools/check_regression.py"]
+run_mode = "ci+manual"
+scope = "docs/INCIDENTS.md 事故表与 tests/ 下回归测试的 ID 引用关系。"
+boundary = "只校验事故 ID↔测试的登记关系；不运行测试、不验证回归测试是否真能复现 bug（轻量版）。"
+
+[[tools]]
+id = "debt"
+kind = "project-static-tool"
+purpose = "放行登记校验（门禁）+ 健康度汇总。校验每条 relaxed 放行有 ①relaxed_reason ②可判定 reopen_when（禁含糊词『暂时/以后/待定』），违规非0；并汇总生命周期/回归债与各检查通过率（读 .cache/check-runs.jsonl）。"
+rule = ".ai-config/AGENTS.md"
+configured_in = ["tools/check.py"]
+entrypoint_commands = ["python3 tools/check.py debt"]
+ci_commands = ["python3 tools/check.py debt"]
+manual_commands = ["python3 tools/check.py debt"]
+run_mode = "ci+manual"
+scope = "校验 registry 里 relaxed 工具 + relaxed semgrep_rulesets 的放行登记；并聚合 check_lifecycle/check_regression 输出 + 通过率。"
+boundary = "门禁只卡放行登记是否带原因 + 可判定清除条件；健康度汇总部分(债数/通过率)仍只读，不评判规则是否该删——那是人看趋势后的决策。"
+
+[[tools]]
+id = "new"
+kind = "project-static-tool"
+purpose = "生成：吐出已带四项职责块/test-meta 头的合规骨架（service/core/tool/test），AI 只填业务体，一次过 module-boundary/test-meta。"
+rule = ".ai-config/AGENTS.md"
+configured_in = ["tools/check.py"]
+entrypoint_commands = ["python3 tools/check.py new"]
+manual_commands = ["python3 tools/check.py new"]
+run_mode = "manual"
+scope = "service→app/services、core→app/core、tool→tools、test→tests；service 默认配回归测试。"
+boundary = "只生成骨架，不写业务逻辑、不覆盖已存在文件；依赖层按目录身份表预填，AI 仍须填实际职责与断言。"
+
+[[tools]]
+id = "complexity"
+kind = "project-static-tool"
+purpose = "函数圈复杂度硬闸：冻结存量 CC≥21(radon rank D+) 的复杂块数(计数型棘轮·只减不增)，新增/变多即阻塞；<21(rank C) 仍归 radon deep 建议不阻塞。"
+rule = ".ai-config/AGENTS.md"
+configured_in = ["tools/check_complexity.py", "tools/check.py", ".ai-config/config/complexity.baseline.json"]
+entrypoint_commands = ["python3 tools/check_complexity.py"]
+ci_commands = ["python3 tools/check_complexity.py"]
+manual_commands = ["python3 tools/check_complexity.py"]
+run_mode = "ci+manual"
+scope = "market-impact-study/ 的函数/方法圈复杂度(radon cc -j)。"
+boundary = "只卡 CC≥21 的块数是否超基线；不重构、不评判某处复杂是否正当、不管 <21 的(那归 deep 建议)。"
+
+[[tools]]
+id = "dup-symbol"
+kind = "project-static-tool"
+purpose = "近似重复符号检测：正式代码顶层 def/class 与别处同名(或去版本后缀后同词根)→WARN『取代还是重复?』，强制把已有同类摆台面、逼出取代分叉交人拍板。词法信号·非语义;WARN 不阻塞。"
+rule = ".ai-config/AGENTS.md"
+configured_in = ["tools/check_dup_symbol.py", "tools/check.py"]
+entrypoint_commands = ["python3 tools/check_dup_symbol.py", "python3 tools/check_dup_symbol.py --changed"]
+manual_commands = ["python3 tools/check_dup_symbol.py"]
+run_mode = "changed+manual"
+scope = "market-impact-study/ 顶层 def/class 名(排除 dunder/通用入口名/<4 字符)；changed 模式只报涉及改动文件的碰撞。"
+boundary = "只报名字/词根碰撞(WARN 不阻塞)；不判取代/重复、不删、不查类内方法名、不抓零名字重叠的语义重复(交子agent复核/人)。"
+
+[[semgrep_rulesets]]
+path = ".semgrep/no-raw-sleep.yml"
+owner_rule = ".ai-config/AGENTS.md"
+purpose = "Non-test Python code should not use raw time.sleep(); prefer polling/explicit waits, annotate business-required fixed waits."
+relaxed = true
+relaxed_reason = "market-impact-study/ 下 7 个数据采集脚本存量 time.sleep 为接口限速正当用途，先用 paths.exclude 冻结存量、只卡新增代码，避免存量噪音淹没新问题。"
+reopen_when = "market-impact-study/ 存量 sleep 逐个补业务注释或改轮询后，移除 paths.exclude 中的 market-impact-study/** 使其全量 blocking。"
+
+[[semgrep_rulesets]]
+path = ".semgrep/observability-contracts.yml"
+owner_rule = ".ai-config/AGENTS.md"
+purpose = "FastAPI entrypoint and API handlers should keep diagnostics observable without exposing raw exceptions to clients."
+
+[[semgrep_rulesets]]
+path = ".semgrep/backend-contracts.yml"
+owner_rule = ".ai-config/AGENTS.md"
+purpose = "Backend API auth markers, transaction IO, sensitive response details, and traceback-preserving logs."
+
+[[semgrep_rulesets]]
+path = ".semgrep/fastapi-debug.yml"
+owner_rule = ".ai-config/AGENTS.md"
+purpose = "FastAPI/Starlette debug, reload, and unsafe CORS static guardrails."
+
+[[semgrep_rulesets]]
+path = ".semgrep/http-timeout.yml"
+owner_rule = ".ai-config/rules/engineering/code.index.md"
+purpose = "HTTP client calls must set explicit timeout."
+
+[[semgrep_rulesets]]
+path = ".semgrep/html-template-safety.yml"
+owner_rule = ".ai-config/AGENTS.md"
+purpose = "HTML template injection guardrails for unsafe innerHTML/template interpolation."
+
+[[semgrep_rulesets]]
+path = ".semgrep/python-bad-smells.yml"
+owner_rule = ".ai-config/rules/engineering/code.index.md"
+purpose = "High-ROI Python bad-smell guardrails that Ruff cannot express well."
+
+[[semgrep_rulesets]]
+path = ".semgrep/ml-timeseries.yml"
+owner_rule = ".ai-config/rules/process/modes.index.md"
+purpose = "Time-series and reproducible split guardrails."
+
+[[semgrep_rulesets]]
+path = ".semgrep/rag-hygiene.yml"
+owner_rule = ".ai-config/rules/engineering/code.index.md"
+purpose = "RAG retrieval and embedding static guardrails."
+
+[[tools]]
+id = "reachability"
+kind = "project-static-tool"
+purpose = "调用图可达性死码扫描:从真入口求可达闭包,报传递性死码(死代理/孤岛递归/死分支),补 vulture 名字级判可达的盲区。"
+rule = ".ai-config/rules/review/review.index.md"
+configured_in = ["tools/reachability_probe.py"]
+entrypoint_commands = ["python3 tools/reachability_probe.py market-impact-study"]
+manual_commands = ["python3 tools/reachability_probe.py market-impact-study"]
+run_mode = "manual"
+scope = "大清理档·advisory,人核后再删。误报源:facade 再导出/反射/外部按名调入口。"
+boundary = "只报候选;删码近不可逆,举证在发现方,宁漏删不误删。"
+
+[[tools]]
+id = "name-health"
+kind = "project-static-tool"
+purpose = "名字图破口扫描:模块级撞名 + 动态分发断点(getattr 非字面/importlib/import X as X 门面)。"
+rule = ".ai-config/rules/review/review.index.md"
+configured_in = ["tools/name_health.py"]
+entrypoint_commands = ["python3 tools/name_health.py market-impact-study"]
+manual_commands = ["python3 tools/name_health.py market-impact-study"]
+run_mode = "manual"
+scope = "大清理档·advisory。近名前缀提示可能噪。"
+boundary = "撞名/复制是候选;是否合并/改名归人裁。"
+
+[[tools]]
+id = "import-cycles"
+kind = "project-static-tool"
+purpose = "模块级 import 图(含函数内延迟 import)Tarjan 找环,补 import-linter independence 查不到的全图任意环。"
+rule = ".ai-config/rules/review/review.index.md"
+configured_in = ["tools/import_cycles.py"]
+entrypoint_commands = ["python3 tools/import_cycles.py market-impact-study"]
+manual_commands = ["python3 tools/import_cycles.py market-impact-study"]
+run_mode = "changed+manual"
+scope = "阶段档(依赖类·高影响·快);报循环依赖簇。"
+boundary = "报环;谁让步=边界重划,人裁。"

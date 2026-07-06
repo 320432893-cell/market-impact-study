@@ -1,0 +1,164 @@
+{
+  "r2_compare": {
+    "linear_whitebox": {
+      "insample": 0.692,
+      "oot": 0.454,
+      "lofo": 0.462
+    },
+    "gbt": {
+      "insample": 0.847,
+      "oot": 0.497,
+      "lofo": 0.454
+    },
+    "blackbox_incremental_oot": 0.043,
+    "blackbox_incremental_lofo": -0.008
+  },
+  "gbt_vs_whitebox_agreement": {
+    "sign_agree_rate": 0.3,
+    "n_compared": 10,
+    "importance_spearman": 0.418,
+    "by_driver": [
+      {
+        "feat": "资产负债率",
+        "shap_signed": -0.016,
+        "en_coef": -0.263,
+        "sign_agree": true
+      },
+      {
+        "feat": "融资余额/市值",
+        "shap_signed": 0.012,
+        "en_coef": -0.157,
+        "sign_agree": false
+      },
+      {
+        "feat": "净利率",
+        "shap_signed": 0.009,
+        "en_coef": 0.128,
+        "sign_agree": true
+      },
+      {
+        "feat": "毛利率",
+        "shap_signed": -0.006,
+        "en_coef": 0.0,
+        "sign_agree": null
+      },
+      {
+        "feat": "研发强度",
+        "shap_signed": -0.001,
+        "en_coef": 0.073,
+        "sign_agree": false
+      },
+      {
+        "feat": "现金比率",
+        "shap_signed": 0.001,
+        "en_coef": 0.0,
+        "sign_agree": null
+      },
+      {
+        "feat": "固定资产周转",
+        "shap_signed": -0.001,
+        "en_coef": 0.057,
+        "sign_agree": false
+      },
+      {
+        "feat": "海外收入占比",
+        "shap_signed": -0.001,
+        "en_coef": 0.0,
+        "sign_agree": null
+      },
+      {
+        "feat": "振幅(60d)",
+        "shap_signed": 0.001,
+        "en_coef": 0.098,
+        "sign_agree": true
+      },
+      {
+        "feat": "资产周转率",
+        "shap_signed": 0.0,
+        "en_coef": -0.064,
+        "sign_agree": false
+      },
+      {
+        "feat": "净利同比",
+        "shap_signed": 0.0,
+        "en_coef": 0.0,
+        "sign_agree": null
+      },
+      {
+        "feat": "营收3年CAGR",
+        "shap_signed": 0.0,
+        "en_coef": -0.081,
+        "sign_agree": false
+      },
+      {
+        "feat": "财务费用率",
+        "shap_signed": 0.0,
+        "en_coef": -0.058,
+        "sign_agree": false
+      },
+      {
+        "feat": "净利率趋势Δ",
+        "shap_signed": 0.0,
+        "en_coef": 0.0,
+        "sign_agree": null
+      },
+      {
+        "feat": "北向持股Δ60d",
+        "shap_signed": -0.0,
+        "en_coef": 0.0,
+        "sign_agree": null
+      },
+      {
+        "feat": "前十大机构占比",
+        "shap_signed": 0.0,
+        "en_coef": -0.035,
+        "sign_agree": false
+      }
+    ]
+  },
+  "whitebox_counterfactual": {
+    "levers_raw_coef": {
+      "资产负债率": {
+        "coef_per_unit": -0.0247,
+        "p_cluster": 0.0,
+        "verified": true,
+        "median": 35.83,
+        "best": 14.53
+      },
+      "现金比率": {
+        "coef_per_unit": 0.2064,
+        "p_cluster": 0.0,
+        "verified": false,
+        "median": 1.41,
+        "best": 1.41
+      }
+    },
+    "yiwei_linear_cf": {
+      "资产负债率": {
+        "current": 14.07,
+        "to_median_lin": -0.538,
+        "to_best_lin": -0.011
+      },
+      "现金比率": {
+        "current": 4.42,
+        "to_median_lin": -0.621,
+        "to_best_lin": -0.621
+      }
+    },
+    "yiwei_compare_lin_vs_gbt": [
+      {
+        "lever": "资产负债率",
+        "Δ中位_白盒线性": -0.538,
+        "Δ中位_GBT": -0.361
+      },
+      {
+        "lever": "现金比率",
+        "Δ中位_白盒线性": -0.621,
+        "Δ中位_GBT": 0.0
+      }
+    ],
+    "note": "线性 Δ = 聚类稳健OLS原单位系数 ×(目标−当前),可手算;GBT Δ 见解释层。两者同号即证 GBT 反事实不靠黑盒。"
+  },
+  "honesty": "两条诚实结论:① 白盒≠解决污染——线性同样把含营收的净利率/毛利率排高;污染由【定义级防火墙+FE+WCB三角】处理,与模型透明度正交。② 全驱动 GBT 与线性符号一致率仅 ~0.36 = 共线/污染下两模型对单驱动方向本就不可靠 → 这正是为何不信任何单模型的逐驱动归因、最终裁决全交 WCB 三角。关键:在三角验证过的杠杆(资产负债率)与成长上,GBT、线性、WCB 三者一致;不可靠的只是那些没过三角的共线/污染项。可信链=线性可手算 + 防火墙 + WCB,全程无需'相信模型';GBT 仅在 OOT 加 ~0.04,作非线性佐证。",
+  "verdict": "样本外(同firm跨时)OOT R²:线性(白盒)=0.454 vs GBT=0.497 → 黑盒增量=+0.043;留一家(跨firm外推)LOFO:线性=0.462 vs GBT=0.454(差距=-0.008,树有界、线性外推弱)。黑盒在 OOT 几乎无增量→可解释天花板 ~50% 不是黑盒造的,线性同样到。 验证杠杆(资产负债率)反事实:白盒线性 Δ=-0.538 与 GBT Δ=-0.361 同号 → 可操作数不靠黑盒。 全驱动符号一致率 0.3(10个可比)、重要性秩相关 0.418。"
+}

@@ -1,0 +1,107 @@
+# 项目级 Ruff 配置
+# 由 pre-commit 的 ruff-check/ruff-format 或手动 ruff 命令调用
+# 个别规则可在文件级 # noqa 豁免
+
+target-version = "py311"
+line-length = 120
+
+[lint]
+select = [
+    # 基础(默认就该有)
+    "E", "F", "W",
+    # import 排序
+    "I",
+    # Python 现代语法升级(项目 requires-python >=3.11)
+    "UP",
+    # 命名规范(老项目防风格分裂,2026-05-18 加入)
+    "N",       # pep8-naming:类 CamelCase / 函数 snake_case / 常量 UPPER 等
+    # 常见 bug 模式
+    "B",       # flake8-bugbear:可变默认参数等
+    "BLE",     # blind-except
+    "TRY",     # tryceratops:try/except 反模式
+    # 路径与资源
+    "PTH",     # 强制 pathlib
+    "S",       # flake8-bandit:安全(2026-05-18 启用整套,OWASP 防御)
+    # 时间
+    "DTZ",     # datetime 时区(naive datetime 防御)
+    # 调试输出
+    "T20",     # 禁 print
+    # 日志规范
+    "LOG",     # flake8-logging
+    "G",       # flake8-logging-format
+    # 类型注解
+    "ANN",     # flake8-annotations
+    # 异步并发安全
+    "ASYNC",   # async/await 反模式(FastAPI 项目必备)
+    # 测试规范
+    "PT",      # pytest 风格
+    # 复杂度与重构
+    "PLR0915", # 函数语句数(变相控制函数大小)
+    "PLR0912", # 分支数
+    "PLR0913", # 参数数
+    "PLR2004", # 魔法数字
+    "PLC0415", # 函数内动态 import
+    "FBT",     # 布尔位置参数坏味道: 调用处语义不清
+    "RET",     # 返回路径坏味道: 冗余变量/else 等
+    "ARG",     # 无用参数: 接口或实现漂移信号
+    # ruff 特定 + 性能
+    "RUF",
+    "PERF",
+    # numpy 反模式(包括随机源)
+    "NPY",
+    # 简化建议
+    "SIM",
+    # comprehension 写法
+    "C4",
+]
+
+ignore = [
+    # Any 类型由 basedpyright 手动基线兜底
+    "ANN401",
+    # try/except 中"long messages in raise"过苛
+    "TRY003",
+    # SIM108(if-else 改 ternary)有时反而难读
+    "SIM108",
+    # 行宽冲突由格式化器处理
+    "E501",
+    # RUF001-003 中文标点全角警告 — 中文项目里全是误报
+    "RUF001", "RUF002", "RUF003",
+    # S101 assert 在测试和断言式编程常用,不算安全问题
+    "S101",
+    # N806 函数内大写变量(常量惯用法)不算违规
+    "N806",
+]
+
+[lint.per-file-ignores]
+# 测试文件放宽
+"tests/**" = ["ANN", "PLR2004", "S101", "PLR0915", "PT"]
+"test_*.py" = ["ANN", "PLR2004", "S101", "PLR0915", "PT"]
+# __init__.py 允许未用 import(re-export)
+"__init__.py" = ["F401"]
+# scripts/ 一次性脚本,放宽
+"scripts/**" = ["T20", "ANN", "S603", "S607"]
+# 统一检查入口需要输出命令状态并调度固定工具命令。
+"tools/check.py" = ["T20", "S603", "S607"]
+# 生命周期扫描器调 git 拿改动文件清单，与 check.py 同款子进程豁免。
+"tools/check_lifecycle.py" = ["S603", "S607"]
+# 规则契约检查脚本偏重可读性和显式错误拼装，允许少量性能风格和阈值常量例外。
+".ai-config/check_rule_tool_contracts.py" = ["PERF401", "PLR2004"]
+# market-impact-study 是采集/分析脚本目录,允许命令行输出和外部公开数据抓取; 仍保留 Ruff 基础、import、常见 bug 和数据泄漏类检查。
+"market-impact-study/**" = [
+    "T20",
+    "ANN",
+    "S310",
+    "DTZ",
+    "PLR0912",
+    "PLR0913",
+    "PLR2004",
+    "PERF401",
+    "E402",
+]
+
+[lint.flake8-annotations]
+suppress-dummy-args = true
+mypy-init-return = true
+
+[lint.flake8-bugbear]
+extend-immutable-calls = ["pathlib.Path", "datetime.datetime"]

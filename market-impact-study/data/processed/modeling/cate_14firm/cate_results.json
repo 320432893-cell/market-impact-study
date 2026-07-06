@@ -1,0 +1,134 @@
+[
+  {
+    "action": "定增/再融资",
+    "treated": 89,
+    "control": 1011,
+    "overlap_frac": 0.734,
+    "lindml": {
+      "ate_pct": 0.38,
+      "ate_ci": [
+        -2.02,
+        2.77
+      ],
+      "ate_sig": false,
+      "cate_low_pct": 2.55,
+      "cate_high_pct": -1.71,
+      "valuation_slope_pct": -6.1,
+      "slope_ci": [
+        -14.52,
+        2.32
+      ],
+      "slope_sig": false,
+      "e_value": 1.19
+    },
+    "causalforest": {
+      "cate_low_pct": 3.29,
+      "cate_low_ci": [
+        -0.97,
+        7.54
+      ],
+      "cate_high_pct": 1.32,
+      "cate_high_ci": [
+        -2.15,
+        4.78
+      ],
+      "var_importance": {
+        "估值分位": 0.143,
+        "规模": 0.37,
+        "ROE": 0.108,
+        "杠杆": 0.169,
+        "研发强度": 0.197,
+        "成长": 0.013
+      }
+    },
+    "placebo_perm_p": 0.833
+  },
+  {
+    "action": "股东增减持/限售流通",
+    "treated": 370,
+    "control": 1011,
+    "overlap_frac": 0.944,
+    "lindml": {
+      "ate_pct": 0.2,
+      "ate_ci": [
+        -1.52,
+        1.92
+      ],
+      "ate_sig": false,
+      "cate_low_pct": 0.62,
+      "cate_high_pct": -0.22,
+      "valuation_slope_pct": -1.2,
+      "slope_ci": [
+        -6.59,
+        4.2
+      ],
+      "slope_sig": false,
+      "e_value": 1.13
+    },
+    "causalforest": {
+      "cate_low_pct": 0.83,
+      "cate_low_ci": [
+        -2.12,
+        3.78
+      ],
+      "cate_high_pct": 1.55,
+      "cate_high_ci": [
+        -2.2,
+        5.3
+      ],
+      "var_importance": {
+        "估值分位": 0.142,
+        "规模": 0.291,
+        "ROE": 0.152,
+        "杠杆": 0.147,
+        "研发强度": 0.178,
+        "成长": 0.09
+      }
+    },
+    "placebo_perm_p": 0.817
+  },
+  {
+    "action": "股份回购(首发)",
+    "treated": 131,
+    "control": 1011,
+    "overlap_frac": 0.891,
+    "lindml": {
+      "ate_pct": -0.52,
+      "ate_ci": [
+        -2.71,
+        1.67
+      ],
+      "ate_sig": false,
+      "cate_low_pct": 0.7,
+      "cate_high_pct": -1.82,
+      "valuation_slope_pct": -3.6,
+      "slope_ci": [
+        -10.6,
+        3.4
+      ],
+      "slope_sig": false,
+      "e_value": 1.23
+    },
+    "causalforest": {
+      "cate_low_pct": 1.15,
+      "cate_low_ci": [
+        -2.49,
+        4.78
+      ],
+      "cate_high_pct": 0.66,
+      "cate_high_ci": [
+        -3.82,
+        5.13
+      ],
+      "var_importance": {
+        "估值分位": 0.161,
+        "规模": 0.182,
+        "ROE": 0.136,
+        "杠杆": 0.237,
+        "研发强度": 0.225,
+        "成长": 0.06
+      }
+    },
+    "placebo_perm_p": 0.75
+  }
+]

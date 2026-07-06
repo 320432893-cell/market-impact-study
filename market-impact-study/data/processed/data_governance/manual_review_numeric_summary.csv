@@ -1,0 +1,16 @@
+﻿metric,value
+reviewed_rows,100
+manual_keep_1,30
+manual_keep_0,70
+manual_noise_1,70
+manual_noise_0,30
+reviewed_training_rows,498
+category::交易机制/IPO,12
+category::产品/技术创新,2
+category::客户/订单,4
+category::管理层/投关信号,1
+category::纯流程/其他,58
+category::资本动作,19
+category::风险事件,4
+status::noise,70
+status::reclassified,30

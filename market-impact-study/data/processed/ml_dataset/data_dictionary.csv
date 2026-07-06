@@ -1,0 +1,125 @@
+﻿table,column,dtype,source,business_meaning,leakage_risk
+event_master,analysis_group_id,string,event_analysis_groups_scored,事件组唯一键,none
+event_master,event_id,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,company,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,ts_code,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,symbol,integer,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,event_date,date,event_analysis_groups_scored,事件发生或披露日期,none
+event_master,aligned_trade_date,date,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,pre_trade_date,date,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,source_type,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,source_types,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,primary_category,category,event_analysis_groups_scored,事件主分类,low
+event_master,category_tags,string,event_analysis_groups_scored / event_overlap_diagnostics,事件类型哑变量,none
+event_master,title,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,summary,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,group_titles_sample,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,source_url,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,pdf_url,float,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,local_pdf_path,float,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,has_pdf,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,source_count,integer,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,group_event_count,integer,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,group_source_count,integer,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,group_evidence_count,integer,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,car_status,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,target_or_post_event
+event_master,is_subject_company,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,is_peer_event,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,is_pre_listing,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,is_ipo_listing_related,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,is_market_trading_related,integer,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,capital_action_subtype,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,capital_action_subtype_hits,string,event_analysis_groups_scored / event_overlap_diagnostics,由上游 SSOT 派生的建模或审计字段,none
+event_master,overlap_event_count_p0_p5,integer,event_analysis_groups_scored / event_overlap_diagnostics,事件窗口污染诊断字段，不进入默认特征,none
+event_master,overlap_event_count_p0_p20,integer,event_analysis_groups_scored / event_overlap_diagnostics,事件窗口污染诊断字段，不进入默认特征,none
+event_master,overlap_event_count_p0_p60,integer,event_analysis_groups_scored / event_overlap_diagnostics,事件窗口污染诊断字段，不进入默认特征,none
+event_master,overlap_category_count_p0_p20,integer,event_analysis_groups_scored / event_overlap_diagnostics,事件窗口污染诊断字段，不进入默认特征,none
+event_master,overlap_categories_p0_p20,string,event_analysis_groups_scored / event_overlap_diagnostics,事件窗口污染诊断字段，不进入默认特征,none
+event_master,is_overlap_clean_p0_p5,integer,event_analysis_groups_scored / event_overlap_diagnostics,事件窗口污染诊断字段，不进入默认特征,none
+event_master,is_overlap_clean_p0_p20,integer,event_analysis_groups_scored / event_overlap_diagnostics,事件窗口污染诊断字段，不进入默认特征,none
+event_master,is_overlap_clean_p0_p60,integer,event_analysis_groups_scored / event_overlap_diagnostics,事件窗口污染诊断字段，不进入默认特征,none
+label_master,analysis_group_id,string,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,event_date,date,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,car_status,string,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,actual_mv_return_p0_p5,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,peer_avg_mv_return_p0_p5,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,relative_mv_return_p0_p5,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,car_p0_p5,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,abnormal_mv_impact_yi_p0_p5,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,actual_mv_change_yi_p0_p5,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,window_coverage_p0_p5,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,end_trade_date_p0_p5,date,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,actual_mv_return_p0_p20,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,peer_avg_mv_return_p0_p20,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,relative_mv_return_p0_p20,float,event_analysis_groups_scored,主标签：事件后 20 个交易日公司市值收益率减同行平均市值收益率,target
+label_master,car_p0_p20,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,abnormal_mv_impact_yi_p0_p20,float,event_analysis_groups_scored,CFO 展示标签：20 日异常市值影响，单位亿元,target
+label_master,actual_mv_change_yi_p0_p20,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,window_coverage_p0_p20,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,end_trade_date_p0_p20,date,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,actual_mv_return_p0_p60,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,peer_avg_mv_return_p0_p60,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,relative_mv_return_p0_p60,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,car_p0_p60,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,abnormal_mv_impact_yi_p0_p60,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,actual_mv_change_yi_p0_p60,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,window_coverage_p0_p60,float,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,end_trade_date_p0_p60,date,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+label_master,relative_mv_reaction_label_p0_p20,string,event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,target
+feature_master,analysis_group_id,string,event_master / event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,low
+feature_master,event_date,date,event_master / event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,low
+feature_master,as_of_date,date,event_master,特征可用日期，必须不晚于事件日,none
+feature_master,source_count,integer,event_master / event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,low
+feature_master,evidence_count,integer,event_master / event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,low
+feature_master,group_event_count,integer,event_master / event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,low
+feature_master,group_source_count,integer,event_master / event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,low
+feature_master,group_evidence_count,integer,event_master / event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,low
+feature_master,keyword_score_num,integer,event_master / event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,low
+feature_master,source_weight_num,integer,event_master / event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,low
+feature_master,signal_strength_num,integer,event_master / event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,low
+feature_master,has_pdf_num,integer,event_master / event_analysis_groups_scored,由上游 SSOT 派生的建模或审计字段,low
+feature_master,pre_total_mv_yi,float,event_analysis_groups_scored,事件前一交易日总市值，单位亿元,low
+feature_master,text_char_len,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_digit_count,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_percent_count,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_money_word_count,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_risk_keyword_count,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_has_risk_keyword,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_growth_keyword_count,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_has_growth_keyword,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_capital_keyword_count,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_has_capital_keyword,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_ir_keyword_count,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_has_ir_keyword,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_tech_keyword_count,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_has_tech_keyword,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_order_keyword_count,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_has_order_keyword,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_policy_keyword_count,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_has_policy_keyword,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_finance_keyword_count,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,text_has_finance_keyword,integer,event_master / event_analysis_groups_scored,轻量文本信号特征,low
+feature_master,category_业绩信号,integer,event_master / event_analysis_groups_scored,事件类型哑变量,low
+feature_master,category_产品/技术创新,integer,event_master / event_analysis_groups_scored,事件类型哑变量,low
+feature_master,category_其他,integer,event_master / event_analysis_groups_scored,事件类型哑变量,low
+feature_master,category_客户/订单,integer,event_master / event_analysis_groups_scored,事件类型哑变量,low
+feature_master,category_政策/行业,integer,event_master / event_analysis_groups_scored,事件类型哑变量,low
+feature_master,category_管理层/投关信号,integer,event_master / event_analysis_groups_scored,事件类型哑变量,low
+feature_master,category_资本动作,integer,event_master / event_analysis_groups_scored,事件类型哑变量,low
+feature_master,category_风险事件,integer,event_master / event_analysis_groups_scored,事件类型哑变量,low
+feature_master,source_has_announcement,integer,event_master / event_analysis_groups_scored,事件来源哑变量,low
+feature_master,source_has_express,integer,event_master / event_analysis_groups_scored,事件来源哑变量,low
+feature_master,source_has_forecast,integer,event_master / event_analysis_groups_scored,事件来源哑变量,low
+feature_master,source_has_institution_survey,integer,event_master / event_analysis_groups_scored,事件来源哑变量,low
+feature_master,source_has_irm_qa,integer,event_master / event_analysis_groups_scored,事件来源哑变量,low
+feature_master,source_has_news,integer,event_master / event_analysis_groups_scored,事件来源哑变量,low
+feature_master,source_has_repurchase,integer,event_master / event_analysis_groups_scored,事件来源哑变量,low
+feature_master,source_has_research_report,integer,event_master / event_analysis_groups_scored,事件来源哑变量,low
+split_master,analysis_group_id,string,event_date / car_status,由上游 SSOT 派生的建模或审计字段,none
+split_master,event_date,date,event_date / car_status,由上游 SSOT 派生的建模或审计字段,none
+split_master,split,category,event_date,固定时间切分标记,none
+split_master,split_reason,string,event_date / car_status,由上游 SSOT 派生的建模或审计字段,none
+split_master,has_main_label,integer,event_date / car_status,由上游 SSOT 派生的建模或审计字段,none
+split_master,is_default_training_candidate,integer,event_date / car_status,由上游 SSOT 派生的建模或审计字段,none
+split_master,is_clean_p0_p20,integer,event_date / car_status,由上游 SSOT 派生的建模或审计字段,none
+split_master,default_model_scope,string,event_date / car_status,由上游 SSOT 派生的建模或审计字段,none

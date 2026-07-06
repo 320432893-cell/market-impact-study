@@ -1,0 +1,46 @@
+{
+  "action": "定增/再融资",
+  "nuisance_diagnostics": [
+    {
+      "action": "定增/再融资",
+      "treated": 89,
+      "y_oof_r2": 0.056,
+      "propensity_auc": 0.892,
+      "overlap_frac": 0.676
+    },
+    {
+      "action": "股东增减持/限售流通",
+      "treated": 370,
+      "y_oof_r2": 0.056,
+      "propensity_auc": 0.914,
+      "overlap_frac": 0.859
+    },
+    {
+      "action": "股份回购(首发)",
+      "treated": 131,
+      "y_oof_r2": 0.003,
+      "propensity_auc": 0.884,
+      "overlap_frac": 0.902
+    }
+  ],
+  "forward_causal": {
+    "point_pct": -0.0,
+    "cluster_ci90_pct": [
+      -2.83,
+      5.87
+    ],
+    "two_sided_p": 0.733,
+    "n_boot": 150,
+    "sig": false
+  },
+  "pre_event_placebo": {
+    "point_pct": 0.09,
+    "cluster_ci90_pct": [
+      -3.29,
+      3.55
+    ],
+    "two_sided_p": 0.933,
+    "n_boot": 150,
+    "sig": false
+  }
+}

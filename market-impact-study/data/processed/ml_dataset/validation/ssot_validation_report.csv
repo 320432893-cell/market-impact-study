@@ -1,0 +1,21 @@
+﻿check,status,detail
+event_master 必要字段,pass,missing=[]
+label_master 必要字段,pass,missing=[]
+feature_master 必要字段,pass,missing=[]
+split_master 必要字段,pass,missing=[]
+data_dictionary 必要字段,pass,missing=[]
+event_master 主键唯一,pass,"duplicated=0, rows=6398"
+label_master 主键唯一,pass,"duplicated=0, rows=6398"
+feature_master 主键唯一,pass,"duplicated=0, rows=6398"
+split_master 主键唯一,pass,"duplicated=0, rows=6398"
+label_master 与 event_master 键集合一致,pass,symmetric_diff=0
+feature_master 与 event_master 键集合一致,pass,symmetric_diff=0
+split_master 与 event_master 键集合一致,pass,symmetric_diff=0
+feature_master point-in-time,pass,as_of_date>event_date rows=0
+feature_master 日期可解析,pass,bad_date_cells=0
+split 取值合法,pass,invalid=[]
+时间切分无穿越,pass,violating_rows=0
+训练/验证/测试均有样本,pass,"{'excluded_unlabeled': 249, 'test': 1620, 'train': 3905, 'valid': 624}"
+默认切分样本主标签完整,pass,missing=0
+feature_master 无目标泄露字段,pass,columns=[]
+字段字典未将特征标为目标泄露,pass,rows=0

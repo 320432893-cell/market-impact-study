@@ -1,0 +1,258 @@
+﻿source,dataset,company_or_scope,symbol,status,rows,path,message
+akshare,cninfo_disclosure_report,移为通信,300590,error,0,market-impact-study/data/raw/akshare/cninfo_disclosure_report/300590.csv,JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+akshare,cninfo_disclosure_report,移远通信,603236,ok,826,market-impact-study/data/raw/akshare/cninfo_disclosure_report/603236.csv,
+akshare,cninfo_disclosure_report,高新兴,300098,ok,2780,market-impact-study/data/raw/akshare/cninfo_disclosure_report/300098.csv,
+akshare,cninfo_disclosure_report,广和通,300638,ok,1964,market-impact-study/data/raw/akshare/cninfo_disclosure_report/300638.csv,
+akshare,cninfo_disclosure_report,日海智能,002313,ok,2265,market-impact-study/data/raw/akshare/cninfo_disclosure_report/002313.csv,
+akshare,cninfo_disclosure_report,锐明技术,002970,ok,1067,market-impact-study/data/raw/akshare/cninfo_disclosure_report/002970.csv,
+akshare,cninfo_disclosure_report,有方科技,688159,ok,968,market-impact-study/data/raw/akshare/cninfo_disclosure_report/688159.csv,
+akshare,cninfo_disclosure_report,美格智能,002881,ok,1241,market-impact-study/data/raw/akshare/cninfo_disclosure_report/002881.csv,
+akshare,cninfo_disclosure_report,博实结,301608,ok,236,market-impact-study/data/raw/akshare/cninfo_disclosure_report/301608.csv,
+akshare,cninfo_disclosure_relation,移为通信,300590,ok,34,market-impact-study/data/raw/akshare/cninfo_disclosure_relation/300590.csv,
+akshare,cninfo_disclosure_relation,移远通信,603236,error,0,market-impact-study/data/raw/akshare/cninfo_disclosure_relation/603236.csv,"KeyError: ""None of [Index(['代码', '简称', '公告标题', '公告时间', 'announcementId', 'orgId'], dtype='str')] are in the [columns]"""
+akshare,cninfo_disclosure_relation,高新兴,300098,ok,54,market-impact-study/data/raw/akshare/cninfo_disclosure_relation/300098.csv,
+akshare,cninfo_disclosure_relation,广和通,300638,ok,54,market-impact-study/data/raw/akshare/cninfo_disclosure_relation/300638.csv,
+akshare,cninfo_disclosure_relation,日海智能,002313,ok,88,market-impact-study/data/raw/akshare/cninfo_disclosure_relation/002313.csv,
+akshare,cninfo_disclosure_relation,锐明技术,002970,ok,75,market-impact-study/data/raw/akshare/cninfo_disclosure_relation/002970.csv,
+akshare,cninfo_disclosure_relation,有方科技,688159,error,0,market-impact-study/data/raw/akshare/cninfo_disclosure_relation/688159.csv,"KeyError: ""None of [Index(['代码', '简称', '公告标题', '公告时间', 'announcementId', 'orgId'], dtype='str')] are in the [columns]"""
+akshare,cninfo_disclosure_relation,美格智能,002881,ok,18,market-impact-study/data/raw/akshare/cninfo_disclosure_relation/002881.csv,
+akshare,cninfo_disclosure_relation,博实结,301608,ok,54,market-impact-study/data/raw/akshare/cninfo_disclosure_relation/301608.csv,
+akshare,eastmoney_individual_notice,移为通信,300590,ok,1573,market-impact-study/data/raw/akshare/eastmoney_individual_notice/300590.csv,
+akshare,eastmoney_individual_notice,移远通信,603236,ok,857,market-impact-study/data/raw/akshare/eastmoney_individual_notice/603236.csv,
+akshare,eastmoney_individual_notice,高新兴,300098,ok,2870,market-impact-study/data/raw/akshare/eastmoney_individual_notice/300098.csv,
+akshare,eastmoney_individual_notice,广和通,300638,ok,2080,market-impact-study/data/raw/akshare/eastmoney_individual_notice/300638.csv,
+akshare,eastmoney_individual_notice,日海智能,002313,ok,2266,market-impact-study/data/raw/akshare/eastmoney_individual_notice/002313.csv,
+akshare,eastmoney_individual_notice,锐明技术,002970,ok,1151,market-impact-study/data/raw/akshare/eastmoney_individual_notice/002970.csv,
+akshare,eastmoney_individual_notice,有方科技,688159,ok,1076,market-impact-study/data/raw/akshare/eastmoney_individual_notice/688159.csv,
+akshare,eastmoney_individual_notice,美格智能,002881,ok,1263,market-impact-study/data/raw/akshare/eastmoney_individual_notice/002881.csv,
+akshare,eastmoney_individual_notice,博实结,301608,ok,344,market-impact-study/data/raw/akshare/eastmoney_individual_notice/301608.csv,
+akshare,eastmoney_research_report,移为通信,300590,ok,71,market-impact-study/data/raw/akshare/eastmoney_research_report/300590.csv,
+akshare,eastmoney_research_report,移远通信,603236,ok,154,market-impact-study/data/raw/akshare/eastmoney_research_report/603236.csv,
+akshare,eastmoney_research_report,高新兴,300098,ok,102,market-impact-study/data/raw/akshare/eastmoney_research_report/300098.csv,
+akshare,eastmoney_research_report,广和通,300638,ok,166,market-impact-study/data/raw/akshare/eastmoney_research_report/300638.csv,
+akshare,eastmoney_research_report,日海智能,002313,ok,8,market-impact-study/data/raw/akshare/eastmoney_research_report/002313.csv,
+akshare,eastmoney_research_report,锐明技术,002970,ok,27,market-impact-study/data/raw/akshare/eastmoney_research_report/002970.csv,
+akshare,eastmoney_research_report,有方科技,688159,ok,2,market-impact-study/data/raw/akshare/eastmoney_research_report/688159.csv,
+akshare,eastmoney_research_report,美格智能,002881,ok,76,market-impact-study/data/raw/akshare/eastmoney_research_report/002881.csv,
+akshare,eastmoney_research_report,博实结,301608,ok,3,market-impact-study/data/raw/akshare/eastmoney_research_report/301608.csv,
+akshare,eastmoney_stock_news,移为通信,300590,ok,10,market-impact-study/data/raw/akshare/eastmoney_stock_news/300590.csv,
+akshare,eastmoney_stock_news,移远通信,603236,ok,10,market-impact-study/data/raw/akshare/eastmoney_stock_news/603236.csv,
+akshare,eastmoney_stock_news,高新兴,300098,ok,10,market-impact-study/data/raw/akshare/eastmoney_stock_news/300098.csv,
+akshare,eastmoney_stock_news,广和通,300638,ok,10,market-impact-study/data/raw/akshare/eastmoney_stock_news/300638.csv,
+akshare,eastmoney_stock_news,日海智能,002313,ok,10,market-impact-study/data/raw/akshare/eastmoney_stock_news/002313.csv,
+akshare,eastmoney_stock_news,锐明技术,002970,ok,10,market-impact-study/data/raw/akshare/eastmoney_stock_news/002970.csv,
+akshare,eastmoney_stock_news,有方科技,688159,ok,10,market-impact-study/data/raw/akshare/eastmoney_stock_news/688159.csv,
+akshare,eastmoney_stock_news,美格智能,002881,ok,10,market-impact-study/data/raw/akshare/eastmoney_stock_news/002881.csv,
+akshare,eastmoney_stock_news,博实结,301608,ok,10,market-impact-study/data/raw/akshare/eastmoney_stock_news/301608.csv,
+akshare,cninfo_irm_questions,移为通信,300590,ok,11,market-impact-study/data/raw/akshare/cninfo_irm_questions/300590.csv,
+akshare,cninfo_irm_questions,移远通信,603236,error,0,market-impact-study/data/raw/akshare/cninfo_irm_questions/603236.csv,"KeyError: ""None of [Index(['股票代码', '公司简称', '行业', '行业代码', '问题', '提问者', '来源', '提问时间', '更新时间',\n       '提问者编号', '问题编号', '回答ID', '回答内容', '回答者'],\n      dtype='str')] are in the [columns]"""
+akshare,cninfo_irm_questions,高新兴,300098,ok,52,market-impact-study/data/raw/akshare/cninfo_irm_questions/300098.csv,
+akshare,cninfo_irm_questions,广和通,300638,ok,32,market-impact-study/data/raw/akshare/cninfo_irm_questions/300638.csv,
+akshare,cninfo_irm_questions,日海智能,002313,ok,11,market-impact-study/data/raw/akshare/cninfo_irm_questions/002313.csv,
+akshare,cninfo_irm_questions,锐明技术,002970,ok,18,market-impact-study/data/raw/akshare/cninfo_irm_questions/002970.csv,
+akshare,cninfo_irm_questions,有方科技,688159,error,0,market-impact-study/data/raw/akshare/cninfo_irm_questions/688159.csv,"KeyError: ""None of [Index(['股票代码', '公司简称', '行业', '行业代码', '问题', '提问者', '来源', '提问时间', '更新时间',\n       '提问者编号', '问题编号', '回答ID', '回答内容', '回答者'],\n      dtype='str')] are in the [columns]"""
+akshare,cninfo_irm_questions,美格智能,002881,ok,13,market-impact-study/data/raw/akshare/cninfo_irm_questions/002881.csv,
+akshare,cninfo_irm_questions,博实结,301608,ok,39,market-impact-study/data/raw/akshare/cninfo_irm_questions/301608.csv,
+akshare,sina_institute_recommend,移为通信,300590,error,0,market-impact-study/data/raw/akshare/sina_institute_recommend/300590.csv,"FileNotFoundError: [Errno 2] No such file or directory: <!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+<head>
+    <meta http-equiv=""Content-type"" content=""text/html; charset=GB2312"" />
+	<title>机构投资评级-股票-新浪财经</title>
+	<meta name=""keywords"" content=""投资评级,机构评级,沪深A股,A股,股票评级,股票投资评级,研究报告,股票研报,机构股票池"">
+    <meta name=""description"" content=""新浪股票投资评级为您及时、全面地提供各大机构的研究报告精华，汇总股票专业投资评级，黑马白马一网"
+akshare,sina_institute_recommend,移远通信,603236,error,0,market-impact-study/data/raw/akshare/sina_institute_recommend/603236.csv,"FileNotFoundError: [Errno 2] No such file or directory: <!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+<head>
+    <meta http-equiv=""Content-type"" content=""text/html; charset=GB2312"" />
+	<title>机构投资评级-股票-新浪财经</title>
+	<meta name=""keywords"" content=""投资评级,机构评级,沪深A股,A股,股票评级,股票投资评级,研究报告,股票研报,机构股票池"">
+    <meta name=""description"" content=""新浪股票投资评级为您及时、全面地提供各大机构的研究报告精华，汇总股票专业投资评级，黑马白马一网"
+akshare,sina_institute_recommend,高新兴,300098,error,0,market-impact-study/data/raw/akshare/sina_institute_recommend/300098.csv,"FileNotFoundError: [Errno 2] No such file or directory: <!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+<head>
+    <meta http-equiv=""Content-type"" content=""text/html; charset=GB2312"" />
+	<title>机构投资评级-股票-新浪财经</title>
+	<meta name=""keywords"" content=""投资评级,机构评级,沪深A股,A股,股票评级,股票投资评级,研究报告,股票研报,机构股票池"">
+    <meta name=""description"" content=""新浪股票投资评级为您及时、全面地提供各大机构的研究报告精华，汇总股票专业投资评级，黑马白马一网"
+akshare,sina_institute_recommend,广和通,300638,error,0,market-impact-study/data/raw/akshare/sina_institute_recommend/300638.csv,"FileNotFoundError: [Errno 2] No such file or directory: <!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+<head>
+    <meta http-equiv=""Content-type"" content=""text/html; charset=GB2312"" />
+	<title>机构投资评级-股票-新浪财经</title>
+	<meta name=""keywords"" content=""投资评级,机构评级,沪深A股,A股,股票评级,股票投资评级,研究报告,股票研报,机构股票池"">
+    <meta name=""description"" content=""新浪股票投资评级为您及时、全面地提供各大机构的研究报告精华，汇总股票专业投资评级，黑马白马一网"
+akshare,sina_institute_recommend,日海智能,002313,error,0,market-impact-study/data/raw/akshare/sina_institute_recommend/002313.csv,"FileNotFoundError: [Errno 2] No such file or directory: <!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+<head>
+    <meta http-equiv=""Content-type"" content=""text/html; charset=GB2312"" />
+	<title>机构投资评级-股票-新浪财经</title>
+	<meta name=""keywords"" content=""投资评级,机构评级,沪深A股,A股,股票评级,股票投资评级,研究报告,股票研报,机构股票池"">
+    <meta name=""description"" content=""新浪股票投资评级为您及时、全面地提供各大机构的研究报告精华，汇总股票专业投资评级，黑马白马一网"
+akshare,sina_institute_recommend,锐明技术,002970,error,0,market-impact-study/data/raw/akshare/sina_institute_recommend/002970.csv,"FileNotFoundError: [Errno 2] No such file or directory: <!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+<head>
+    <meta http-equiv=""Content-type"" content=""text/html; charset=GB2312"" />
+	<title>机构投资评级-股票-新浪财经</title>
+	<meta name=""keywords"" content=""投资评级,机构评级,沪深A股,A股,股票评级,股票投资评级,研究报告,股票研报,机构股票池"">
+    <meta name=""description"" content=""新浪股票投资评级为您及时、全面地提供各大机构的研究报告精华，汇总股票专业投资评级，黑马白马一网"
+akshare,sina_institute_recommend,有方科技,688159,error,0,market-impact-study/data/raw/akshare/sina_institute_recommend/688159.csv,"FileNotFoundError: [Errno 2] No such file or directory: <!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+<head>
+    <meta http-equiv=""Content-type"" content=""text/html; charset=GB2312"" />
+	<title>机构投资评级-股票-新浪财经</title>
+	<meta name=""keywords"" content=""投资评级,机构评级,沪深A股,A股,股票评级,股票投资评级,研究报告,股票研报,机构股票池"">
+    <meta name=""description"" content=""新浪股票投资评级为您及时、全面地提供各大机构的研究报告精华，汇总股票专业投资评级，黑马白马一网"
+akshare,sina_institute_recommend,美格智能,002881,error,0,market-impact-study/data/raw/akshare/sina_institute_recommend/002881.csv,"FileNotFoundError: [Errno 2] No such file or directory: <!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+<head>
+    <meta http-equiv=""Content-type"" content=""text/html; charset=GB2312"" />
+	<title>机构投资评级-股票-新浪财经</title>
+	<meta name=""keywords"" content=""投资评级,机构评级,沪深A股,A股,股票评级,股票投资评级,研究报告,股票研报,机构股票池"">
+    <meta name=""description"" content=""新浪股票投资评级为您及时、全面地提供各大机构的研究报告精华，汇总股票专业投资评级，黑马白马一网"
+akshare,sina_institute_recommend,博实结,301608,error,0,market-impact-study/data/raw/akshare/sina_institute_recommend/301608.csv,"FileNotFoundError: [Errno 2] No such file or directory: <!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+<head>
+    <meta http-equiv=""Content-type"" content=""text/html; charset=GB2312"" />
+	<title>机构投资评级-股票-新浪财经</title>
+	<meta name=""keywords"" content=""投资评级,机构评级,沪深A股,A股,股票评级,股票投资评级,研究报告,股票研报,机构股票池"">
+    <meta name=""description"" content=""新浪股票投资评级为您及时、全面地提供各大机构的研究报告精华，汇总股票专业投资评级，黑马白马一网"
+eastmoney_ir,eastmoney_ir,移为通信,300590,ok,56,market-impact-study/data/raw/eastmoney_ir/300590.csv,
+eastmoney_ir,eastmoney_ir,移远通信,603236,ok,355,market-impact-study/data/raw/eastmoney_ir/603236.csv,
+eastmoney_ir,eastmoney_ir,高新兴,300098,ok,2,market-impact-study/data/raw/eastmoney_ir/300098.csv,
+eastmoney_ir,eastmoney_ir,广和通,300638,ok,116,market-impact-study/data/raw/eastmoney_ir/300638.csv,
+eastmoney_ir,eastmoney_ir,日海智能,002313,ok,1,market-impact-study/data/raw/eastmoney_ir/002313.csv,
+eastmoney_ir,eastmoney_ir,锐明技术,002970,ok,189,market-impact-study/data/raw/eastmoney_ir/002970.csv,
+eastmoney_ir,eastmoney_ir,有方科技,688159,ok,4,market-impact-study/data/raw/eastmoney_ir/688159.csv,
+eastmoney_ir,eastmoney_ir,美格智能,002881,ok,10,market-impact-study/data/raw/eastmoney_ir/002881.csv,
+eastmoney_ir,eastmoney_ir,博实结,301608,ok,137,market-impact-study/data/raw/eastmoney_ir/301608.csv,
+tushare,stock_basic,all_listed,,ok,5528,market-impact-study/data/raw/tushare/stock_basic.csv,
+tushare,daily,移为通信:300590.SZ,,ok,2181,market-impact-study/data/raw/tushare/daily/300590.SZ.csv,
+tushare,daily_basic,移为通信:300590.SZ,,ok,2181,market-impact-study/data/raw/tushare/daily_basic/300590.SZ.csv,
+tushare,adj_factor,移为通信:300590.SZ,,ok,2285,market-impact-study/data/raw/tushare/adj_factor/300590.SZ.csv,
+tushare,income,移为通信:300590.SZ,,ok,51,market-impact-study/data/raw/tushare/income/300590.SZ.csv,
+tushare,balancesheet,移为通信:300590.SZ,,ok,55,market-impact-study/data/raw/tushare/balancesheet/300590.SZ.csv,
+tushare,cashflow,移为通信:300590.SZ,,ok,51,market-impact-study/data/raw/tushare/cashflow/300590.SZ.csv,
+tushare,fina_indicator,移为通信:300590.SZ,,ok,63,market-impact-study/data/raw/tushare/fina_indicator/300590.SZ.csv,
+tushare,forecast,移为通信:300590.SZ,,ok,25,market-impact-study/data/raw/tushare/forecast/300590.SZ.csv,
+tushare,express,移为通信:300590.SZ,,ok,6,market-impact-study/data/raw/tushare/express/300590.SZ.csv,
+tushare,dividend,移为通信:300590.SZ,,ok,34,market-impact-study/data/raw/tushare/dividend/300590.SZ.csv,
+tushare,repurchase,移为通信:300590.SZ,,ok,28,market-impact-study/data/raw/tushare/repurchase/300590.SZ.csv,
+tushare,pledge_stat,移为通信:300590.SZ,,ok,545,market-impact-study/data/raw/tushare/pledge_stat/300590.SZ.csv,
+tushare,stk_holdernumber,移为通信:300590.SZ,,ok,87,market-impact-study/data/raw/tushare/stk_holdernumber/300590.SZ.csv,
+tushare,anns_d,移为通信:300590.SZ,,error,0,market-impact-study/data/raw/tushare/anns_d/300590.SZ.csv,抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。
+tushare,daily,移远通信:603236.SH,,ok,1675,market-impact-study/data/raw/tushare/daily/603236.SH.csv,
+tushare,daily_basic,移远通信:603236.SH,,ok,1675,market-impact-study/data/raw/tushare/daily_basic/603236.SH.csv,
+tushare,adj_factor,移远通信:603236.SH,,ok,1675,market-impact-study/data/raw/tushare/adj_factor/603236.SH.csv,
+tushare,income,移远通信:603236.SH,,ok,44,market-impact-study/data/raw/tushare/income/603236.SH.csv,
+tushare,balancesheet,移远通信:603236.SH,,ok,38,market-impact-study/data/raw/tushare/balancesheet/603236.SH.csv,
+tushare,cashflow,移远通信:603236.SH,,ok,47,market-impact-study/data/raw/tushare/cashflow/603236.SH.csv,
+tushare,fina_indicator,移远通信:603236.SH,,ok,46,market-impact-study/data/raw/tushare/fina_indicator/603236.SH.csv,
+tushare,forecast,移远通信:603236.SH,,ok,16,market-impact-study/data/raw/tushare/forecast/603236.SH.csv,
+tushare,express,移远通信:603236.SH,,ok,2,market-impact-study/data/raw/tushare/express/603236.SH.csv,
+tushare,dividend,移远通信:603236.SH,,ok,30,market-impact-study/data/raw/tushare/dividend/603236.SH.csv,
+tushare,repurchase,移远通信:603236.SH,,ok,23,market-impact-study/data/raw/tushare/repurchase/603236.SH.csv,
+tushare,pledge_stat,移远通信:603236.SH,,ok,504,market-impact-study/data/raw/tushare/pledge_stat/603236.SH.csv,
+tushare,stk_holdernumber,移远通信:603236.SH,,ok,32,market-impact-study/data/raw/tushare/stk_holdernumber/603236.SH.csv,
+tushare,anns_d,移远通信:603236.SH,,error,0,market-impact-study/data/raw/tushare/anns_d/603236.SH.csv,抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。
+tushare,daily,高新兴:300098.SZ,,ok,3636,market-impact-study/data/raw/tushare/daily/300098.SZ.csv,
+tushare,daily_basic,高新兴:300098.SZ,,ok,3636,market-impact-study/data/raw/tushare/daily_basic/300098.SZ.csv,
+tushare,adj_factor,高新兴:300098.SZ,,ok,3854,market-impact-study/data/raw/tushare/adj_factor/300098.SZ.csv,
+tushare,income,高新兴:300098.SZ,,ok,83,market-impact-study/data/raw/tushare/income/300098.SZ.csv,
+tushare,balancesheet,高新兴:300098.SZ,,ok,97,market-impact-study/data/raw/tushare/balancesheet/300098.SZ.csv,
+tushare,cashflow,高新兴:300098.SZ,,ok,80,market-impact-study/data/raw/tushare/cashflow/300098.SZ.csv,
+tushare,fina_indicator,高新兴:300098.SZ,,ok,100,market-impact-study/data/raw/tushare/fina_indicator/300098.SZ.csv,
+tushare,forecast,高新兴:300098.SZ,,ok,68,market-impact-study/data/raw/tushare/forecast/300098.SZ.csv,
+tushare,express,高新兴:300098.SZ,,ok,11,market-impact-study/data/raw/tushare/express/300098.SZ.csv,
+tushare,dividend,高新兴:300098.SZ,,ok,33,market-impact-study/data/raw/tushare/dividend/300098.SZ.csv,
+tushare,repurchase,高新兴:300098.SZ,,ok,86,market-impact-study/data/raw/tushare/repurchase/300098.SZ.csv,
+tushare,pledge_stat,高新兴:300098.SZ,,ok,632,market-impact-study/data/raw/tushare/pledge_stat/300098.SZ.csv,
+tushare,stk_holdernumber,高新兴:300098.SZ,,ok,182,market-impact-study/data/raw/tushare/stk_holdernumber/300098.SZ.csv,
+tushare,anns_d,高新兴:300098.SZ,,error,0,market-impact-study/data/raw/tushare/anns_d/300098.SZ.csv,抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。
+tushare,daily,广和通:300638.SZ,,ok,2219,market-impact-study/data/raw/tushare/daily/300638.SZ.csv,
+tushare,daily_basic,广和通:300638.SZ,,ok,2219,market-impact-study/data/raw/tushare/daily_basic/300638.SZ.csv,
+tushare,adj_factor,广和通:300638.SZ,,ok,2226,market-impact-study/data/raw/tushare/adj_factor/300638.SZ.csv,
+tushare,income,广和通:300638.SZ,,ok,56,market-impact-study/data/raw/tushare/income/300638.SZ.csv,
+tushare,balancesheet,广和通:300638.SZ,,ok,53,market-impact-study/data/raw/tushare/balancesheet/300638.SZ.csv,
+tushare,cashflow,广和通:300638.SZ,,ok,56,market-impact-study/data/raw/tushare/cashflow/300638.SZ.csv,
+tushare,fina_indicator,广和通:300638.SZ,,ok,60,market-impact-study/data/raw/tushare/fina_indicator/300638.SZ.csv,
+tushare,forecast,广和通:300638.SZ,,ok,15,market-impact-study/data/raw/tushare/forecast/300638.SZ.csv,
+tushare,express,广和通:300638.SZ,,ok,3,market-impact-study/data/raw/tushare/express/300638.SZ.csv,
+tushare,dividend,广和通:300638.SZ,,ok,33,market-impact-study/data/raw/tushare/dividend/300638.SZ.csv,
+tushare,repurchase,广和通:300638.SZ,,ok,91,market-impact-study/data/raw/tushare/repurchase/300638.SZ.csv,
+tushare,pledge_stat,广和通:300638.SZ,,ok,487,market-impact-study/data/raw/tushare/pledge_stat/300638.SZ.csv,
+tushare,stk_holdernumber,广和通:300638.SZ,,ok,87,market-impact-study/data/raw/tushare/stk_holdernumber/300638.SZ.csv,
+tushare,anns_d,广和通:300638.SZ,,error,0,market-impact-study/data/raw/tushare/anns_d/300638.SZ.csv,抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。
+tushare,daily,日海智能:002313.SZ,,ok,3870,market-impact-study/data/raw/tushare/daily/002313.SZ.csv,
+tushare,daily_basic,日海智能:002313.SZ,,ok,3870,market-impact-study/data/raw/tushare/daily_basic/002313.SZ.csv,
+tushare,adj_factor,日海智能:002313.SZ,,ok,4012,market-impact-study/data/raw/tushare/adj_factor/002313.SZ.csv,
+tushare,income,日海智能:002313.SZ,,ok,79,market-impact-study/data/raw/tushare/income/002313.SZ.csv,
+tushare,balancesheet,日海智能:002313.SZ,,ok,94,market-impact-study/data/raw/tushare/balancesheet/002313.SZ.csv,
+tushare,cashflow,日海智能:002313.SZ,,ok,83,market-impact-study/data/raw/tushare/cashflow/002313.SZ.csv,
+tushare,fina_indicator,日海智能:002313.SZ,,ok,100,market-impact-study/data/raw/tushare/fina_indicator/002313.SZ.csv,
+tushare,forecast,日海智能:002313.SZ,,ok,67,market-impact-study/data/raw/tushare/forecast/002313.SZ.csv,
+tushare,express,日海智能:002313.SZ,,ok,12,market-impact-study/data/raw/tushare/express/002313.SZ.csv,
+tushare,dividend,日海智能:002313.SZ,,ok,32,market-impact-study/data/raw/tushare/dividend/002313.SZ.csv,
+tushare,repurchase,日海智能:002313.SZ,,ok,14,market-impact-study/data/raw/tushare/repurchase/002313.SZ.csv,
+tushare,pledge_stat,日海智能:002313.SZ,,ok,878,market-impact-study/data/raw/tushare/pledge_stat/002313.SZ.csv,
+tushare,stk_holdernumber,日海智能:002313.SZ,,ok,76,market-impact-study/data/raw/tushare/stk_holdernumber/002313.SZ.csv,
+tushare,anns_d,日海智能:002313.SZ,,error,0,market-impact-study/data/raw/tushare/anns_d/002313.SZ.csv,抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。
+tushare,daily,锐明技术:002970.SZ,,ok,1571,market-impact-study/data/raw/tushare/daily/002970.SZ.csv,
+tushare,daily_basic,锐明技术:002970.SZ,,ok,1571,market-impact-study/data/raw/tushare/daily_basic/002970.SZ.csv,
+tushare,adj_factor,锐明技术:002970.SZ,,ok,1571,market-impact-study/data/raw/tushare/adj_factor/002970.SZ.csv,
+tushare,income,锐明技术:002970.SZ,,ok,37,market-impact-study/data/raw/tushare/income/002970.SZ.csv,
+tushare,balancesheet,锐明技术:002970.SZ,,ok,38,market-impact-study/data/raw/tushare/balancesheet/002970.SZ.csv,
+tushare,cashflow,锐明技术:002970.SZ,,ok,43,market-impact-study/data/raw/tushare/cashflow/002970.SZ.csv,
+tushare,fina_indicator,锐明技术:002970.SZ,,ok,41,market-impact-study/data/raw/tushare/fina_indicator/002970.SZ.csv,
+tushare,forecast,锐明技术:002970.SZ,,ok,19,market-impact-study/data/raw/tushare/forecast/002970.SZ.csv,
+tushare,express,锐明技术:002970.SZ,,ok,3,market-impact-study/data/raw/tushare/express/002970.SZ.csv,
+tushare,dividend,锐明技术:002970.SZ,,ok,33,market-impact-study/data/raw/tushare/dividend/002970.SZ.csv,
+tushare,repurchase,锐明技术:002970.SZ,,ok,23,market-impact-study/data/raw/tushare/repurchase/002970.SZ.csv,
+tushare,pledge_stat,锐明技术:002970.SZ,,ok,237,market-impact-study/data/raw/tushare/pledge_stat/002970.SZ.csv,
+tushare,stk_holdernumber,锐明技术:002970.SZ,,ok,43,market-impact-study/data/raw/tushare/stk_holdernumber/002970.SZ.csv,
+tushare,anns_d,锐明技术:002970.SZ,,error,0,market-impact-study/data/raw/tushare/anns_d/002970.SZ.csv,抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。
+tushare,daily,有方科技:688159.SH,,ok,1545,market-impact-study/data/raw/tushare/daily/688159.SH.csv,
+tushare,daily_basic,有方科技:688159.SH,,ok,1545,market-impact-study/data/raw/tushare/daily_basic/688159.SH.csv,
+tushare,adj_factor,有方科技:688159.SH,,ok,1545,market-impact-study/data/raw/tushare/adj_factor/688159.SH.csv,
+tushare,income,有方科技:688159.SH,,ok,38,market-impact-study/data/raw/tushare/income/688159.SH.csv,
+tushare,balancesheet,有方科技:688159.SH,,ok,36,market-impact-study/data/raw/tushare/balancesheet/688159.SH.csv,
+tushare,cashflow,有方科技:688159.SH,,ok,41,market-impact-study/data/raw/tushare/cashflow/688159.SH.csv,
+tushare,fina_indicator,有方科技:688159.SH,,ok,41,market-impact-study/data/raw/tushare/fina_indicator/688159.SH.csv,
+tushare,forecast,有方科技:688159.SH,,ok,19,market-impact-study/data/raw/tushare/forecast/688159.SH.csv,
+tushare,express,有方科技:688159.SH,,ok,7,market-impact-study/data/raw/tushare/express/688159.SH.csv,
+tushare,dividend,有方科技:688159.SH,,ok,23,market-impact-study/data/raw/tushare/dividend/688159.SH.csv,
+tushare,repurchase,有方科技:688159.SH,,ok,5,market-impact-study/data/raw/tushare/repurchase/688159.SH.csv,
+tushare,pledge_stat,有方科技:688159.SH,,empty,0,market-impact-study/data/raw/tushare/pledge_stat/688159.SH.csv,
+tushare,stk_holdernumber,有方科技:688159.SH,,ok,27,market-impact-study/data/raw/tushare/stk_holdernumber/688159.SH.csv,
+tushare,anns_d,有方科技:688159.SH,,error,0,market-impact-study/data/raw/tushare/anns_d/688159.SH.csv,抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。
+tushare,daily,美格智能:002881.SZ,,ok,2179,market-impact-study/data/raw/tushare/daily/002881.SZ.csv,
+tushare,daily_basic,美格智能:002881.SZ,,ok,2179,market-impact-study/data/raw/tushare/daily_basic/002881.SZ.csv,
+tushare,adj_factor,美格智能:002881.SZ,,ok,2179,market-impact-study/data/raw/tushare/adj_factor/002881.SZ.csv,
+tushare,income,美格智能:002881.SZ,,ok,52,market-impact-study/data/raw/tushare/income/002881.SZ.csv,
+tushare,balancesheet,美格智能:002881.SZ,,ok,53,market-impact-study/data/raw/tushare/balancesheet/002881.SZ.csv,
+tushare,cashflow,美格智能:002881.SZ,,ok,56,market-impact-study/data/raw/tushare/cashflow/002881.SZ.csv,
+tushare,fina_indicator,美格智能:002881.SZ,,ok,63,market-impact-study/data/raw/tushare/fina_indicator/002881.SZ.csv,
+tushare,forecast,美格智能:002881.SZ,,ok,22,market-impact-study/data/raw/tushare/forecast/002881.SZ.csv,
+tushare,express,美格智能:002881.SZ,,ok,6,market-impact-study/data/raw/tushare/express/002881.SZ.csv,
+tushare,dividend,美格智能:002881.SZ,,ok,31,market-impact-study/data/raw/tushare/dividend/002881.SZ.csv,
+tushare,repurchase,美格智能:002881.SZ,,ok,56,market-impact-study/data/raw/tushare/repurchase/002881.SZ.csv,
+tushare,pledge_stat,美格智能:002881.SZ,,ok,537,market-impact-study/data/raw/tushare/pledge_stat/002881.SZ.csv,
+tushare,stk_holdernumber,美格智能:002881.SZ,,ok,51,market-impact-study/data/raw/tushare/stk_holdernumber/002881.SZ.csv,
+tushare,anns_d,美格智能:002881.SZ,,error,0,market-impact-study/data/raw/tushare/anns_d/002881.SZ.csv,抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。
+tushare,daily,博实结:301608.SZ,,ok,450,market-impact-study/data/raw/tushare/daily/301608.SZ.csv,
+tushare,daily_basic,博实结:301608.SZ,,ok,450,market-impact-study/data/raw/tushare/daily_basic/301608.SZ.csv,
+tushare,adj_factor,博实结:301608.SZ,,ok,450,market-impact-study/data/raw/tushare/adj_factor/301608.SZ.csv,
+tushare,income,博实结:301608.SZ,,ok,10,market-impact-study/data/raw/tushare/income/301608.SZ.csv,
+tushare,balancesheet,博实结:301608.SZ,,ok,10,market-impact-study/data/raw/tushare/balancesheet/301608.SZ.csv,
+tushare,cashflow,博实结:301608.SZ,,ok,14,market-impact-study/data/raw/tushare/cashflow/301608.SZ.csv,
+tushare,fina_indicator,博实结:301608.SZ,,ok,9,market-impact-study/data/raw/tushare/fina_indicator/301608.SZ.csv,
+tushare,forecast,博实结:301608.SZ,,empty,0,market-impact-study/data/raw/tushare/forecast/301608.SZ.csv,
+tushare,express,博实结:301608.SZ,,empty,0,market-impact-study/data/raw/tushare/express/301608.SZ.csv,
+tushare,dividend,博实结:301608.SZ,,ok,11,market-impact-study/data/raw/tushare/dividend/301608.SZ.csv,
+tushare,repurchase,博实结:301608.SZ,,empty,0,market-impact-study/data/raw/tushare/repurchase/301608.SZ.csv,
+tushare,pledge_stat,博实结:301608.SZ,,ok,92,market-impact-study/data/raw/tushare/pledge_stat/301608.SZ.csv,
+tushare,stk_holdernumber,博实结:301608.SZ,,ok,69,market-impact-study/data/raw/tushare/stk_holdernumber/301608.SZ.csv,
+tushare,anns_d,博实结:301608.SZ,,error,0,market-impact-study/data/raw/tushare/anns_d/301608.SZ.csv,抱歉，您没有接口(anns_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。
+tushare,index_daily,创业板指:399006.SZ,,ok,3892,market-impact-study/data/raw/tushare/index_daily/399006.SZ.csv,
+tushare,index_daily,沪深300:000300.SH,,ok,3991,market-impact-study/data/raw/tushare/index_daily/000300.SH.csv,
+tushare,index_daily,中证500:000905.SH,,ok,3991,market-impact-study/data/raw/tushare/index_daily/000905.SH.csv,
+tushare,index_daily,中证1000:000852.SH,,ok,3991,market-impact-study/data/raw/tushare/index_daily/000852.SH.csv,
